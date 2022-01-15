@@ -1,32 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>JSON Test</title>
-</head>
+<html>
+<title> Fetch API - Getting JSON</title>
 <body>
-    <div id="myData"></div>
+    <h1>Fetch API - Getting JSON</h1>
+
     <script>
-        fetch('people.json')
-            .then(function (response) {
-                return response.json();
-            })
-            .then(function (data) {
-                appendData(data);
-            })
-            .catch(function (err) {
-                console.log('error: ' + err);
-            });
-        function appendData(data) {
-            var mainContainer = document.getElementById("myData");
-            for (var i = 0; i < data.length; i++) {
-                var div = document.createElement("div");
-                div.innerHTML = 'Name: ' + data[i].firstName + ' ' + data[i].lastName;
-                mainContainer.appendChild(div);
-            }
+        catchjson()
+        .then(response => {
+            console.log('file imported succesfully');
+        })
+        .catch(error => {
+            console.log ('error importing file');
+            console.log(error);
+        });
+
+        async function catchjson() {
+            const response = await fetch('examplefile.json');
+            const jsonfile1 = await response.json()
+            console.log(jsonfile1)
         }
+
+    </script>
+
+    <script>
+        const meJson = `
+        {
+            "date": "Wed",
+            "people": [
+                {
+                    "name": "dom",
+                    "job": "CS",
+                    "age": 9,
+                    "country": "USA"
+                },
+                {
+                    "name": "dom3",
+                    "job": "CS3",
+                    "age": 93,
+                    "country": "USA3"
+                }
+            ]
+        }
+        `;
+        const me = JSON.parse(meJson);
+        console.log(me.date);
     </script>
 </body>
 </html>
