@@ -1,16 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-
-
-<!--Begin Body -->
+<html>
+<title> Fetch API - Getting JSON</title>
 <body>
-    testing
+    <h1>Fetch API - Getting JSON</h1>
+
+    <div id="abc" style="font-size:10rem"></div>
     <script>
-        let Recipe = "Macaron";
-        document.write(Recipe); // Writes Nathan to the  tag
-        
-        let Steps = "1) Use food <br> 2) Bake";
-        document.write(Steps); // Writes 999 to the tag
+        const recipeJson = `
+        {
+            "index": [
+                {
+                    "name": "dom",
+                    "job": "CS",
+                    "age": 9,
+                    "country": "USA"
+                },
+                {
+                    "name": "dom3",
+                    "job": "CS3",
+                    "age": 93,
+                    "country": "USA3"
+                }
+            ]
+        }
+        `;
+        const me = JSON.parse(recipeJson);
+        console.log(me.index[1].name);
+        const name = me.index[1].name;
+        document.getElementById("abc").innerHTML = name;
     </script>
 </body>
 </html>
