@@ -2,7 +2,7 @@
 <title> Fetch API - Getting JSON</title>
 <body>
     <h1>Fetch API - Getting JSON</h1>
-
+    <script src="examplefile.json"></script>
     <script>
         catchjson()
         .then(response => {
@@ -19,6 +19,11 @@
             console.log(jsonfile1)
         }
 
+    </script>
+
+    <script>
+        const data = require('./examplefile.json');
+        console.log(data)
     </script>
 
     <script>

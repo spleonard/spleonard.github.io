@@ -5,19 +5,18 @@ body,html {
     overflow-x: hidden
 }
 
-@media(min-width:768px) {
-    #body {
-        margin-left: 0.5%;
-        margin-right: 0.5%;
-        margin-top: 0.5%;
-    }
-    .container-fluid {
+body {
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    margin-top: 0.5%;
+}
+
+.container-fluid {
         margin-right: auto;
         margin-left: auto;
         height: 100%;
         padding-left: 15px;
         padding-right: 15px
-    }
 }
 
 .text-white {
