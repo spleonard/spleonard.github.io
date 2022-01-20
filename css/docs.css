@@ -4,39 +4,24 @@ body,html {
     width: 100%;
     height: 100%;
     font-family: APO!important;
-    overflow-x: hidden
-}
-
-body {
+    overflow-x: hidden;
     margin-left: 0.5%;
     margin-right: 0.5%;
     margin-top: 0.5%;
-}
-
-@media only screen and (max-width: 400px) and (max-height:800px) {
-    body {
-      background-color: green;
-    }
-}
-
-@media only screen and (max-width: 800px) and (max-height:400px) {
-    body {
-      background-color: blue;
-    }
-}
-
-.homepage-menu {
-        margin-right: auto;
-        margin-left: auto;
-        height: 100%;
-        padding-left: 15px;
-        padding-right: 15px
 }
 
 .text-white {
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-family: APO!important;
+}
+
+.homepage-menu {
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 15px
 }
 
 .header-row {
@@ -58,119 +43,3 @@ body {
 }
 
 /* End Basic CSS */
-
-/* Start Hovering CSS */
-
-.opacity-away {
-    opacity: 1;
-    transition: all .4s ease;
-    -webkit-transition: all .4s;
-    -moz-transition: all .4s;
-    -o-transition: all .4s;
-}
-
-.opacity-away:hover {
-    opacity: 1;
-    transition: all .4s ease;
-    -webkit-transition: all .4s;
-    -moz-transition: all .4s;
-    -o-transition: all .4s;
-}
-
-.opacity-hover {
-    opacity: 1;
-    transition: all .4s ease;
-    -webkit-transition: all .4s;
-    -moz-transition: all .4s;
-    -o-transition: all .4s;
-}
-
-.opacity-hover:hover {
-    opacity: 0.4;
-    transition: all .4s ease;
-    -webkit-transition: all .4s;
-    -moz-transition: all .4s;
-    -o-transition: all .4s;
-}
-
-/* End Hovering CSS */
-
-/* Start Example Container CSS */
-.divBack{
-    color: black;
-}
-
-#Wrapper {
-    display:grid;
-    grid-template-columns: repeat(3,min-content 1%);
-    grid-template-rows: 25% 25% auto auto;
-    gap: 10px;
-    align-items: center;
-    padding: 10px;
-}
-
-.roundGray {
-    background-color: gainsboro;
-    border: 3px solid #bbbbbb;
-    border-radius: 15px;
-    padding-left: 2%;
-}
-
-.divContainer {
-    grid-area: 1/1/3/5;
-    align-self:stretch;
-}
-
-.divIngredient {
-    background-color: gainsboro;
-    border: 3px solid #bbbbbb;
-    border-radius: 15px;
-    padding-left: 2%;
-    color: black;
-    grid-area: 3/1/4/3;
-    align-self:stretch;
-}
-
-.divMaterials {
-    background-color: gainsboro;
-    border: 3px solid #bbbbbb;
-    border-radius: 15px;
-    padding-left: 2%;
-    color: black;
-    grid-area: 3/3/4/6;
-    align-self:stretch;
-}
-
-.divName {
-    color: black;
-    font-size: 400%;
-    grid-area: 1/1/3/2;
-    padding-left: 15px;
-    align-self: center;
-    border-radius: 15px;
-    white-space: nowrap;
-}
-
-.divServings {
-    color: black;
-    grid-area: 1/3/2/4;
-    align-self: end;
-}
-
-.divSteps {
-    background-color: gainsboro;
-    border: 3px solid #bbbbbb;
-    border-radius: 15px;
-    padding-left: 2%;
-    color: black;
-    grid-area: 4/1/5/6;
-    align-self:stretch;
-}
-
-.divTime {
-    color: black;
-    grid-area: 2/3/3/4;
-    align-self:stretch;
-}
-
-/* End Example Container CSS */
