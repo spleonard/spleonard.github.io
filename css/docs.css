@@ -13,6 +13,12 @@ body {
     margin-top: 0.5%;
 }
 
+@media only screen and (max-width: 400px) {
+    body {
+      background-color: green;
+    }
+}
+
 .homepage-menu {
         margin-right: auto;
         margin-left: auto;
@@ -42,6 +48,7 @@ body {
     background-size: cover;
     display: block;
     background-position: center;
+    background-image: url("../img/Image2.jpg");
 }
 
 /* End Basic CSS */
