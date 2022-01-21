@@ -6,6 +6,9 @@ function ButtonX_Click(pageRequest) {
 
     // Updates other local variables
     updateVariables();
+
+    // Go to the Recipe Page
+    window.location.href = './Recipes_Example.html'
 }
 
 /* This function saves all subset categories of the Json file as local variables */
@@ -20,7 +23,7 @@ function updateVariables() {
     var recipeIndex = localStorage.getItem("recipeList");
 
     console.log(recipeChosen);
-    console.log(recipeIndex.findIndex(recipeChosen));
+    //console.log(recipeIndex.findIndex(recipeChosen));
     /*
     let RJson = parsedRecipeJson[recipeChosen];
 
@@ -57,10 +60,15 @@ function populateMenu(containerName){
         var menuitem = document.createElement('div');
         menuitem.innerHTML = obj.title;
         menuitem.className = 'header-row opacity-hover';
-        menuitem.onclick = console.log(obj.title);
+        menuitem.onclick = function() {ButtonX_Click(this.textContent);};
+
+        // Create a Spacer 
+        var spacer = document.createElement('div');
+        spacer.innerHTML = "<br>";
 
         // Append the div to the Predefined Container
         container.appendChild(menuitem);
+        container.appendChild(spacer);
     };
 }
 
