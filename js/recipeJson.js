@@ -209,7 +209,7 @@ var recipeJSON2 =
                     "time": ""
                 },
                 {       
-                    "title":"Apple Sauce (Dad’s Variant)",
+                    "title":"Apple Sauce (Dad's Variant)",
                     "ingredients": "",
                     "link": "",
                     "materials": "",

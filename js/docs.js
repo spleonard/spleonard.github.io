@@ -30,13 +30,25 @@ function updateVariables() {
 }
 
 function populateMenu(containerName){
-    document.addEventListener('DOMContentLoaded', function() {
+    const retrievedJson = localStorage.getItem("tempJson");
+    console.log(retrievedJson);
+    const jsonObj = JSON.parse(retrievedJson);
+    var count = Object.keys(jsonObj.jsonList).length;
+    console.log(count);
+    var container= document.getElementById(containerName); // reference to containing elm
+
+    for(var i=0;i<count;i++){
+        var obj= jsonObj.jsonList[i];
+        console.log(obj.title);
+        document.addEventListener('DOMContentLoaded', function() {
         var div = document.createElement('div');
-        div.innerHTML = 'Hi there!';
+        div.innerHTML = obj.title;
         div.className = 'header-row';
      
         document.body.appendChild(div);
     }, false);
+    }
+
 }
 
 /* This function populates the Home Menu */
