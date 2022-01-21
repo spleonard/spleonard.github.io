@@ -11,7 +11,7 @@ body{
     color: black;
 }
 
-#Wrapper {
+.Wrapper {
     display:grid;
     grid-template-columns: repeat(3,min-content 1%);
     grid-template-rows: 25% 25% auto auto;
