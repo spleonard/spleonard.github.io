@@ -26,7 +26,6 @@
 .wrapper{
     text-align: left;
     grid-area: 1/1/2/2;
-    justify-self: start;
 }
 
 .subWrapper{
