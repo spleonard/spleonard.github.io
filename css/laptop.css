@@ -1,7 +1,5 @@
 /* CSS File for Large Screens Only */
 
-@media only screen and (min-width: 401px) and (min-height:401px) {
-
 /* Start Hovering CSS */
 
 .opacity-away {
@@ -43,82 +41,62 @@
     color: black;
 }
 
-.subWrapper{
-    background-color: purple;
+.gridArray {
+    display:grid;
+    grid-template-columns: 3fr 1fr 2fr;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+    align-items: stretch;
+    padding-left: 15px;
+    padding-right: 50px;
+    color: black;
 }
 
-.Wrapper {
-    display:grid;
-    grid-template-columns: repeat(2,min-content 1%) max-content 10%;
-    grid-template-rows: 25% 25% auto auto;
-    gap: 10px;
-    align-items: center;
-    padding: 10px;
+.wrapper{
+    text-align: left;
+    grid-area: 1/1/2/3;
+    justify-self: start;
+}
+
+.subWrapper{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.divName {
+    display: inline-block;
+    vertical-align: middle;
+
+    font-size: 400%;
+    padding-left: 15px;
+    white-space: nowrap;
+}
+
+.divServings, .divTime {
+    padding-left: 50px;
+}
+
+.divIngredient {
+    grid-area: 2/1/3/2;
+}
+
+.divMaterials {
+    grid-area: 2/2/3/4;
+}
+
+.divSteps {
+    grid-area: 3/1/4/4;
+}
+
+.divSteps2 {
+    grid-area: 3/1/4/4;
 }
 
 .roundGray {
     background-color: gainsboro;
     border: 3px solid #bbbbbb;
     border-radius: 15px;
-    padding-left: 2%;
-}
-
-.divContainer {
-    grid-area: 1/1/3/5;
-    align-self:stretch;
-}
-
-.divIngredient {
-    background-color: gainsboro;
-    border: 3px solid #bbbbbb;
-    border-radius: 15px;
-    padding-left: 2%;
-    color: black;
-    grid-area: 3/1/4/3;
-    align-self:stretch;
-}
-
-.divMaterials {
-    background-color: gainsboro;
-    border: 3px solid #bbbbbb;
-    border-radius: 15px;
-    padding-left: 2%;
-    color: black;
-    grid-area: 3/3/4/6;
-    align-self:stretch;
-}
-
-.divName {
-    color: black;
-    font-size: 400%;
-    grid-area: 1/1/3/2;
-    padding-left: 15px;
-    align-self: center;
-    border-radius: 15px;
-    white-space: nowrap;
-}
-
-.divServings {
-    color: black;
-    grid-area: 1/3/2/4;
-    align-self: end;
-}
-
-.divSteps {
-    background-color: gainsboro;
-    border: 3px solid #bbbbbb;
-    border-radius: 15px;
-    padding-left: 2%;
-    color: black;
-    grid-area: 4/1/5/6;
-    align-self:stretch;
-}
-
-.divTime {
-    color: black;
-    grid-area: 2/3/3/4;
-    align-self:stretch;
+    padding: 2%;
 }
 
 /* End Example Container CSS */
-}
