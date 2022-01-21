@@ -16,6 +16,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/paper/bootstrap.min.css" />
   <!--Body CSS -->
   <link rel="stylesheet" href="./css/docs.css">
+  <link rel="stylesheet" href="./css/laptop.css">
+  <link rel="stylesheet" href="./css/mobile.css">
+  <link rel="stylesheet" href="./css/mobileSide.css">
   <!--Body JS -->
   <script src="./js/docs.js"></script>
   <script src="./js/recipeJson.js"></script>
@@ -24,16 +27,11 @@
 
 <!--Begin Body -->
 <body>
-<script> createList(); updateVariables(); </script>
 <!--BEGIN CONTENT-->
-<div id="body" class="container-fluid">
-<div class="header-row opacity-hover"  onclick = "ButtonX_Click(this.textContent);" style="background-image: url(./img/Image.png);"><h1 class="text-white"><br><br>Apple Rosemary Bread</h1></div>
-<br>
-<div class="header-row opacity-hover"  onclick = "ButtonX_Click(this.textContent);" style="background-image: url(./img/Image.png);"><h1 class="text-white" ><br><br>Lava Cake</h1></div>
-<br>
-<div class="header-row opacity-hover"  onclick="ButtonX_Click(this.textContent);window.location.href = './Recipes_Example.html'" style="background-image: url(./img/Image.png);"><h1 class="text-white"><br><br>Wings</h1></div>
-<br>
-<div class="header-row opacity-hover"  onclick="window.location.href = './Recipes_Example.html'" style="background-image: url(./img/Image.png);"><h1 class="text-white"><br><br>Ribs</h1></div>
+<div id="menu" class="container-fluid">
+
+</div>
+<script> populateMenu("menu") </script>
 <!--END CONTENT -->
 </body>
 </html>

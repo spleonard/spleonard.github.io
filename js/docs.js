@@ -1,24 +1,30 @@
 /* This function saves the name of the clicked button */
 function ButtonX_Click(pageRequest) {
-    /* Saves and logs the selected value as a local variable*/
+    // Saves and logs the selected value as a local variable
     localStorage.setItem("recipeSelected",pageRequest);
     console.log(pageRequest + " was the selection");
 
-    /* Updates other local variables */
+    // Updates other local variables
     updateVariables();
 }
 
 /* This function saves all subset categories of the Json file as local variables */
 function updateVariables() {
-    /* Call and log the full Json file (formed in recipeJson.js) */
+    // Call and log the full Json file (formed in recipeJson.js)
     const fullRecipeJson = localStorage.getItem("recipeJson");
-    const parsedRecipeJson = JSON.parse(fullRecipeJson);
+    const parsedRecipeJson = JSON.parse(fullRecipeJson).jsonList;
+    console.log(parsedRecipeJson);
 
-    /* Retrieve the recipe name and simplify the Json file to only include relevant data */
+    // Retrieve the Recipe Name and List
     const recipeChosen = localStorage.getItem("recipeSelected");
+    var recipeIndex = localStorage.getItem("recipeList");
+
+    console.log(recipeChosen);
+    console.log(recipeIndex.findIndex(recipeChosen));
+    /*
     let RJson = parsedRecipeJson[recipeChosen];
 
-    /* Save all relevant data as new local variables */
+    // Save all relevant data as new local variables
     localStorage.setItem("recipeIngredients",RJson.ingredients);
     console.log(RJson.ingredients);
     localStorage.setItem("recipeLink",RJson.link);
@@ -27,46 +33,56 @@ function updateVariables() {
     localStorage.setItem("recipeServings",RJson.servings);
     localStorage.setItem("recipeSteps",RJson.steps);
     localStorage.setItem("recipeTime",RJson.time);
+    */
 }
 
+/* This Function Populates the Home Menu */
 function populateMenu(containerName){
-    const retrievedJson = localStorage.getItem("tempJson");
-    console.log(retrievedJson);
+    // Call the full Json file (formed in recipeJson.js)
+    const retrievedJson = localStorage.getItem("recipeJson"); 
     const jsonObj = JSON.parse(retrievedJson);
+
+    // Find Number of Entries in the Json file
     var count = Object.keys(jsonObj.jsonList).length;
-    console.log(count);
-    var container= document.getElementById(containerName); // reference to containing elm
 
+    // Set the div Defined to be the Container
+    var container= document.getElementById(containerName);
+
+    // Create a div for each Entry
     for(var i=0;i<count;i++){
+        // Find the Relevant Part of the Json File
         var obj= jsonObj.jsonList[i];
-        console.log(obj.title);
-        document.addEventListener('DOMContentLoaded', function() {
-        var div = document.createElement('div');
-        div.innerHTML = obj.title;
-        div.className = 'header-row';
-     
-        document.body.appendChild(div);
-    }, false);
-    }
 
+        // Create, Populate, and Format a new div
+        var menuitem = document.createElement('div');
+        menuitem.innerHTML = obj.title;
+        menuitem.className = 'header-row opacity-hover';
+        menuitem.onclick = console.log(obj.title);
+
+        // Append the div to the Predefined Container
+        container.appendChild(menuitem);
+    };
 }
 
-/* This function populates the Home Menu */
-function populateMenu2(containerName) {
-    
-    const retrievedJson = localStorage.getItem("tempJson");
-    console.log(retrievedJson);
+/* This Function Creates a List of the Recipe Names (Utilized in updateVariables() Function) */
+function createList(){
+    // Call the full Json file (formed in recipeJson.js)
+    const retrievedJson = localStorage.getItem("recipeJson"); 
     const jsonObj = JSON.parse(retrievedJson);
-    var count = Object.keys(jsonObj.jsonList).length;
-    console.log(count);
-    var container= document.getElementById(containerName); // reference to containing elm
 
+    // Find Number of Entries in the Json file
+    var count = Object.keys(jsonObj.jsonList).length;
+
+    // Create the Empty List
+    var recipeList= [];
+
+    // Record the Name for each Entry
     for(var i=0;i<count;i++){
-    var obj= jsonObj.jsonList[i];
-    console.log(obj.title);
-    var button = "<input type='submit' value="+obj.title+"></input>";
-    container.innerHTML+=button;
-    }
+        // Find the Relevant Part of the Json File and Push it to the List
+        var obj= jsonObj.jsonList[i].title;
+        recipeList.push(obj);
+    };
+    localStorage.setItem("recipeList",recipeList);
 }
 
 /*This function formats "_" as " " and "/n" as "<br>" */
