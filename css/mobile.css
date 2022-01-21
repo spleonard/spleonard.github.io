@@ -67,7 +67,7 @@
 
 .roundGray {
     background-color: gainsboro;
-    border: 3px solid blue;
+    border: 3px solid #bbbbbb;
     border-radius: 15px;
 }
 
