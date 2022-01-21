@@ -37,19 +37,21 @@
 /* End Hovering CSS */
 
 /* Start Example Container CSS */
+
 .divBack{
     color: black;
 }
 
 .gridArray {
     display:grid;
-    grid-template-columns: 3fr 1fr 2fr;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: 3fr 3fr;
+    grid-template-rows: min-content auto auto;
     gap: 10px;
     align-items: stretch;
     padding-left: 15px;
     padding-right: 50px;
     color: black;
+    min-height: 90%;
 }
 
 .wrapper{
@@ -81,22 +83,22 @@
 }
 
 .divMaterials {
-    grid-area: 2/2/3/4;
+    grid-area: 2/2/3/3;
 }
 
 .divSteps {
-    grid-area: 3/1/4/4;
+    grid-area: 3/1/4/3;
+    padding: 1%;
 }
 
-.divSteps2 {
-    grid-area: 3/1/4/4;
+.wrapper, .divIngredient, .divMaterials {
+    padding: 2%;
 }
 
 .roundGray {
     background-color: gainsboro;
     border: 3px solid #bbbbbb;
     border-radius: 15px;
-    padding: 2%;
 }
 
 /* End Example Container CSS */
