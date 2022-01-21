@@ -26,6 +26,7 @@
 .wrapper{
     text-align: left;
     grid-area: 1/1/2/2;
+    justify-self: stretch;
 }
 
 .subWrapper{
@@ -64,7 +65,7 @@
 
 .roundGray {
     background-color: gainsboro;
-    border: 3px solid #bbbbbb;
+    border: 3px solid green;
     border-radius: 15px;
 }
 
