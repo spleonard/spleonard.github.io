@@ -45,11 +45,15 @@ function updateVariables() {
 function populateMenu(containerName){
     // Call the full Json file (formed in recipeJson.js)
     const retrievedJson = localStorage.getItem("recipeJson"); 
-    const jsonObj = JSON.parse(retrievedJson).jsonList;
+    console.log("retrievedJson: "+retrievedJson);
+    const jsonParsed = JSON.parse(retrievedJson);
+    console.log("jsonParsed: "+jsonParsed);
+    const jsonObj = jsonParsed.jsonList; // This Part of the File is Glitchy, but Only on Desktop for Some Reason
+    console.log("jsonObj: "+jsonObj);
 
     // Find Number of Entries in the Json file
     console.log(jsonObj);
-    var count = Object.keys(jsonObj).length; // This Part of the File is Glitchy, but Only on Desktop for Some Reason
+    var count = Object.keys(jsonObj).length;
 
     // Set the div Defined to be the Container
     var container= document.getElementById(containerName);
