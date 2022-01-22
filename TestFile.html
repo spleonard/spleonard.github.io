@@ -1,0 +1,23 @@
+
+<body>
+  <script src="./js/docs.js"></script>
+  <script src="./js/recipeJson.js"></script>
+hiya
+</body>
+<script>
+/*/ Call the full Json file (formed in recipeJson.js)
+const retrievedJson = localStorage.getItem("recipeJson"); 
+const myArray = JSON.parse(retrievedJson).jsonList;
+console.log(myArray);
+
+// Search the file
+let index = myArray.findIndex( element => {
+    if (element.title === 'Wings') {
+      return true;
+    }
+  });
+console.log('Wings'+ ' index: ' + index);
+console.log(myArray[index]);
+*/
+updateVariables();
+</script>
