@@ -48,7 +48,7 @@ function populateMenu(containerName){
     console.log("retrievedJson: "+retrievedJson);
     const jsonParsed = JSON.parse(retrievedJson);
     console.log("jsonParsed: "+jsonParsed);
-    const jsonObj = jsonParsed.jsonList; // This Part of the File is Glitchy, but Only on Desktop for Some Reason
+    const jsonObj = jsonParsed.jsonList; // This Part of the File is Glitchy, but Only on Desktop for Some Reason [SOLVED]
     console.log("jsonObj: "+jsonObj);
 
     // Find Number of Entries in the Json file
