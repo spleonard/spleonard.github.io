@@ -3,184 +3,183 @@ var recipeJSON =
             [
                 {
                         "title":"Apple Rosemary Bread",
-                        "ingredients": "example example",
-                        "link": "example2",
-                        "materials": "example3",
-                        "servings": "example5",
-                        "steps": "example6",
-                        "time": "example7"
+                        "ingredients": "A Bread ingredients",
+                        "link": "A Bread link",
+                        "materials": "A Bread materials",
+                        "servings": "A Bread servings",
+                        "steps": "A Bread steps",
+                        "time": "A Bread time"
                 },
                 {
                         "title":"Apple Sauce (Dad`s Variant)",
-                        "ingredients": "",
-                        "link": "",
-                        "materials": "",
-                        "servings": "",
-                        "steps": "",
-                        "time": ""
+                        "ingredients": "A Sauce ingredients",
+                        "link": "A Sauce link",
+                        "materials": "A Sauce materials",
+                        "servings": "A Sauce servings",
+                        "steps": "A Sauce steps",
+                        "time": "A Sauce time"
                 },
                 {
                         "title":"Banana Bread",
-                        "ingredients": "",
-                        "link": "",
-                        "materials": "",
-                        "servings": "",
-                        "steps": "",
-                        "time": ""
+                        "ingredients": "B Bread ingredients",
+                        "link": "B Bread link",
+                        "materials": "B Bread materials",
+                        "servings": "B Bread servings",
+                        "steps": "B Bread steps",
+                        "time": "B Bread time"
                 },
                 {
                         "title":"Bagels",
-                        "ingredients": "",
-                        "link": "",
-                        "materials": "",
-                        "servings": "",
-                        "steps": "",
-                        "time": ""
+                        "ingredients": "Bagel ingredients",
+                        "link": "Bagel link",
+                        "materials": "Bagel materials",
+                        "servings": "Bagel servings",
+                        "steps": "Bagel steps",
+                        "time": "Bagel time"
                 },
                 {
                         "title":"Cinnamon Rolls",
-                        "ingredients": "",
-                        "link": "",
-                        "materials": "",
-                        "servings": "",
-                        "steps": "",
-                        "time": ""
+                        "ingredients": "C Roll ingredients",
+                        "link": "C Roll link",
+                        "materials": "C Roll materials",
+                        "servings": "C Roll servings",
+                        "steps": "C Roll steps",
+                        "time": "C Roll time"
                 },
                 {
                         "title":"Coffee Cake",
-                        "ingredients": "",
-                        "link": "",
-                        "materials": "",
-                        "name": "",
-                        "servings": "",
-                        "steps": "",
-                        "time": ""
+                        "ingredients": "C Cake ingredients",
+                        "link": "C Cake link",
+                        "materials": "C Cake materials",
+                        "servings": "C Cake servings",
+                        "steps": "C Cake steps",
+                        "time": "C Cake time"
                 },
                 {
                         "title":"Cookies (Meg`s Variant)",
-                        "ingredients": "",
-                        "link": "",
-                        "materials": "",
-                        "servings": "",
-                        "steps": "",
-                        "time": ""
+                        "ingredients": "M Cookie ingredients",
+                        "link": "M Cookie link",
+                        "materials": "M Cookie materials",
+                        "servings": "M Cookie servings",
+                        "steps": "M Cookie steps",
+                        "time": "M Cookie time"
                 },
                 {
                         "title":"Cookies (Vegan Variant)",
-                        "ingredients": "",
-                        "link": "",
-                        "materials": "",
-                        "servings": "",
-                        "steps": "",
-                        "time": ""
+                        "ingredients": "V Cookie ingredients",
+                        "link": "V Cookie link",
+                        "materials": "V Cookie materials",
+                        "servings": "V Cookie servings",
+                        "steps": "V Cookie steps",
+                        "time": "V Cookie time"
                 },
                 {
                         "title":"Crepes",
-                        "ingredients": "",
-                        "link": "",
-                        "materials": "",
-                        "servings": "",
-                        "steps": "",
-                        "time": ""
+                        "ingredients": "Crepe ingredients",
+                        "link": "Crepe link",
+                        "materials": "Crepe materials",
+                        "servings": "Crepe servings",
+                        "steps": "Crepe steps",
+                        "time": "Crepe time"
                 },
                 {
                         "title":"Crepes (Alison`s Variant)",
-                        "ingredients": "",
-                        "link": "",
-                        "materials": "",
-                        "servings": "",
-                        "steps": "",
-                        "time": ""
+                        "ingredients": "ingredients",
+                        "link": "link",
+                        "materials": "materials",
+                        "servings": "servings",
+                        "steps": "steps",
+                        "time": "time"
                 },
                 {
                         "title":"Croissant",
-                        "ingredients": "",
-                        "link": "",
-                        "materials": "",
-                        "servings": "",
-                        "steps": "",
-                        "time": ""
+                        "ingredients": "ingredients",
+                        "link": "link",
+                        "materials": "materials",
+                        "servings": "servings",
+                        "steps": "steps",
+                        "time": "time"
                 },
                 {
                         "title":"Garlic Bread",
-                        "ingredients": "",
-                        "link": "",
-                        "materials": "",
-                        "servings": "",
-                        "steps": "",
-                        "time": ""
+                        "ingredients": "ingredients",
+                        "link": "link",
+                        "materials": "materials",
+                        "servings": "servings",
+                        "steps": "steps",
+                        "time": "time"
                 },
                 {
                         "title":"Lava Cake",
-                        "ingredients": "",
-                        "link": "",
-                        "materials": "",
-                        "servings": "",
-                        "steps": "",
-                        "time": ""
+                        "ingredients": "ingredients",
+                        "link": "link",
+                        "materials": "materials",
+                        "servings": "servings",
+                        "steps": "steps",
+                        "time": "time"
                 },
                 {
                         "title":"Lava Cake (Paloma`s Variant)",
-                        "ingredients": "",
-                        "link": "",
-                        "materials": "",
-                        "servings": "",
-                        "steps": "",
-                        "time": ""
+                        "ingredients": "ingredients",
+                        "link": "link",
+                        "materials": "materials",
+                        "servings": "servings",
+                        "steps": "steps",
+                        "time": "time"
                 },
                 {
                         "title":"Macaron",
-                        "ingredients": "",
-                        "link": "",
-                        "materials": "",
-                        "servings": "",
-                        "steps": "",
-                        "time": ""
+                        "ingredients": "ingredients",
+                        "link": "link",
+                        "materials": "materials",
+                        "servings": "servings",
+                        "steps": "steps",
+                        "time": "time"
                 },
                 {
                         "title":"Monkey Bread",
-                        "ingredients": "",
-                        "link": "",
-                        "materials": "",
-                        "servings": "",
-                        "steps": "",
-                        "time": ""
+                        "ingredients": "ingredients",
+                        "link": "link",
+                        "materials": "materials",
+                        "servings": "servings",
+                        "steps": "steps",
+                        "time": "time"
                 },
                 {
                         "title":"Pizza",
-                        "ingredients": "",
-                        "link": "",
-                        "materials": "",
-                        "servings": "",
-                        "steps": "",
-                        "time": ""
+                        "ingredients": "ingredients",
+                        "link": "link",
+                        "materials": "materials",
+                        "servings": "servings",
+                        "steps": "steps",
+                        "time": "time"
                 },
                 {
                         "title": "Ribs",
-                        "ingredients": "",
-                        "link": "",
-                        "materials": "",
-                        "servings": "",
-                        "steps": "",
-                        "time": ""
+                        "ingredients": "ingredients",
+                        "link": "link",
+                        "materials": "materials",
+                        "servings": "servings",
+                        "steps": "steps",
+                        "time": "time"
                 },
                 {
                         "title":"Rolls",
-                        "ingredients": "",
-                        "link": "",
-                        "materials": "",
-                        "servings": "",
-                        "steps": "",
-                        "time": ""
+                        "ingredients": "ingredients",
+                        "link": "link",
+                        "materials": "materials",
+                        "servings": "servings",
+                        "steps": "steps",
+                        "time": "time"
                 },
                 {
                         "title":"Wings",
-                        "ingredients": "",
-                        "link": "",
-                        "materials": "",
-                        "servings": "",
-                        "steps": "",
-                        "time": ""
+                        "ingredients": "ingredients",
+                        "link": "link",
+                        "materials": "materials",
+                        "servings": "servings",
+                        "steps": "steps",
+                        "time": "time"
                 }
             ]
         }

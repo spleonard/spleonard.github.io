@@ -35,7 +35,7 @@ function updateVariables() {
     localStorage.setItem("recipeIngredients",RJson.ingredients);
     localStorage.setItem("recipeLink",RJson.link);
     localStorage.setItem("recipeMaterials",RJson.materials);
-    localStorage.setItem("recipeName",RJson.name);
+    localStorage.setItem("recipeTitle",RJson.title);
     localStorage.setItem("recipeServings",RJson.servings);
     localStorage.setItem("recipeSteps",RJson.steps);
     localStorage.setItem("recipeTime",RJson.time);
@@ -72,4 +72,21 @@ function populateMenu(containerName){
         container.appendChild(menuitem);
         container.appendChild(spacer);
     };
+}
+
+function populateRecipe() {
+    // Retrieve all Json Variables
+    const varIngredients = localStorage.getItem("recipeIngredients");
+    const varLink = localStorage.getItem("recipeLink");
+    const varMaterials = localStorage.getItem("recipeMaterials");
+    const varTitle = localStorage.getItem("recipeTitle");
+    const varServings = localStorage.getItem("recipeServings");
+    const varSteps = localStorage.getItem("recipeSteps");
+    const varTime = localStorage.getItem("recipeTime");
+    ingredients.innerHTML = varIngredients;
+    materials.innerHTML = varMaterials;
+    title.innerHTML = varTitle;
+    servings.innerHTML = varServings;
+    steps.innerHTML = varSteps;
+    time.innerHTML = varTime;
 }
