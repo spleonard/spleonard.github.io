@@ -48,7 +48,8 @@ function populateMenu(containerName){
     const jsonObj = JSON.parse(retrievedJson);
 
     // Find Number of Entries in the Json file
-    var count = Object.keys(jsonObj.jsonList).length;
+    console.log(jsonObj);
+    var count = Object.keys(jsonObj.jsonList).length; // This Part of the File is Glitchy, but Only on Desktop for Some Reason
 
     // Set the div Defined to be the Container
     var container= document.getElementById(containerName);
