@@ -7,7 +7,7 @@ var recipeJSON =
                         "link": "https://www.myrecipes.com/recipe/rosemary-apple-bread",
                         "materials": "A Bread materials",
                         "servings": "A Bread servings",
-                        "steps": "3 cups flour <br> 1 1&frasl;2 tsp salt",
+                        "steps": "3 cups flour <br> 1 1<sup>1</sup>&frasl;<sub>2</sub> tsp salt",
                         "time": "A Bread time"
                 },
                 {
