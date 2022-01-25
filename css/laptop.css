@@ -1,5 +1,7 @@
 /* CSS File for Large Screens Only */
-
+.header-row {
+    font-size: 10em!important;
+}
 /* Start Hovering CSS */
 
 .opacity-away {

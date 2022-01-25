@@ -39,12 +39,12 @@ var recipeJSON =
                 },
                 {
                         "title":"Cinnamon Rolls",
-                        "ingredients": "C Roll ingredients",
+                        "ingredients": "1 cup warm Milk <br> 1 tbsp Yeast <br> 2 tbsp Sugar <br> 1 tsp Salt <br> 3 tbsp Butter <br> 1 Egg <br> 3 cups Flour <br> <br> 1/2 cup Butter <br> 1 cup Brown Sugar <br> 2 tbsp Cinnamon <br> <br> 4 oz Cream Creese <br> 1/4 cup Butter <br> 1 cup Powdered Sugar <br> 1/2 tsp Vanilla Extract <br> 2 tbsp Milk",
                         "link": "https://thestayathomechef.com/best-homemade-cinnamon-rolls-ever/",
-                        "materials": "C Roll materials",
-                        "servings": "C Roll servings",
-                        "steps": "C Roll steps",
-                        "time": "C Roll time"
+                        "materials": "Oven <br> Baking Dish <br> Rolling Pin <br> Stand Mixer <br> Cooking Spray",
+                        "servings": "Makes 12 Rolls",
+                        "steps": "1) Mix Milk, Yeast, Sugar, Salt, 3 tbsp Butter, and Eggs in a Stand Mixer <br> 2) Add in flour and mix well <br> 3) Cover dough and let rest for 1 hour <br> 4) Punch down the dough and roll into a 12\" by 18\" rectangle <br> 5) Brush the dough with melted 1/2 cup melted Butter <br> 6) Sprinkle on the Brown Sugar and Cinnamon evenly <br> 7) Roll up and cut the cylinder into 12 1\" slices, placing them in a greased baking dish <br> 8) Let rolls rise for half an hour <br> ↪ During this time, preheat oven to 325°<br> 9) Bake for 15 minutes <br> ↪ During this time whip together cream cheese and butter in a bowl <br> ↪ Add Powdered Sugar and Vanilla Extract to the bowl <br> ↪ Add Milk until a nice glaze is made <br> 10) Frost rolls while warm",
+                        "time": "Takes 2 1/2 Hours"
                 },
                 {
                         "title":"Coffee Cake",

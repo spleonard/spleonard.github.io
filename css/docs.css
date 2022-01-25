@@ -25,24 +25,23 @@ body,html {
 }
 
 .header-row {
-    color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    font-family: APO!important;
     padding-top: 8%;
-    border: red;
-    border-width: 5px;
     padding-bottom: 8%;
     margin: -20px;
     margin-top: 0;
     height: 50%;
-    text-align: center;
-    font-size: 12em!important;
+    /* Centering Text */
+    text-align:center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    /* For Image Content*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-repeat: no-repeat;
     background-size: cover;
-    display: block;
     background-position: center;
     background-image: url("../img/Image.png");
 }

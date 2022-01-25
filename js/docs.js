@@ -94,4 +94,5 @@ function populateRecipe() {
     servings.innerHTML = varServings;
     steps.innerHTML = varSteps;
     time.innerHTML = varTime;
+    title.setAttribute('onclick', "window.location.href = '"+varLink+"'");
 }
