@@ -4,13 +4,10 @@
 
 .header-row {
     font-size: 2em!important;
-    height: 70%;
+    height: 80%;
 }
 /* Start Example Container CSS */
 
-.body{
-    background-color: orange;
-}
 .divBack{
     color: black;
 }
