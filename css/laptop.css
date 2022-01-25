@@ -1,6 +1,8 @@
 /* CSS File for Large Screens Only */
+
 .header-row {
-    font-size: 10em!important;
+    font-size: 12em!important;
+    height: 50%;
 }
 /* Start Hovering CSS */
 
