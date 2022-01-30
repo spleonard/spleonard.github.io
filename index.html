@@ -1,6 +1,16 @@
 <!DOCTYPE html>
+<head>
+  <!--AppIcon-->
+  <link rel="apple-touch-icon" href="./img/Logo.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+</head>
+
 <html lang="en">
 <body>
-    <div onclick="window.location.href = './Recipes_Home.html'"> click me to go to my recipe website </div>
+    <div style="background-color:lightblue" onclick="window.location.replace('./Recipes_Home.html')"> click me to go to my recipe website (replace) </div>
+    <br><br><br><br> 
+    <div style="background-color:red" onclick="window.location.assign('./Recipes_Home.html')"> click me to go to my recipe website (assign) </div>
+    <br><br><br><br> 
+    <div style="background-color:yellow" onclick="window.location.href = './Recipes_Home.html'"> click me to go to my recipe website (href) </div>
 </body>
 </html>

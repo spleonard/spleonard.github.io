@@ -48,21 +48,21 @@ var recipeJSON =
                 },
                 {
                         "title":"Coffee Cake",
-                        "ingredients": "C Cake ingredients",
+                        "ingredients": "1 cup chopped Walnuts <br> 3 tbsp Brown Sugar <br> 2 tsp cinnamon <br><br> 2 1/3 cups Flour <br> 1/2 tsp Baking Soda <br> 1 tsp Salt <br> 2 cups Sugar <br> 1 cup Butter <br> 3 Eggs <br> 8 oz Sour Cream <br> 1 1/2 tsp Vanilla Extract",
                         "link": "https://www.onceuponachef.com/recipes/sour-cream-coffee-cake-with-cinnamon-walnut-swirl.html",
-                        "materials": "C Cake materials",
-                        "servings": "C Cake servings",
-                        "steps": "C Cake steps",
-                        "time": "C Cake time"
+                        "materials": "Baking Tray <br> Oven <br> Small Bowl <br> Stand Mixer <br> Bundt Pan <br> Cooking Spray",
+                        "servings": "Makes 1 Cake",
+                        "steps": "1) Preheat oven to 325° <br> 2) Roast Walnuts in Oven for 15 minutes <br> 3) Reduce Oven to 300° <br> 4) Mix roasted Walnuts, Brown Sugar, and Cinnamon together <br> 5) Mix Butter and Sugar in a Mixing Bowl <br> 6) Add Eggs <br> 7) Add Sour Cream and Vanilla <br> 8) Add Flour, Baking Soda, and Salt, mix thoroughly <br> 9) Put 1/3 of the Batter into a well-greased Bundt pan (Spray + Flour is a good idea) <br> 10) Distribute Half the Walnut mixture evenly in the Bundt pan <br> 11) Add another 1/3 of the batter <br> 12) Add the rest of the Walnut mixture <br> 13) Add the last of the batter <br> 14) Bake for 70 Minutes",
+                        "time": "Takes 1.5 Hours"
                 },
                 {
                         "title":"Cookies (Meg`s Variant)",
-                        "ingredients": "M Cookie ingredients",
+                        "ingredients": "1 cup Butter <br> 2 1/2 cups Flour <br> 2 tsp Cornstarch <br> 1 1/2 tsp Cinnamon <br> 1 tsp Baking Powder <br> 1/2 tsp Baking Soda <br> 1/2 tsp Salt <br> 1 1/4 cups Brown Sugar <br> 1/3 cup Sugar <br> 1 tsp Vanilla Extract <br> 2 Eggs <br> 2 cups Chocolate Chips <br> 1 cup dulce de leche",
                         "link": "https://www.cookingclassy.com/browned-butter-cinnamon-dulce-de-leche-stuffed-chocolate-chip-cookies/",
-                        "materials": "M Cookie materials",
-                        "servings": "M Cookie servings",
-                        "steps": "M Cookie steps",
-                        "time": "M Cookie time"
+                        "materials": "Pan <br> Oven <br> 2+ Baking Trays <br> Parchment Paper/2+ Silicone Mats <br> Stand Mixer",
+                        "servings": "Makes 2 Dozen Cookies",
+                        "steps": "1) Brown Butter in a Pan and cool <br> 2) Combine Flour, Cornstarch, Cinnamon, Baking Powder, and Baking Soda",
+                        "time": "Takes 1 Hour"
                 },
                 {
                         "title":"Cookies (Vegan Variant)",
