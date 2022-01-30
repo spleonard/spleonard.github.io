@@ -1,0 +1,7 @@
+{
+  "name": "Sam's Virtual Cookbook",
+  "short_name": "S Recipes",
+  "display": "standalone",
+  "scope": "https://www.samleonard.me/",
+  "start_url": "https://www.samleonard.me/index"
+}
