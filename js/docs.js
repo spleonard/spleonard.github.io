@@ -8,7 +8,7 @@ function ButtonX_Click(pageRequest) {
     updateVariables();
 
     // Go to the Recipe Page
-    window.location.href = './Recipes_Example.html'
+    window.location.assign('./Recipes_Example.html');
 }
 
 /* This function saves all Subset Categories of the Json File */
