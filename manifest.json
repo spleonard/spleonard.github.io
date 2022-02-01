@@ -1,7 +1,7 @@
 {
   "name": "Sam's Virtual Cookbook",
-  "short_name": "S Recipes",
+  "short_name": "Bake Book",
   "display": "standalone",
   "scope": "https://www.samleonard.me/",
-  "start_url": "https://www.samleonard.me/index"
+  "start_url": "https://www.samleonard.me/Recipes_Home"
 }
