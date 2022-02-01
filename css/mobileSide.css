@@ -45,7 +45,8 @@
 }
 
 .divServings, .divTime {
-    padding-left: 50px;
+    visibility: hidden;
+    overflow: hidden;
 }
 
 .divIngredient {
