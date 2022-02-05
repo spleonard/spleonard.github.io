@@ -11,7 +11,7 @@ var recipeJSON =
                         "time": "Takes 2 Hours"
                 },
                 {
-                        "title":"Apple Sauce (Dad`s Variant)",
+                        "title":"Apple Sauce (Dad\'s Variant)",
                         "ingredients": "2 tbsp Butter <br> 2 tbsp Brown Sugar <br> 1 tbsp Cinnamon <br> 4 Apples",
                         "link": "",
                         "materials": "<strong> Needed:</strong><br> Stovetop <br> Pot with Cover <br> Cutting Board",
@@ -56,7 +56,7 @@ var recipeJSON =
                         "time": "Takes 1.5 Hours"
                 },
                 {
-                        "title":"Cookies (Meg`s Variant)",
+                        "title":"Cookies (Meg\'s Variant)",
                         "ingredients": "1 cup Butter <br> 2 1/2 cups Flour <br> 2 tsp Cornstarch <br> 1 1/2 tsp Cinnamon <br> 1 tsp Baking Powder <br> 1/2 tsp Baking Soda <br> 1/2 tsp Salt <br> 1 1/4 cups Brown Sugar <br> 1/3 cup Sugar <br> 1 tsp Vanilla Extract <br> 2 Eggs <br> 2 cups Chocolate Chips <br> 1 cup dulce de leche",
                         "link": "https://www.cookingclassy.com/browned-butter-cinnamon-dulce-de-leche-stuffed-chocolate-chip-cookies/",
                         "materials": "Pan <br> Oven <br> 2+ Baking Trays <br> Parchment Paper/2+ Silicone Mats <br> Stand Mixer",
@@ -91,7 +91,7 @@ var recipeJSON =
                         "time": "Crepe time"
                 },
                 {
-                        "title":"Crepes (Alison`s Variant)",
+                        "title":"Crepes (Alison\'s Variant)",
                         "ingredients": "ingredients",
                         "link": "",
                         "materials": "materials",
@@ -127,7 +127,7 @@ var recipeJSON =
                         "time": "time"
                 },
                 {
-                        "title":"Lava Cake (Paloma`s Variant)",
+                        "title":"Lava Cake (Paloma\'s Variant)",
                         "ingredients": "ingredients",
                         "link": "https://www.bingingwithbabish.com/recipes/2017/8/22/chocolatelavacakes",
                         "materials": "materials",
