@@ -61,7 +61,7 @@
 .wrapper{
     text-align: left;
     grid-area: 1/1/2/3;
-    justify-self: start;
+    justify-self: stretch;
 }
 
 .subWrapper{
@@ -99,7 +99,7 @@
     padding: 2%;
 }
 
-.roundGray {
+.roundGrayTitle, .roundGray {
     background-color: gainsboro;
     border: 3px solid #bbbbbb;
     border-radius: 15px;
