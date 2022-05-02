@@ -66,12 +66,12 @@ var recipeJSON =
                 },
                 {
                         "title":"Cookies (Vegan Variant)",
-                        "ingredients": "V Cookie ingredients",
+                        "ingredients": "1/2 cup Vegan Butter <br>1/2 cup Brown Sugar <br>1/4 cup Sugar <br>1 tsp Vanilla Extract <br>1/2 cup Mashed Ripe Banana <br>1 cup Flour <br>1 and 1/2 cups Oats <br>1 tsp Cornstarch <br>1/2 tsp Baking Powder <br>1/2 tsp Baking Soda <br>1/4 tsp Salt <br>3/4 tsp Cinnamon <br>1/4 tsp Ground Cloves <br>",
                         "link": "https://lovingitvegan.com/vegan-banana-oatmeal-cookies/",
-                        "materials": "V Cookie materials",
-                        "servings": "V Cookie servings",
-                        "steps": "V Cookie steps",
-                        "time": "V Cookie time"
+                        "materials": "Stand Mixer <br> 2-3 Baking Trays <br> Parchment Paper <br> Oven",
+                        "servings": "Makes 2 Dozen",
+                        "steps": "1) Add the Vegan Butter, Brown Sugar and White Sugar to the bowl of an electric mixer and cream them together <br> 2) Mix in the Vanilla Extract and mashed Banana <br>3) Add Flour, Oats, Cornstarch, Baking Powder, Baking Soda, Salt, Cinnamon and Cloves and mix with spoon <br> 4) Preheat the oven to 350°F <br> 5) Scoop roughly 2 Tbsp sized scoops onto a parchment lined baking tray and flatten them <br> 6) Bake for 15 minutes <br> 7) Allow to cool and firm up on the tray before moving",
+                        "time": "Takes 30 Minutes"
                 },
                 {
                         "title":"Creme Brulee",
@@ -83,30 +83,21 @@ var recipeJSON =
                         "time": "Takes 3 Hours"
                 },{
                         "title":"Crepes",
-                        "ingredients": "Crepe ingredients",
+                        "ingredients": "1 cup Flour <br>2 Eggs<br>1/2 cup Milk<br>1/2 cup Water<br>1/4 teaspoon Salt<br>2 tablespoons melted Butter",
                         "link": "https://www.allrecipes.com/recipe/16383/basic-crepes/",
-                        "materials": "Crepe materials",
-                        "servings": "Crepe servings",
-                        "steps": "Crepe steps",
-                        "time": "Crepe time"
+                        "materials": "Bowl <br> Whisk <br> Pan <br> Cooking Spray",
+                        "servings": "Makes 4",
+                        "steps": "1) Whisk together Flour and Eggs<br>2) Gradually stir in Milk and Water <br>3) Add Salt and Butter; beat until smooth. <br> 4) Heat a Pan to medium/high heat <br> 5) Lightly Oil the Pan <br> 6) Pour in about 1/4 cup batter to evenly cover the whole surface of the pan <br> 7) Cook for about 2 min a side <br> 8) Repeat steps 5-7 until out of batter",
+                        "time": "Takes 30 Minutes"
                 },
                 {
                         "title":"Crepes (Alison\'s Variant)",
-                        "ingredients": "ingredients",
+                        "ingredients": "500g Flour <br> 150g Sugar <br> 4 Eggs <br> 1 liter Milk <br> Butter",
                         "link": "",
-                        "materials": "materials",
-                        "servings": "servings",
-                        "steps": "steps",
-                        "time": "time"
-                },
-                {
-                        "title":"Croissant",
-                        "ingredients": "ingredients",
-                        "link": "https://tasty.co/recipe/homemade-chocolate-croissants-pain-au-chocolate",
-                        "materials": "materials",
-                        "servings": "servings",
-                        "steps": "steps",
-                        "time": "time"
+                        "materials": "Bowl <br> Whisk <br> Pan",
+                        "servings": "Makes 6",
+                        "steps": "Lightly mix Sugar and Eggs <br>2) Add some Flour and Milk and stir <br> 3) Repeat step 2 until out <br> 4) Add butter to a hot pan <br> 5) Pour in about 1/4 cup batter to evenly cover the whole surface of the pan <br> 6) Cook for about 2 min a side <br> 7) Repeat steps 4-6 until out of batter",
+                        "time": "Takes 30 Minutes"
                 },
                 {
                         "title":"Garlic Bread",
