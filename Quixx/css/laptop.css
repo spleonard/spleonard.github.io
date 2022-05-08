@@ -1,0 +1,29 @@
+/* Blank on Purpose */
+
+.redButton {
+    height: 30px;
+    width: 30px;
+    background-color: lightpink;
+    border-color: red;
+}
+
+.yellowButton {
+    height: 30px;
+    width: 30px;
+    background-color: lightyellow;
+    border-color: yellow;
+}
+
+.greenButton {
+    height: 30px;
+    width: 30px;
+    background-color: lightgreen;
+    border-color: green;
+}
+
+.blueButton {
+    height: 30px;
+    width: 30px;
+    background-color: lightskyblue;
+    border-color: blue;
+}
