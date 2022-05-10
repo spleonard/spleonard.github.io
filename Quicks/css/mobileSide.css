@@ -1,0 +1,37 @@
+@media only screen and (max-width: 500px) and (max-height:900px) {
+    body{
+        background-color: #e4e3e9;
+        color: white;
+        font-family: neue-kabel,sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+        #board {opacity: 0;}
+        #redRow {opacity: 0;}      
+        #yellowRow {opacity: 0;}      
+        #greenRow {opacity: 0;}      
+        #blueRow {opacity: 0;}      
+      .redBox {opacity: 0;}      
+      .yellowBox {opacity: 0;}      
+      .greenBox {opacity: 0;}      
+      .blueBox {opacity: 0;}      
+      .rowLock {opacity: 0;}                        
+      
+      #points{opacity: 0;}      
+      .topPoints{opacity: 0;}      
+      .bottomPoints{opacity: 0;}      
+      .pointsBox{opacity: 0;}      
+      .smallText{opacity: 0;}      
+      .penaltyBox{opacity: 0;}      
+      .lineAbove{opacity: 0;}
+                      
+      #scores{opacity: 0;}      
+      #grayRow {opacity: 0;}      
+      .whiteBox {opacity: 0;}      
+      .boxCross{opacity: 0;}      
+      .circleCross{opacity: 0;}      
+      .penaltyCross{opacity: 0;}      
+      .clicks{opacity: 0;}      
+      .penaltyClicks{opacity: 0;}
+}
