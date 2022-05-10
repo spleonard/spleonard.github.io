@@ -1,91 +1,254 @@
-<!DOCTYPE html>
-<html lang="en">
-<!--Begin Head -->
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Sam Leonard">
-  <meta name="description" content="Virtual Cookbook">
-  <title>Quicks Sheet</title>
-  <!--Favicon -->
-  <link rel="icon" type="image/png" href="./img/Logo.png">
-  <!--AppIcon-->
-  <link rel="apple-touch-icon" href="./img/Logo.png">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <link rel="manifest" href="./manifest.json">
-   <!--Bootstrap Core CSS -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/paper/bootstrap.min.css" />
-   <!--Body CSS -->
-   <link rel="stylesheet" href="https://use.typekit.net/vyj2qbb.css">
-   <link rel="stylesheet" href="./css/docs.css">
-   <link rel="stylesheet" href="./css/laptop.css">
-   <link rel="stylesheet" href="./css/mobile.css">
-   <link rel="stylesheet" href="./css/mobileSide.css">
-  <!--Body JS -->
-  <script src="./js/docs.js"></script>
-  <script src="./js/recipeJson.js"></script>
+  <link rel="stylesheet" href="./css/docs.css">
+  <link rel="stylesheet" href="https://use.typekit.net/vyj2qbb.css">
+  <script src="./checkbox.js"></script> 
 </head>
-<!--End Head -->
 
-<!--Begin Body -->
-<body>
-  quixx scoresheet
-  <br>
-  <input type="checkbox" class="redButton visually-hidden">2</input>
-  <button class="redButton">3</button>
-  <button class="redButton">4</button>
-  <button class="redButton">5</button>
-  <button class="redButton">6</button>
+<div id="board">
+  <!-- Initializes Rows and Boxes-->
+  <div id="redRow"></div>
+      <div id="box1_1" class="redBox" style="grid-column: 1">2</div>
+      <div id="box1_2" class="redBox" style="grid-column: 2">3</div>
+      <div id="box1_3" class="redBox" style="grid-column: 3">4</div>
+      <div id="box1_4" class="redBox" style="grid-column: 4">5</div>
+      <div id="box1_5" class="redBox" style="grid-column: 5">6</div>
+      <div id="box1_6" class="redBox" style="grid-column: 6">7</div>
+      <div id="box1_7" class="redBox" style="grid-column: 7">8</div>
+      <div id="box1_8" class="redBox" style="grid-column: 8">9</div>
+      <div id="box1_9" class="redBox" style="grid-column: 9">10</div>
+      <div id="box1_10" class="redBox" style="grid-column: 10">11</div>
+      <div id="box1_11" class="redBox" style="grid-column: 11">12</div>
+      <div id="box1_12" class="redBox rowLock" style="grid-column: 12">L</div>
 
-  <button class="redButton">7</button>
-  <button class="redButton">8</button>
-  <button class="redButton">9</button>
-  <button class="redButton">10</button>
-  <button class="redButton">11</button>
+      <div id="x1_1" class="boxCross" style="grid-area: 1/1/2/2">X</div>
+      <div id="x1_2" class="boxCross" style="grid-area: 1/2/2/3">X</div>
+      <div id="x1_3" class="boxCross" style="grid-area: 1/3/2/4">X</div>
+      <div id="x1_4" class="boxCross" style="grid-area: 1/4/2/5">X</div>
+      <div id="x1_5" class="boxCross" style="grid-area: 1/5/2/6">X</div>
+      <div id="x1_6" class="boxCross" style="grid-area: 1/6/2/7">X</div>
+      <div id="x1_7" class="boxCross" style="grid-area: 1/7/2/8">X</div>
+      <div id="x1_8" class="boxCross" style="grid-area: 1/8/2/9">X</div>
+      <div id="x1_9" class="boxCross" style="grid-area: 1/9/2/10">X</div>
+      <div id="x1_10" class="boxCross" style="grid-area: 1/10/2/11">X</div>
+      <div id="x1_11" class="boxCross" style="grid-area: 1/11/2/12">X</div>
+      <div id="x1_12" class="circleCross" style="grid-area: 1/12/2/13">X</div>
 
-  <button class="redButton">12</button>
-  <br>
-  <button class="yellowButton">2</button>
-  <button class="yellowButton">3</button>
-  <button class="yellowButton">4</button>
-  <button class="yellowButton">5</button>
-  <button class="yellowButton">6</button>
+      <input id="check1_1" class="clicks redClicks" type="checkbox" style="grid-area: 1/1/2/2" onclick="checkfunction('check1_1','x1_1'); tallyChecks('clicks redClicks','redScore')">
+      <input id="check1_2" class="clicks redClicks" type="checkbox" style="grid-area: 1/2/2/3" onclick="checkfunction('check1_2','x1_2'); tallyChecks('clicks redClicks','redScore')">
+      <input id="check1_3" class="clicks redClicks" type="checkbox" style="grid-area: 1/3/2/4" onclick="checkfunction('check1_3','x1_3'); tallyChecks('clicks redClicks','redScore')">
+      <input id="check1_4" class="clicks redClicks" type="checkbox" style="grid-area: 1/4/2/5" onclick="checkfunction('check1_4','x1_4'); tallyChecks('clicks redClicks','redScore')">
+      <input id="check1_5" class="clicks redClicks" type="checkbox" style="grid-area: 1/5/2/6" onclick="checkfunction('check1_5','x1_5'); tallyChecks('clicks redClicks','redScore')">
+      <input id="check1_6" class="clicks redClicks" type="checkbox" style="grid-area: 1/6/2/7" onclick="checkfunction('check1_6','x1_6'); tallyChecks('clicks redClicks','redScore')">
+      <input id="check1_7" class="clicks redClicks" type="checkbox" style="grid-area: 1/7/2/8" onclick="checkfunction('check1_7','x1_7'); tallyChecks('clicks redClicks','redScore')">
+      <input id="check1_8" class="clicks redClicks" type="checkbox" style="grid-area: 1/8/2/9" onclick="checkfunction('check1_8','x1_8'); tallyChecks('clicks redClicks','redScore')">
+      <input id="check1_9" class="clicks redClicks" type="checkbox" style="grid-area: 1/9/2/10" onclick="checkfunction('check1_9','x1_9'); tallyChecks('clicks redClicks','redScore')">
+      <input id="check1_10" class="clicks redClicks" type="checkbox" style="grid-area: 1/10/2/11" onclick="checkfunction('check1_10','x1_10'); tallyChecks('clicks redClicks','redScore')">
+      <input id="check1_11" class="clicks redClicks" type="checkbox" style="grid-area: 1/11/2/12" onclick="checkfunction('check1_11','x1_11'); tallyChecks('clicks redClicks','redScore')">
+      <input id="check1_12" class="clicks redClicks" type="checkbox" style="grid-area: 1/12/2/13" onclick="checkfunction('check1_12','x1_12'); tallyChecks('clicks redClicks','redScore')">
 
-  <button class="yellowButton">7</button>
-  <button class="yellowButton">8</button>
-  <button class="yellowButton">9</button>
-  <button class="yellowButton">10</button>
-  <button class="yellowButton">11</button>
 
-  <button class="yellowButton">12</button>
-  <br>
-  <button class="greenButton">12</button>
-  <button class="greenButton">11</button>
-  <button class="greenButton">10</button>
-  <button class="greenButton">9</button>
-  <button class="greenButton">8</button>
+  <div id="yellowRow"></div>
+      <div id="box2_1" class="yellowBox" style="grid-column: 1">2</div>
+      <div id="box2_2" class="yellowBox" style="grid-column: 2">3</div>
+      <div id="box2_3" class="yellowBox" style="grid-column: 3">4</div>
+      <div id="box2_4" class="yellowBox" style="grid-column: 4">5</div>
+      <div id="box2_5" class="yellowBox" style="grid-column: 5">6</div>
+      <div id="box2_6" class="yellowBox" style="grid-column: 6">7</div>
+      <div id="box2_7" class="yellowBox" style="grid-column: 7">8</div>
+      <div id="box2_8" class="yellowBox" style="grid-column: 8">9</div>
+      <div id="box2_9" class="yellowBox" style="grid-column: 9">10</div>
+      <div id="box2_10" class="yellowBox" style="grid-column: 10">11</div>
+      <div id="box2_11" class="yellowBox" style="grid-column: 11">12</div>
+      <div id="box2_12" class="yellowBox rowLock" style="grid-column: 12">L</div>
 
-  <button class="greenButton">7</button>
-  <button class="greenButton">6</button>
-  <button class="greenButton">5</button>
-  <button class="greenButton">4</button>
-  <button class="greenButton">3</button>
+      <div id="x2_1" class="boxCross" style="grid-area: 2/1/3/2">X</div>
+      <div id="x2_2" class="boxCross" style="grid-area: 2/2/3/3">X</div>
+      <div id="x2_3" class="boxCross" style="grid-area: 2/3/3/4">X</div>
+      <div id="x2_4" class="boxCross" style="grid-area: 2/4/3/5">X</div>
+      <div id="x2_5" class="boxCross" style="grid-area: 2/5/3/6">X</div>
+      <div id="x2_6" class="boxCross" style="grid-area: 2/6/3/7">X</div>
+      <div id="x2_7" class="boxCross" style="grid-area: 2/7/3/8">X</div>
+      <div id="x2_8" class="boxCross" style="grid-area: 2/8/3/9">X</div>
+      <div id="x2_9" class="boxCross" style="grid-area: 2/9/3/10">X</div>
+      <div id="x2_10" class="boxCross" style="grid-area: 2/10/3/11">X</div>
+      <div id="x2_11" class="boxCross" style="grid-area: 2/11/3/12">X</div>
+      <div id="x2_12" class="circleCross" style="grid-area: 2/12/3/13">X</div>
 
-  <button class="greenButton">2</button>
-  <br>
-  <button class="blueButton">12</button>
-  <button class="blueButton">11</button>
-  <button class="blueButton">10</button>
-  <button class="blueButton">9</button>
-  <button class="blueButton">8</button>
+      <input id="check2_1" class="clicks yellowClicks" type="checkbox" style="grid-area: 2/1/3/2" onclick="checkfunction('check2_1','x2_1'); tallyChecks('clicks yellowClicks','yellowScore')">
+      <input id="check2_2" class="clicks yellowClicks" type="checkbox" style="grid-area: 2/2/3/3" onclick="checkfunction('check2_2','x2_2'); tallyChecks('clicks yellowClicks','yellowScore')">
+      <input id="check2_3" class="clicks yellowClicks" type="checkbox" style="grid-area: 2/3/3/4" onclick="checkfunction('check2_3','x2_3'); tallyChecks('clicks yellowClicks','yellowScore')">
+      <input id="check2_4" class="clicks yellowClicks" type="checkbox" style="grid-area: 2/4/3/5" onclick="checkfunction('check2_4','x2_4'); tallyChecks('clicks yellowClicks','yellowScore')">
+      <input id="check2_5" class="clicks yellowClicks" type="checkbox" style="grid-area: 2/5/3/6" onclick="checkfunction('check2_5','x2_5'); tallyChecks('clicks yellowClicks','yellowScore')">
+      <input id="check2_6" class="clicks yellowClicks" type="checkbox" style="grid-area: 2/6/3/7" onclick="checkfunction('check2_6','x2_6'); tallyChecks('clicks yellowClicks','yellowScore')">
+      <input id="check2_7" class="clicks yellowClicks" type="checkbox" style="grid-area: 2/7/3/8" onclick="checkfunction('check2_7','x2_7'); tallyChecks('clicks yellowClicks','yellowScore')">
+      <input id="check2_8" class="clicks yellowClicks" type="checkbox" style="grid-area: 2/8/3/9" onclick="checkfunction('check2_8','x2_8'); tallyChecks('clicks yellowClicks','yellowScore')">
+      <input id="check2_9" class="clicks yellowClicks" type="checkbox" style="grid-area: 2/9/3/10" onclick="checkfunction('check2_9','x2_9'); tallyChecks('clicks yellowClicks','yellowScore')">
+      <input id="check2_10" class="clicks yellowClicks" type="checkbox" style="grid-area: 2/10/3/11" onclick="checkfunction('check2_10','x2_10'); tallyChecks('clicks yellowClicks','yellowScore')">
+      <input id="check2_11" class="clicks yellowClicks" type="checkbox" style="grid-area: 2/11/3/12" onclick="checkfunction('check2_11','x2_11'); tallyChecks('clicks yellowClicks','yellowScore')">
+      <input id="check2_12" class="clicks yellowClicks" type="checkbox" style="grid-area: 2/12/3/13" onclick="checkfunction('check2_12','x2_12'); tallyChecks('clicks yellowClicks','yellowScore')">
 
-  <button class="blueButton">7</button>
-  <button class="blueButton">6</button>
-  <button class="blueButton">5</button>
-  <button class="blueButton">4</button>
-  <button class="blueButton">3</button>
 
-  <button class="blueButton">2</button>
+  <div id="greenRow"></div>
+      <div id="box3_1" class="greenBox" style="grid-column: 1">12</div>
+      <div id="box3_2" class="greenBox" style="grid-column: 2">11</div>
+      <div id="box3_3" class="greenBox" style="grid-column: 3">10</div>
+      <div id="box3_4" class="greenBox" style="grid-column: 4">9</div>
+      <div id="box3_5" class="greenBox" style="grid-column: 5">8</div>
+      <div id="box3_6" class="greenBox" style="grid-column: 6">7</div>
+      <div id="box3_7" class="greenBox" style="grid-column: 7">6</div>
+      <div id="box3_8" class="greenBox" style="grid-column: 8">5</div>
+      <div id="box3_9" class="greenBox" style="grid-column: 9">4</div>
+      <div id="box3_10" class="greenBox" style="grid-column: 10">3</div>
+      <div id="box3_11" class="greenBox" style="grid-column: 11">2</div>
+      <div id="box3_12" class="greenBox rowLock" style="grid-column: 12">L</div>
 
-</body>
-</html>
+      <div id="x3_1" class="boxCross" style="grid-area: 3/1/4/2">X</div>
+      <div id="x3_2" class="boxCross" style="grid-area: 3/2/4/3">X</div>
+      <div id="x3_3" class="boxCross" style="grid-area: 3/3/4/4">X</div>
+      <div id="x3_4" class="boxCross" style="grid-area: 3/4/4/5">X</div>
+      <div id="x3_5" class="boxCross" style="grid-area: 3/5/4/6">X</div>
+      <div id="x3_6" class="boxCross" style="grid-area: 3/6/4/7">X</div>
+      <div id="x3_7" class="boxCross" style="grid-area: 3/7/4/8">X</div>
+      <div id="x3_8" class="boxCross" style="grid-area: 3/8/4/9">X</div>
+      <div id="x3_9" class="boxCross" style="grid-area: 3/9/4/10">X</div>
+      <div id="x3_10" class="boxCross" style="grid-area: 3/10/4/11">X</div>
+      <div id="x3_11" class="boxCross" style="grid-area: 3/11/4/12">X</div>
+      <div id="x3_12" class="circleCross" style="grid-area: 3/12/4/13">X</div>
+      
+      <input id="check3_1" class="clicks greenClicks" type="checkbox" style="grid-area: 3/1/4/2" onclick="checkfunction('check3_1','x3_1'); tallyChecks('clicks greenClicks','greenScore')">
+      <input id="check3_2" class="clicks greenClicks" type="checkbox" style="grid-area: 3/2/4/3" onclick="checkfunction('check3_2','x3_2'); tallyChecks('clicks greenClicks','greenScore')">
+      <input id="check3_3" class="clicks greenClicks" type="checkbox" style="grid-area: 3/3/4/4" onclick="checkfunction('check3_3','x3_3'); tallyChecks('clicks greenClicks','greenScore')">
+      <input id="check3_4" class="clicks greenClicks" type="checkbox" style="grid-area: 3/4/4/5" onclick="checkfunction('check3_4','x3_4'); tallyChecks('clicks greenClicks','greenScore')">
+      <input id="check3_5" class="clicks greenClicks" type="checkbox" style="grid-area: 3/5/4/6" onclick="checkfunction('check3_5','x3_5'); tallyChecks('clicks greenClicks','greenScore')">
+      <input id="check3_6" class="clicks greenClicks" type="checkbox" style="grid-area: 3/6/4/7" onclick="checkfunction('check3_6','x3_6'); tallyChecks('clicks greenClicks','greenScore')">
+      <input id="check3_7" class="clicks greenClicks" type="checkbox" style="grid-area: 3/7/4/8" onclick="checkfunction('check3_7','x3_7'); tallyChecks('clicks greenClicks','greenScore')">
+      <input id="check3_8" class="clicks greenClicks" type="checkbox" style="grid-area: 3/8/4/9" onclick="checkfunction('check3_8','x3_8'); tallyChecks('clicks greenClicks','greenScore')">
+      <input id="check3_9" class="clicks greenClicks" type="checkbox" style="grid-area: 3/9/4/10" onclick="checkfunction('check3_9','x3_9'); tallyChecks('clicks greenClicks','greenScore')">
+      <input id="check3_10" class="clicks greenClicks" type="checkbox" style="grid-area: 3/10/4/11" onclick="checkfunction('check3_10','x3_10'); tallyChecks('clicks greenClicks','greenScore')">
+      <input id="check3_11" class="clicks greenClicks" type="checkbox" style="grid-area: 3/11/4/12" onclick="checkfunction('check3_11','x3_11'); tallyChecks('clicks greenClicks','greenScore')">
+      <input id="check3_12" class="clicks greenClicks" type="checkbox" style="grid-area: 3/12/4/13" onclick="checkfunction('check3_12','x3_12'); tallyChecks('clicks greenClicks','greenScore')">
+
+
+  <div id="blueRow"></div>
+      <div id="box4_1" class="blueBox" style="grid-column: 1">12</div>
+      <div id="box4_2" class="blueBox" style="grid-column: 2">11</div>
+      <div id="box4_3" class="blueBox" style="grid-column: 3">10</div>
+      <div id="box4_4" class="blueBox" style="grid-column: 4">9</div>
+      <div id="box4_5" class="blueBox" style="grid-column: 5">8</div>
+      <div id="box4_6" class="blueBox" style="grid-column: 6">7</div>
+      <div id="box4_7" class="blueBox" style="grid-column: 7">6</div>
+      <div id="box4_8" class="blueBox" style="grid-column: 8">5</div>
+      <div id="box4_9" class="blueBox" style="grid-column: 9">4</div>
+      <div id="box4_10" class="blueBox" style="grid-column: 10">3</div>
+      <div id="box4_11" class="blueBox" style="grid-column: 11">2</div>
+      <div id="box4_12" class="blueBox rowLock" style="grid-column: 12">L</div>
+
+      <div id="x4_1" class="boxCross" style="grid-area: 4/1/5/2">X</div>
+      <div id="x4_2" class="boxCross" style="grid-area: 4/2/5/3">X</div>
+      <div id="x4_3" class="boxCross" style="grid-area: 4/3/5/4">X</div>
+      <div id="x4_4" class="boxCross" style="grid-area: 4/4/5/5">X</div>
+      <div id="x4_5" class="boxCross" style="grid-area: 4/5/5/6">X</div>
+      <div id="x4_6" class="boxCross" style="grid-area: 4/6/5/7">X</div>
+      <div id="x4_7" class="boxCross" style="grid-area: 4/7/5/8">X</div>
+      <div id="x4_8" class="boxCross" style="grid-area: 4/8/5/9">X</div>
+      <div id="x4_9" class="boxCross" style="grid-area: 4/9/5/10">X</div>
+      <div id="x4_10" class="boxCross" style="grid-area: 4/10/5/11">X</div>
+      <div id="x4_11" class="boxCross" style="grid-area: 4/11/5/12">X</div>
+      <div id="x4_12" class="circleCross" style="grid-area: 4/12/5/13">X</div>
+      
+      <input id="check4_1" class="clicks blueClicks" type="checkbox" style="grid-area: 4/1/5/2" onclick="checkfunction('check4_1','x4_1'); tallyChecks('clicks blueClicks','blueScore')">
+      <input id="check4_2" class="clicks blueClicks" type="checkbox" style="grid-area: 4/2/5/3" onclick="checkfunction('check4_2','x4_2'); tallyChecks('clicks blueClicks','blueScore')">
+      <input id="check4_3" class="clicks blueClicks" type="checkbox" style="grid-area: 4/3/5/4" onclick="checkfunction('check4_3','x4_3'); tallyChecks('clicks blueClicks','blueScore')">
+      <input id="check4_4" class="clicks blueClicks" type="checkbox" style="grid-area: 4/4/5/5" onclick="checkfunction('check4_4','x4_4'); tallyChecks('clicks blueClicks','blueScore')">
+      <input id="check4_5" class="clicks blueClicks" type="checkbox" style="grid-area: 4/5/5/6" onclick="checkfunction('check4_5','x4_5'); tallyChecks('clicks blueClicks','blueScore')">
+      <input id="check4_6" class="clicks blueClicks" type="checkbox" style="grid-area: 4/6/5/7" onclick="checkfunction('check4_6','x4_6'); tallyChecks('clicks blueClicks','blueScore')">
+      <input id="check4_7" class="clicks blueClicks" type="checkbox" style="grid-area: 4/7/5/8" onclick="checkfunction('check4_7','x4_7'); tallyChecks('clicks blueClicks','blueScore')">
+      <input id="check4_8" class="clicks blueClicks" type="checkbox" style="grid-area: 4/8/5/9" onclick="checkfunction('check4_8','x4_8'); tallyChecks('clicks blueClicks','blueScore')">
+      <input id="check4_9" class="clicks blueClicks" type="checkbox" style="grid-area: 4/9/5/10" onclick="checkfunction('check4_9','x4_9'); tallyChecks('clicks blueClicks','blueScore')">
+      <input id="check4_10" class="clicks blueClicks" type="checkbox" style="grid-area: 4/10/5/11" onclick="checkfunction('check4_10','x4_10'); tallyChecks('clicks blueClicks','blueScore')">
+      <input id="check4_11" class="clicks blueClicks" type="checkbox" style="grid-area: 4/11/5/12" onclick="checkfunction('check4_11','x4_11'); tallyChecks('clicks blueClicks','blueScore')">
+      <input id="check4_12" class="clicks blueClicks" type="checkbox" style="grid-area: 4/12/5/13" onclick="checkfunction('check4_12','x4_12'); tallyChecks('clicks blueClicks','blueScore')">
+</div>
+
+<div id="points">
+  <div class="topPoints" style="grid-column: 2">1x</div>
+  <div class="bottomPoints" style="grid-column: 2">1</div>
+  <div class="lineAbove" style="grid-column: 2"></div>
+  <div class="topPoints" style="grid-column: 3">2x</div>
+  <div class="bottomPoints" style="grid-column: 3">3</div>
+  <div class="lineAbove" style="grid-column: 3"></div>
+  <div class="topPoints" style="grid-column: 4">3x</div>
+  <div class="bottomPoints" style="grid-column: 4">6</div>
+  <div class="lineAbove" style="grid-column: 4"></div>
+  <div class="topPoints" style="grid-column: 5">4x</div>
+  <div class="bottomPoints" style="grid-column: 5">10</div>
+  <div class="lineAbove" style="grid-column: 5"></div>
+  <div class="topPoints" style="grid-column: 6">5x</div>
+  <div class="bottomPoints" style="grid-column: 6">15</div>
+  <div class="lineAbove" style="grid-column: 6"></div>
+  <div class="topPoints" style="grid-column: 7">6x</div>
+  <div class="bottomPoints" style="grid-column: 7">21</div>
+  <div class="lineAbove" style="grid-column: 7"></div>
+  <div class="topPoints" style="grid-column: 8">7x</div>
+  <div class="bottomPoints" style="grid-column: 8">28</div>
+  <div class="lineAbove" style="grid-column: 8"></div>
+  <div class="topPoints" style="grid-column: 9">8x</div>
+  <div class="bottomPoints" style="grid-column: 9">36</div>
+  <div class="lineAbove" style="grid-column: 9"></div>
+  <div class="topPoints" style="grid-column: 10">9x</div>
+  <div class="bottomPoints" style="grid-column: 10">45</div>
+  <div class="lineAbove" style="grid-column: 10"></div>
+  <div class="topPoints" style="grid-column: 11">10x</div>
+  <div class="bottomPoints" style="grid-column: 11">55</div>
+  <div class="lineAbove" style="grid-column: 11"></div>
+  <div class="topPoints" style="grid-column: 12">11x</div>
+  <div class="bottomPoints" style="grid-column: 12">66</div>
+  <div class="lineAbove" style="grid-column: 12"></div>
+  <div class="topPoints" style="grid-column: 13">12x</div>
+  <div class="bottomPoints" style="grid-column: 13">78</div>
+  <div class="lineAbove" style="grid-column: 13"></div>
+
+  <div class="smallText" style="grid-area: 2/1/3/2">points</div>
+  <div class="pointsBox" style="grid-area: 1/1/2/2">X</div>
+  <div class="lineAbove" style="grid-column: 1"></div>
+
+  <div class="smallText" style="grid-area: 1/14/2/18">= -5</div>
+
+  <div id="boxp1" class="penaltyBox" style="grid-column: 14"></div>
+  <div id="boxp2" class="penaltyBox" style="grid-column: 15"></div>
+  <div id="boxp3" class="penaltyBox" style="grid-column: 16"></div>
+  <div id="boxp4" class="penaltyBox" style="grid-column: 17"></div>
+
+  <div id="xp1" class="penaltyCross" style="grid-area: 2/14/3/15">X</div>
+  <div id="xp2" class="penaltyCross" style="grid-area: 2/15/3/16">X</div>
+  <div id="xp3" class="penaltyCross" style="grid-area: 2/16/3/17">X</div>
+  <div id="xp4" class="penaltyCross" style="grid-area: 2/17/3/18">X</div>
+
+  <input id="checkp1" class="penaltyClicks" type="checkbox" style="grid-area: 2/14/3/15" onclick="checkfunction('checkp1','xp1'); tallyPenaltyChecks('penaltyClicks')">
+  <input id="checkp2" class="penaltyClicks" type="checkbox" style="grid-area: 2/15/3/16" onclick="checkfunction('checkp2','xp2'); tallyPenaltyChecks('penaltyClicks')">
+  <input id="checkp3" class="penaltyClicks" type="checkbox" style="grid-area: 2/16/3/17" onclick="checkfunction('checkp3','xp3'); tallyPenaltyChecks('penaltyClicks')">
+  <input id="checkp4" class="penaltyClicks" type="checkbox" style="grid-area: 2/17/3/18" onclick="checkfunction('checkp4','xp4'); tallyPenaltyChecks('penaltyClicks')">
+</div>
+
+
+<div id="scores">
+  <div id="grayRow"></div>
+
+  <div class="smallText" style="grid-area: 1/1/2/2">totals</div>
+  <div id="redScore" class="redBox" style="grid-area: 1/2/2/3; color:#4f4f47">0</div>
+
+  <div class="smallText" style="grid-area: 1/3/2/4">+</div>
+  <div id="yellowScore" class="yellowBox" style="grid-area: 1/4/2/5; color:#4f4f47">0</div>
+
+  <div class="smallText" style="grid-area: 1/5/2/6">+</div>
+  <div id="greenScore" class="greenBox" style="grid-area: 1/6/2/7; color:#4f4f47">0</div>
+
+  <div class="smallText" style="grid-area: 1/7/2/8">+</div>
+  <div id="blueScore" class="blueBox" style="grid-area: 1/8/2/9; color:#4f4f47">0</div>
+
+  <div class="smallText" style="grid-area: 1/9/2/10">-</div>
+  <div id="penaltyScore" class="whiteBox" style="grid-area: 1/10/2/11; border-color:#959396">0</div>
+
+  <div class="smallText" style="grid-area: 1/11/2/12">=</div>
+  <div id="finalScore" class="whiteBox" style="grid-area: 1/12/2/13"></div>
+</div>
