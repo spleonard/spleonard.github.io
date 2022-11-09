@@ -11,8 +11,10 @@
 
 <html lang="en">
 <body>
-    <div style="background-color:lightgray" class="header-row opacity-hover" onclick="window.location.assign('./CookBook/Recipes_Home.html')"> Recipes </div>
-    <br><br><br><br> 
-    <div style="background-color:red" class="header-row opacity-hover" onclick="window.location.assign('./Quicks/Quicks.html')"> Quixx </div>
+  <div id="skeleton">
+    <img src="./Logo.png" style="grid-row:1/1/2/2; margin: 5%;"> 
+    <button style="grid-area: 2/1/3/2" class="headButton opacity-hover" onclick="window.location.assign('./CookBook/Recipes_Home.html')"> Recipes </button>
+    <button style="grid-area: 2/2/3/3" class="headButton opacity-hover" onclick="window.location.assign('./Quicks/Quicks.html')"> Quixx </button>
+  </div>
 </body>
 </html>
