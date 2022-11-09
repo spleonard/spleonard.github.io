@@ -27,11 +27,11 @@
 
 .headButton {
     background-color: lightgray;
-    font-size: 8em!important;
+    font-size: 6em!important;
     margin: 5%;
     padding: 3%;
     /* Borders */
-    border-radius: 5px;
+    border-radius: 25px;
     border-width: 2px;
     border-color: black;
     /* Centering Text */
@@ -41,12 +41,6 @@
     align-items: center;
 }
 
-@media only screen and (max-width: 900px) and (max-height:500px) {
-    .header-row {
-        font-size: 2em!important;
-        height: 80%;
-    }
-}
 
 /* Start Hovering CSS */
 
