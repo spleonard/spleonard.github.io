@@ -7,9 +7,7 @@
     grid-template-rows: repeat(5, 20%);
     row-gap: 2px;
     column-gap: 2px;
-    padding: 2px;
     position:fixed;
-
     
     /* For Image Content*/
     -webkit-background-size: cover;
@@ -28,6 +26,7 @@
 .headButton {
     background-color: lightgray;
     font-size: 6em!important;
+    color: black;
     margin: 5%;
     padding: 3%;
     /* Borders */
