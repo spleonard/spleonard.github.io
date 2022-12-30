@@ -28,7 +28,7 @@ function checkAllTags(xi) {
   for (i = 0; i < activeFilters.length; i++) {
     if (xi.className.indexOf(activeFilters[i]) > -1) tagsInElement++;
   }
-  if (tagsInElement == activeFilters.length) return true;
+  if (tagsInElement == activeFilters.length) return true; //posibility for bug
   return false;
 }
 
