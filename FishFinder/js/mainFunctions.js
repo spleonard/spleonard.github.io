@@ -15,7 +15,7 @@ function filterSelection(c) {
     if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
     // Below Line Removes if they are contained in all 4 seasons
     if (x[i].classList.contains("spring") & x[i].classList.contains("summer") & x[i].classList.contains("fall") & x[i].classList.contains("winter") & s4) w3RemoveClass(x[i], "show");
-    if (x[i].classList.contains("pot") & hP) w3RemoveClass(x[i], "show");
+    if ((x[i].classList.contains("pot") || x[i].classList.contains("plant"))  & hP) w3RemoveClass(x[i], "show");
   }
 }
 
