@@ -1,0 +1,93 @@
+body {
+    background-color: whitesmoke;
+    width: 100vw;
+    height: 100vh;
+    font-size: 300%;
+}
+
+input{
+  font-size: 50%;
+}
+
+#fishFrame img {
+  transform: scale(3);
+}
+
+.unscaled{
+  transform: scale(2);
+  z-index: 0;
+  filter: brightness(0%), opacity(10%);
+}
+
+#buttonFrame{
+  z-index: 10;
+  display: grid;
+  grid-template-columns: repeat(3, 30vw);
+  margin-left: 7vw;
+  justify-content: center;
+  align-content: center;
+}
+
+#fishFrame {
+  width: 100vw;
+  height: 50vh;
+  justify-content: center;
+  align-content: center;
+  padding-left: 3vw;  
+  padding-top: 5vw;  
+
+  background-image: url(../img/FishMenuEmpty.png);
+  background-size: 100vw 50vh;
+  background-repeat: no-repeat;
+
+  display: grid;
+  grid-template-columns: repeat(10,8.1vw);
+  grid-template-rows: repeat(9, 1fr);
+}
+
+.labelContainer{
+  display: inline-block;
+}
+
+.filterDiv {
+  float: left;
+  background-color: transparent;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  filter: brightness(0);
+  opacity: 0.15;    /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+  .show {
+    filter: brightness(1);
+    opacity: 100;
+  }
+
+
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  /* Add a light grey background on mouse-over */
+  .btn:hover {
+    background-color: #ddd;
+  }
+  /* Add a dark background to the active button */
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+
+
+  .switch{
+    width: 30px;
+    height: 30px;
+  }
