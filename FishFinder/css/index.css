@@ -73,18 +73,20 @@ figcaption{
     filter: brightness(1);
     opacity: 100;
   }
-  
+
   .fullHide {
     opacity: 0;
   }
 
   /* Style the buttons */
   .btn {
-    border: none;
-    outline: none;
+    border: solid;
+    border-width: 1px;
+    border-radius: 20%;
     padding: 12px 16px;
-    background-color: #f1f1f1;
+    background-color: #e1e1e1;
     cursor: pointer;
+    color: black;
   }
   /* Add a light grey background on mouse-over */
   .btn:hover {
@@ -92,10 +94,24 @@ figcaption{
   }
   /* Add a dark background to the active button */
   .btn.active {
-    background-color: #666;
-    color: white;
+    border: solid;
+    border-width: 1px;
+    border-radius: 20%;
+    padding: 12px 16px;
+    background-color: rgb(210, 150, 87);
+    cursor: pointer;
+    color: rgb(94, 33, 33);
   }
 
+  .btn.header {
+    border: none;
+    border-radius: 0;
+    padding: 12px 16px;
+    background-color: #666;
+    cursor: pointer;
+    color: white;
+    margin: 1vw;
+  }
 
   .switch{
     width: 30px;
