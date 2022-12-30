@@ -42,11 +42,18 @@ input{
 
   display: grid;
   grid-template-columns: repeat(10,8.1vw);
-  grid-template-rows: repeat(9, 1fr);
+  grid-template-rows: repeat(9, 5.5vh);
 }
 
 .labelContainer{
   display: inline-block;
+}
+
+figcaption{
+  margin-top: 2.5vh;
+  margin-bottom: 0;
+  font-size: 13px;
+  color: black;
 }
 
 .filterDiv {
@@ -66,7 +73,10 @@ input{
     filter: brightness(1);
     opacity: 100;
   }
-
+  
+  .fullHide {
+    opacity: 0;
+  }
 
   /* Style the buttons */
   .btn {

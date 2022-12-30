@@ -8,14 +8,18 @@ function filterSelection(c) {
   x = document.getElementsByClassName("filterDiv");
   s4 = document.getElementById('hide4seasons'); s4 = s4.checked;
   hP = document.getElementById('hidePot'); hP = hP.checked;
+  sT = document.getElementById('showTimes'); sT = sT.checked;
   if (c == "all") c = "";
   // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
   for (i = 0; i < x.length; i++) {
     w3RemoveClass(x[i], "show");
     if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-    // Below Line Removes if they are contained in all 4 seasons
+    // Below Lines Remove Divs Based on Checkbox Toggles
     if (x[i].classList.contains("spring") & x[i].classList.contains("summer") & x[i].classList.contains("fall") & x[i].classList.contains("winter") & s4) w3RemoveClass(x[i], "show");
     if ((x[i].classList.contains("pot") || x[i].classList.contains("plant"))  & hP) w3RemoveClass(x[i], "show");
+    if (x[i].classList.contains("time") & !sT) w3AddClass(x[i], "fullHide");
+    if (x[i].classList.contains("time") & sT) w3RemoveClass(x[i], "fullHide");
+    if (x[i].classList.contains("time") & !x[i].classList.contains("show")) w3AddClass(x[i], "fullHide");
   }
 }
 
