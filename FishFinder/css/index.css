@@ -30,8 +30,8 @@ input{
 #buttonFrame{
   z-index: 10;
   display: grid;
-  grid-template-columns: repeat(3, 32vw);
-  margin-left: 5vw;
+  grid-template-columns: repeat(3, 31vw);
+  margin-left: 2vw;
   justify-content: center;
   align-content: center;
 }
