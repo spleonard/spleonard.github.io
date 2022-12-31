@@ -34,12 +34,12 @@
   <div style="grid-area: 3/10/4/11" class="filterDiv show summer fall ocean rainy bundle"><img src="./img/1_9_RedSnapper.png"></div>  
 
   <div style="grid-area: 4/1/5/2" class="filterDiv show winter ocean sunny rainy"><img src="./img/2_0_Squid.png"></div>
-  <div style="grid-area: 4/2/5/3" class="filterDiv show plant spring summer fall winter ocean river lake island forest desert other sunny rainy"><img src="./img/2_1_Seaweed.png"></div>
-  <div style="grid-area: 4/3/5/4" class="filterDiv show plant spring summer fall winter ocean river lake island forest desert other sunny rainy"><img src="./img/2_2_GreenAlgae.png"></div>
+  <div style="grid-area: 4/2/5/3" class="filterDiv show plant spring summer fall winter ocean sunny rainy"><img src="./img/2_1_Seaweed.png"></div>
+  <div style="grid-area: 4/3/5/4" class="filterDiv show plant spring summer fall winter river lake island forest desert other sunny rainy"><img src="./img/2_2_GreenAlgae.png"></div>
   <div style="grid-area: 4/4/5/5" class="filterDiv show fall winter ocean sunny rainy"><img src="./img/2_3_SeaCucumber.png"></div>
   <div style="grid-area: 4/5/5/6" class="filterDiv show summer fall ocean island sunny rainy"><img src="./img/2_4_SuperCucumber.png"></div>
   <div style="grid-area: 4/6/5/7" class="filterDiv show spring summer winter fall other sunny rainy bundle"><img src="./img/2_5_Ghostfish.png"></div>
-  <div style="grid-area: 4/7/5/8" class="filterDiv show plant spring summer fall winter ocean river lake island forest desert other sunny rainy"><img src="./img/2_6_WhiteAlgae.png"></div>
+  <div style="grid-area: 4/7/5/8" class="filterDiv show plant spring summer fall winter river lake island forest desert other sunny rainy"><img src="./img/2_6_WhiteAlgae.png"></div>
   <div style="grid-area: 4/8/5/9" class="filterDiv show spring summer winter fall other sunny rainy"><img src="./img/2_7_Stonefish.png"></div>
   <div style="grid-area: 4/9/5/10" class="filterDiv show summer ocean sunny rainy legend"><img src="./img/2_8_Crimsonfish.png"></div>
   <div style="grid-area: 4/10/5/11" class="filterDiv show fall river sunny rainy legend"><img src="./img/2_9_Angler.png"></div>
@@ -111,12 +111,12 @@
   <div style="grid-area: 3/10/4/11" class="filterDiv fullHide summer fall ocean rainy bundle time"><figcaption>6am-7pm</figcaption></div>  
 
   <div style="grid-area: 4/1/5/2" class="filterDiv fullHide winter ocean sunny rainy time"><figcaption>6pm-2am</figcaption></div>
-  <div style="grid-area: 4/2/5/3" class="filterDiv fullHide plant spring summer fall winter ocean river lake island forest desert other sunny rainy time"><figcaption>All Day</figcaption></div>
-  <div style="grid-area: 4/3/5/4" class="filterDiv fullHide plant spring summer fall winter ocean river lake island forest desert other sunny rainy time"><figcaption>All Day</figcaption></div>
+  <div style="grid-area: 4/2/5/3" class="filterDiv fullHide plant spring summer fall winter ocean time"><figcaption>All Day</figcaption></div>
+  <div style="grid-area: 4/3/5/4" class="filterDiv fullHide plant spring summer fall winter river lake island forest desert other sunny rainy time"><figcaption>All Day</figcaption></div>
   <div style="grid-area: 4/4/5/5" class="filterDiv fullHide fall winter ocean sunny rainy time"><figcaption>6am-7pm</figcaption></div>
   <div style="grid-area: 4/5/5/6" class="filterDiv fullHide summer fall ocean island sunny rainy time"><figcaption>6pm-2am</figcaption></div>
   <div style="grid-area: 4/6/5/7" class="filterDiv fullHide spring summer winter fall other sunny rainy bundle time"><figcaption>All Day</figcaption></div>
-  <div style="grid-area: 4/7/5/8" class="filterDiv fullHide plant spring summer fall winter ocean river lake island forest desert other sunny rainy time"><figcaption>All Day</figcaption></div>
+  <div style="grid-area: 4/7/5/8" class="filterDiv fullHide plant spring summer fall winter river lake island forest desert other sunny rainy time"><figcaption>All Day</figcaption></div>
   <div style="grid-area: 4/8/5/9" class="filterDiv fullHide spring summer winter fall other sunny rainy time"><figcaption>All Day</figcaption></div>
   <div style="grid-area: 4/9/5/10" class="filterDiv fullHide summer ocean sunny rainy legend time"><figcaption>All Day</figcaption></div>
   <div style="grid-area: 4/10/5/11" class="filterDiv fullHide fall river sunny rainy legend time"><figcaption>All Day</figcaption></div>
@@ -174,10 +174,12 @@
     <input type="button" class="btn" onclick="filterSelection('fall')" id="fall"  value="Fall"></input><br>
     <input type="button" class="btn" onclick="filterSelection('winter')" id="winter"  value="Winter"></input><br> 
     <input type="button" class="btn" onclick="filterSelection('market')" id="market" value="Night Market"></input><br>
-    <p>Toggles</p>    
-    <div class="labelContainer"><input id="showTimes" type="checkbox" class="switch" onclick="filterSelection2('useLast')"></input><label style="font-size: 50%">  Show Times</label></div><br>
-    <div class="labelContainer"><input id="hide4seasons" type="checkbox" class="switch" onclick="filterSelection2('useLast')"></input><label style="font-size: 50%">  Hide 4-Season Fish</label></div><br>
-    <div class="labelContainer"><input id="hidePot" type="checkbox" class="switch" onclick="filterSelection2('useLast')"></input><label style="font-size: 50%">  Hide CrabPot/Plants</label></div><br>
+    <p>Toggles</p>  
+    <div class="frame">  
+      <div class="labelContainer"><input id="showTimes" type="checkbox" class="switch" onclick="filterSelection2('useLast')"></input><label style="font-size: 50%">  Show Times</label></div><br>
+      <div class="labelContainer"><input id="hide4seasons" type="checkbox" class="switch" onclick="filterSelection2('useLast')"></input><label style="font-size: 50%">  Hide 4-Season Fish</label></div><br>
+      <div class="labelContainer"><input id="hidePot" type="checkbox" class="switch" onclick="filterSelection2('useLast')"></input><label style="font-size: 50%">  Hide CrabPot/Plants</label></div><br>
+    </div>
   </div>
   <div style="grid-area: 3/2/4/3">
     <!-- Start Weather -->
