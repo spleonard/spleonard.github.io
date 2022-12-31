@@ -1,14 +1,10 @@
 body {
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-
     background-image: url(../img/Background.webp);
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
     background-position: fixed;
     backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
 
     width: 100vw;
     height: 100vh;
