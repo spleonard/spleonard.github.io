@@ -5,18 +5,23 @@ body {
     background-position: fixed;
     backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
+    background-attachment: fixed;
+    background-position:fixed;
 
     width: 100vw;
     height: 100vh;
     font-size: 300%;
     margin: 0;
-    position: fixed;
 }
 
 input{
   font-size: 50%;
 }
 
+p {
+ margin-top: 3vh;
+ margin-bottom: 3vh;
+}
 #fishFrame img {
   transform: scale(3);
 }
@@ -42,6 +47,7 @@ input{
   justify-content: center;
   align-content: center;
   padding-left: 3vw;  
+  padding-right:3vw;
   padding-top: 5vw;  
 
   background-image: url(../img/FishMenuEmpty.png);
