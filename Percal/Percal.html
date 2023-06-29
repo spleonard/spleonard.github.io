@@ -7,8 +7,29 @@
 </head>
 <html lang="en">
 <body>
+  <label for="input">Enter Text:</label>
+  <input type="text" id="input" />
+  <button onclick="updateLabel()">Go</button>
+  <br />
+  <label id="output"></label>
 
-<div> hello </div>  
+  <script>
+    // Check if the label value exists in localStorage
+    if (localStorage.getItem('labelValue')) {
+      // Retrieve the label value from localStorage
+      document.getElementById('output').innerText = localStorage.getItem('labelValue');
+    }
 
+    function updateLabel() {
+      // Get the input value
+      var inputValue = document.getElementById('input').value;
+
+      // Update the label with the input value
+      document.getElementById('output').innerText = inputValue;
+
+      // Store the label value in localStorage
+      localStorage.setItem('labelValue', inputValue);
+    }
+  </script>
 </body>
 </html>
