@@ -1,24 +1,94 @@
+/* Default styles */
 body {
-    background-image: url(../img/Background.webp);
-    background-size: 100vw 100vh;
-    background-repeat: no-repeat;
-    background-position: fixed;
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
-    background-attachment: fixed;
-    background-position:fixed;
-
-    width: 100vw;
-    height: 100vh;
-    font-size: 300%;
-    margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  margin: 0;
+  padding: 0;
 }
 
-input{
-  font-size: 50%;
+.header {
+  background-color: #000080;
+  padding: 20px;
+  color: #fff;
 }
 
-p {
- margin-top: 3vh;
- margin-bottom: 3vh;
+.header-title {
+  margin: 0;
+}
+
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #87CEEB;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  text-align: center;
+  color: #000080;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  margin-bottom: 10px;
+  color: #000080;
+}
+
+.form-input {
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #000080;
+}
+
+.form-links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.form-link {
+  color: #000080;
+  text-decoration: none;
+}
+
+.form-button {
+  padding: 10px;
+  background-color: #000080;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: #0069d9;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 767px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .form-input,
+  .form-button {
+    width: 100%;
+  }
+
+  .form-links {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 70%;
+  }
 }

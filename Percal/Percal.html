@@ -6,30 +6,29 @@
   <script src="./js/mainFunctions.js"></script>
 </head>
 <html lang="en">
-<body>
-  <label for="input">Enter Text:</label>
-  <input type="text" id="input" />
-  <button onclick="updateLabel()">Go</button>
-  <br />
-  <label id="output"></label>
-
-  <script>
-    // Check if the label value exists in localStorage
-    if (localStorage.getItem('labelValue')) {
-      // Retrieve the label value from localStorage
-      document.getElementById('output').innerText = localStorage.getItem('labelValue');
-    }
-
-    function updateLabel() {
-      // Get the input value
-      var inputValue = document.getElementById('input').value;
-
-      // Update the label with the input value
-      document.getElementById('output').innerText = inputValue;
-
-      // Store the label value in localStorage
-      localStorage.setItem('labelValue', inputValue);
-    }
-  </script>
-</body>
+  <body>
+    <header class="header">
+      <h1 class="header-title">Login</h1>
+    </header>
+    
+    <div class="container">
+      <h2 class="form-title">Login</h2>
+      <form id="loginForm">
+        <label class="form-label" for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" class="form-input">
+  
+        <label class="form-label" for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" class="form-input">
+  
+        <div class="form-links">
+          <a href="#" class="form-link">Create Account</a>
+          <a href="#" class="form-link">Forgot Password</a>
+        </div>
+  
+        <button id="loginButton" type="submit" class="form-button">Login</button>
+      </form>
+    </div>
+  
+    <script src="script.js"></script>
+  </body>
 </html>
