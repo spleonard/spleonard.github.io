@@ -1,4 +1,5 @@
-document.getElementById("loginButton").addEventListener("submit", function(event) {
+
+  document.getElementById("loginForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Prevent form submission
   
     // Get username and password values
@@ -7,12 +8,12 @@ document.getElementById("loginButton").addEventListener("submit", function(event
   
     // Perform validation (add your own logic here)
     if (username === "admin" && password === "password") {
-      alert("Login successful!");
+      console.log("Login successful!");
   
       // Redirect to the desired page
-      window.location.href = "homepage.html";
+      window.location.href = "./dashboard.html";
     } else {
-      alert("Invalid username or password. Please try again.");
+      console.log("Invalid username or password. Please try again.");
     }
   });
   

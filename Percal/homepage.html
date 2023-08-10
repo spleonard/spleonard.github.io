@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calendar App</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" href="https://use.typekit.net/vyj2qbb.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="./js/mainFunctions.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/react-calendar/dist/Calendar.css" />
+</head>
+<body>
+  <div id="root"></div>
+
+  <script src="https://unpkg.com/react/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/react-calendar/dist/entry.js"></script>
+  <script>
+    const App = () => {
+      const handleDateChange = date => {
+        console.log(date);
+      };
+
+      return (
+        <div>
+          <h1>Calendar</h1>
+          <Calendar onChange={handleDateChange} />
+        </div>
+      );
+    };
+
+    ReactDOM.render(<App />, document.getElementById('root'));
+  </script>
+</body>
+</html>
