@@ -11,7 +11,7 @@
       console.log("Login successful!");
   
       // Redirect to the desired page
-      window.location.href = "./dashboard.html";
+      window.location.href = "./homepage.html";
     } else {
       console.log("Invalid username or password. Please try again.");
     }
