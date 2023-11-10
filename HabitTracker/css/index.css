@@ -29,10 +29,37 @@ body {
   
     display: grid;
     grid-template-columns: repeat(21,2.3vw);
+    grid-template-rows: 10vh 1vh;
     column-gap: 2vw;
     row-gap: 1vh;
   }
 
+  .dayFrame{
+    border: solid;
+    border-width: 1px;
+    border-color: #afad00;
+    display: grid;
+    grid-template-columns: repeat(3,2.3vw);
+    grid-template-rows: 20vh 1vh;
+    column-gap: 2vw;
+    row-gap: 1vh;
+}
+
+.Day {
+    background-color: #fffdd0;
+    border: solid;
+    border-color: #afad00 ;
+    border-width: 2px;
+    border-radius: 8px;
+    height: 10vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+
+    grid-area: 1/1/2/4;
+    }
 
 /* Begin CSS for toggle switches */
 
@@ -94,22 +121,4 @@ body {
   
 /* End CSS for toggle switches */
 
-.Day {
-    background-color: #fffdd0;
-    border: solid;
-    border-color: #afad00 ;
-    border-width: 2px;
-    border-radius: 8px;
-    height: 10vh;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: x-large;
-    }
 
-.dayFrame{
-    border: solid;
-    border-width: 1px;
-    border-color: #afad00;
-}
