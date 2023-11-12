@@ -1,42 +1,16 @@
-var formValues = JSON.parse(localStorage.getItem('formValues')) || {};
-var $checkboxes = $("#checkbox-container :checkbox");
-var $button = $("#checkbox-container button");
+        // Array of checkbox names
+        const cbNames = ["Sun1", "Sun2", "Sun3", "Mon1", "Mon2", "Mon3", "Tue1", "Tue2", "Tue3", "Wed1", "Wed2", "Wed3", "Thu1", "Thu2", "Thu3", "Fri1", "Fri2", "Fri3", "Sat1", "Sat2", "Sat3"];
 
-function allChecked(){
-  return $checkboxes.length === $checkboxes.filter(":checked").length;
-}
+        cbNames.forEach(name => {
+            // Check if there is a stored value for the checkbox
+            const isChecked = JSON.parse(localStorage.getItem(`Is${name}Enabled`)) || false;
 
-function updateButtonStatus(){
-  $button.text(allChecked()? "Uncheck all" : "Check all");
-}
+            // Set the initial state of the checkbox
+            document.getElementById(name).checked = isChecked;
 
-function handleButtonClick(){
-  $checkboxes.prop("checked", allChecked()? false : true)
-}
-
-function updateStorage(){
-  $checkboxes.each(function(){
-    formValues[this.id] = this.checked;
-  });
-
-  formValues["buttonText"] = $button.text();
-  localStorage.setItem("formValues", JSON.stringify(formValues));
-}
-
-$button.on("click", function() {
-  handleButtonClick();
-  updateButtonStatus();
-  updateStorage();
-});
-
-$checkboxes.on("change", function(){
-  updateButtonStatus();
-  updateStorage();
-});
-
-// On page load
-$.each(formValues, function(key, value) {
-  $("#" + key).prop('checked', value);
-});
-
-$button.text(formValues["buttonText"]);
+            // Add event listener to the checkbox for changes
+            document.getElementById(name).addEventListener('change', function () {
+                // Update localStorage with the current checkbox state
+                localStorage.setItem(`Is${name}Enabled`, this.checked);
+            });
+        });
