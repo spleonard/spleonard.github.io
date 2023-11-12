@@ -8,57 +8,66 @@ body {
     background-attachment: fixed;
     background-position:fixed;
 
+    /*justify-content: center;
+    align-items: center;*/
+
     width: 100vw;
     height: 100vh;
     font-size: 300%;
     margin: 0;
 }
+#pageTitle {
+    height: 0vh;
+    width: 100vw;
+    padding-top: 5vh;
+    font-size: 4vh;
+    position: absolute;
+    text-align: center;
+    text-shadow: -2px -2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, 2px 2px 0 #000;
+    color: #fffdd0;
+}
 
 #CalFrame {
     width: 100vw;
-    height: 50vh;
+    height: 100vh;
     justify-content: center;
     align-content: center;
     padding-left: 3vw;  
     padding-right:3vw;
     padding-top: 5vw;  
   
-    background-image: url(../img/FishMenuEmpty.png);
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
   
     display: grid;
-    grid-template-columns: repeat(21,2.3vw);
-    grid-template-rows: 10vh 1vh;
-    column-gap: 2vw;
-    row-gap: 1vh;
+    grid-template-columns: 30vw, repeat(3,2vw);
+    grid-template-rows: repeat(8,7vh);
+    column-gap: 5vw;
+    row-gap: 3vh;
   }
 
   .dayFrame{
     border: solid;
-    border-width: 1px;
+    border-width: 3px;
     border-color: #afad00;
-    display: grid;
-    grid-template-columns: repeat(3,2.3vw);
-    grid-template-rows: 20vh 1vh;
-    column-gap: 2vw;
-    row-gap: 1vh;
+    height: 7vh;
+    border-radius: 2vh;
 }
 
 .Day {
     background-color: #fffdd0;
     border: solid;
-    border-color: #afad00 ;
+    border-color: 0#afad0 ;
     border-width: 2px;
     border-radius: 8px;
-    height: 10vh;
+    height: 7vh;
+    width: 30vw;
     
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: x-large;
+    font-size: xx-large;
 
-    grid-area: 1/1/2/4;
     }
 
 /* Begin CSS for toggle switches */
@@ -67,28 +76,30 @@ input[type=checkbox]{
     height: 0;
     width: 0;
     visibility: hidden;
+    position: relative;
 }
 
 label {
     cursor: pointer;
     text-indent: -9999px;
-    width: 25px;
-    height: 50px;
+    width: 2.5vh;
+    height: 5.5vh;
     background: grey;
-    display: block;
-    border-radius: 25px;
+    display: flex;
+    border-radius: 2.5vh;
     position: relative;
+    align-self: center;
 }
 
 label:after {
     content: '';
     position: absolute;
-    bottom: 1.25px; /* Adjusted starting position */
-    left: 1.25px;
-    width: 22.5px;
-    height: 22.5px;
+    bottom: 0.125vh; /* Adjusted starting position */
+    left: 0.125vh;
+    width: 2.25vh;
+    height: 2.25vh;
     background: #fff;
-    border-radius: 22.5px;
+    border-radius: 2.25vh;
     transition: 0.3s;
 }
 
@@ -103,20 +114,12 @@ input:checked.T3 + label {
 }
 
 input:checked + label:after {
-    bottom: calc(100% - 1.25px); /* Adjusted position for checked state */
+    bottom: calc(100% - 0.125vh); /* Adjusted position for checked state */
     transform: translateY(100%);
 }
 
 label:active:after {
-    height: 32.5px;
-}
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    
+    height: 3.25vh;
 }
   
 /* End CSS for toggle switches */
