@@ -1,18 +1,17 @@
 body {
     background-image: url(../img/wood_bg.jpg);
     background-size: 100vw 100vh;
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
     background-position: fixed;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(25px);
-    background-attachment: fixed;
-    background-position:fixed;
+    overflow: hidden;
 
     /*justify-content: center;
     align-items: center;*/
 
-    width: 105vw;
-    height: 105vh;
+    width: 100vw;
+    height: 1020vh;
     font-size: 300%;
     position: fixed;
     margin: 0;
@@ -59,10 +58,10 @@ body {
     border-radius: 2vh;
 }
 
-.Day {
+  .Day{
     background-color: #fffdd0;
     border: solid;
-    border-color: 0#afad0 ;
+    border-color: #0afad0;
     border-width: 2px;
     border-radius: 8px;
     height: 7vh;
@@ -72,8 +71,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: xx-large;
-
-    }
+}
 
 /* Begin CSS for toggle switches */
 
@@ -129,4 +127,28 @@ label:active:after {
   
 /* End CSS for toggle switches */
 
+.goalHeader {
+    height: 0vh;
+    width: 100vw;
+    padding-top: 5vh;
+    font-size: 2.5vh;
+    position: absolute;
+    text-align: center;
+    text-shadow: -2px -2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, 2px 2px 0 #000;
+    
+}
+
+.form-input {
+    color: #000;
+    height: 3vh;
+    width: 40vw;
+    font-size: xx-large;
+
+    border: none;
+    outline: none;
+    background: rgba(255,255,255,0.25);
+    border-bottom: 1px solid #000; /* You can change the color to your preference */
+    text-shadow: -2px -2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, 2px 2px 0 #000;
+    padding-left: 10px;
+}
 
