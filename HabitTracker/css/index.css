@@ -130,7 +130,7 @@ label:active:after {
 .goalHeader {
     height: 0vh;
     width: 100vw;
-    padding-top: 5vh;
+    padding-top: 0vh;
     font-size: 2.5vh;
     position: absolute;
     text-align: center;
@@ -150,5 +150,8 @@ label:active:after {
     border-bottom: 1px solid #000; /* You can change the color to your preference */
     text-shadow: -2px -2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, 2px 2px 0 #000;
     padding-left: 10px;
+    padding-top: 0;
+    z-index: 1;
+
 }
 
