@@ -104,7 +104,7 @@ var recipeJSON =
                         "ingredients": "ingredients",
                         "link": "https://sallysbakingaddiction.com/homemade-artisan-bread/",
                         "materials": "materials",
-                        "servings": "servings",
+                        "servings": "Makes 2",
                         "steps": "steps",
                         "time": "time"
                 },

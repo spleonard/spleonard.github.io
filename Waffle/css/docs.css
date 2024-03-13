@@ -1,0 +1,54 @@
+body{
+    background-color: #e4e3e9;
+    color: darkslategray;
+    font-family: neue-kabel,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 100vw;
+  }
+  
+  
+  #board {
+      display: grid;
+      grid-template-columns:repeat(5,15vh);
+      grid-template-rows: repeat(6,15vh);
+      row-gap: 10px;
+      column-gap: 10px;
+    }
+  
+  .letterBox {
+      font-size: xx-large;
+      font-weight: bolder;
+  
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+
+      text-align: center;
+      margin: 10px;
+      border-radius: 10px;
+  }
+  
+  .grayBox {     
+      background-color: #c0c0c0;
+      color: #4f4f4f;
+  }
+  
+  .greenBox {
+      background-color: #22c35d;
+      color: #4f4f4f;
+  }
+
+  .yellowBox {
+      background-color: #d7d11e;
+      color: #4f4f4f;
+  }
+  
+  button {
+    grid-area: 6/2/7/5;
+    padding: 1vh;
+    background-color: #afafaf;
+    border-radius: .5vh;
+    font-size: larger;
+  }
