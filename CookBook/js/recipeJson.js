@@ -27,6 +27,15 @@ var recipeJSON =
                         "servings": "Makes 1 Loaf",
                         "steps": "1) Mash Bananas in bowl 1 <br> 2) Add Cinnamon and Milk to the Bananas <br> 3) Mix Flour, Baking Powder, Baking Soda, and Salt in bowl 2 <br> 4) Mix Butter and Sugar in Mixing Bowl <br> 5) Add eggs to Butter bowl, 1 at a time <br> 6) Add Banana bowl contents to Butter bowl <br> 7) Add Dry Ingredients to the bowl <br> ↪ Mix in any extras now, like chocolate or nuts <br> 8) Pour into Bread Pan <br> 9) Bake for about 70 Minutes",
                         "time": "Takes 1 <sup>1</sup>&frasl;<sub>2</sub> Hours"
+                },                
+                {
+                        "title":"Banana Bread, (Dad\'s)",
+                        "ingredients": "1 cup Sugar <br> 1/3 cup Margarine (or Butter) <br> 2 Eggs <br> 1 1/2 cups Ripe Banana (3 to 4 Bananas) <br> 1/3 cup Water (if Bananas not Frozen) <br> 1 2/3 cups Flour <br> 1 tsp Baking Soda <br> 1/2 tsp Salt <br> 1/4 tsp Baking Powder <i> Optional: <br> 1/4 cup Chocolate Chips<br> 1/2 cup chopped walnuts</i>",
+                        "link": "",
+                        "materials": "<strong> Needed:</strong><br> Oven <br> Bread Pan <br> Masher <br> 3 Bowls <br><br> <strong> Optional:</strong> <br> Stand Mixer <br> Brush",
+                        "servings": "Makes 1 Loaf",
+                        "steps": "1) Heat Oven to 350 degrees <br> 2) Grease Bread Pan <br> 3) Mix Sugar and Margarine <br> 4) Add Eggs <br> 5) Add Bananas and Water <br> 6) Stir in Remaining Ingredients <br> 7) Stir in Nuts and Chocolate <br> 8) Transfer to pan <br> 9) Bake for 65 minutes",
+                        "time": "Takes 1 <sup>1</sup>&frasl;<sub>2</sub> Hours"
                 },
                 {
                         "title":"Bagels",
@@ -54,7 +63,18 @@ var recipeJSON =
                         "servings": "Makes 1 Cake",
                         "steps": "1) Preheat oven to 325° <br> 2) Roast Walnuts in Oven for 15 minutes <br> 3) Reduce Oven to 300° <br> 4) Mix roasted Walnuts, Brown Sugar, and Cinnamon together <br> 5) Mix Butter and Sugar in a Mixing Bowl <br> 6) Add Eggs <br> 7) Add Sour Cream and Vanilla <br> 8) Add Flour, Baking Soda, and Salt, mix thoroughly <br> 9) Put 1/3 of the Batter into a well-greased Bundt pan (Spray + Flour is a good idea) <br> 10) Distribute Half the Walnut mixture evenly in the Bundt pan <br> 11) Add another 1/3 of the batter <br> 12) Add the rest of the Walnut mixture <br> 13) Add the last of the batter <br> 14) Bake for 70 Minutes",
                         "time": "Takes 1.5 Hours"
+
+
                 },
+                {
+                        "title":"Cookies, Kissies",
+                        "ingredients": "1 1/3 cups Flour <br> 1 tsp Baking Soda <br> 1/2 tsp Salt <br> 1/2 Cup Vegtable Shortening <br> 1/2 cup Sugar <br> 1/2 cup Brown Sugar <br> 1/2 cup Peanut Butter <br> 1 large Egg <br> 1 tsp Vanilla <br> Extra Sugar <br> 30 Hershey Kisses",
+                        "link": "",
+                        "materials": "Pan <br> Oven <br> 2+ Baking Trays <br> Parchment Paper/2+ Silicone Mats <br> Stand Mixer",
+                        "servings": "Makes About 30 Cookies",
+                        "steps": "1) Preheat Oven to 350 degrees <br> 2) Cream Vegtable Shortening and Sugar <br> 3) Beat in Peanut Butter <br> 4) Beat in Egg and Vanilla <br> 5) Combine Flour, Baking Soda, and Salt in Seperate Bowl <br> 6) Add Mixture into Mixing Bowl gradually <br> 7) Make 1 inch balls of Cookie Dough <br> 8) Bake for 9 Minutes <br> Remove from Oven, push Hershey Kiss in middle of every Cookie <br> 9) Bake 2 Minutes",
+                        "time": "Takes 1 Hour"
+                },                
                 {
                         "title":"Cookies (Meg\'s Variant)",
                         "ingredients": "1 cup Butter <br> 2 1/2 cups Flour <br> 2 tsp Cornstarch <br> 1 1/2 tsp Cinnamon <br> 1 tsp Baking Powder <br> 1/2 tsp Baking Soda <br> 1/2 tsp Salt <br> 1 1/4 cups Brown Sugar <br> 1/3 cup Sugar <br> 1 tsp Vanilla Extract <br> 2 Eggs <br> 2 cups Chocolate Chips <br> 1 cup dulce de leche",
@@ -96,26 +116,26 @@ var recipeJSON =
                         "link": "",
                         "materials": "Bowl <br> Whisk <br> Pan",
                         "servings": "Makes 6",
-                        "steps": "Lightly mix Sugar and Eggs <br>2) Add some Flour and Milk and stir <br> 3) Repeat step 2 until out <br> 4) Add butter to a hot pan <br> 5) Pour in about 1/4 cup batter to evenly cover the whole surface of the pan <br> 6) Cook for about 2 min a side <br> 7) Repeat steps 4-6 until out of batter",
+                        "steps": "1) Lightly mix Sugar and Eggs <br>2) Add some Flour and Milk and stir <br> 3) Repeat step 2 until out <br> 4) Add butter to a hot pan <br> 5) Pour in about 1/4 cup batter to evenly cover the whole surface of the pan <br> 6) Cook for about 2 min a side <br> 7) Repeat steps 4-6 until out of batter",
                         "time": "Takes 30 Minutes"
                 },
                 {
                         "title":"Garlic Bread",
-                        "ingredients": "ingredients",
+                        "ingredients": "3 1/4 cups Flour <br> 2 tsp Yeast <br> 2 tsp (Coarse) Salt <br> 1 1/2 cups warm water <br> 1 head garlic <br> 1 stick butter <br> olive oil <br> italian seasoning",
                         "link": "https://sallysbakingaddiction.com/homemade-artisan-bread/",
-                        "materials": "materials",
-                        "servings": "Makes 2",
-                        "steps": "steps",
-                        "time": "time"
+                        "materials": "Stand Mixer <br> Baking Tray <br> Parchment Paper",
+                        "servings": "Makes 4 small half loaves",
+                        "steps": "1) Mix dry Ingredients <br>2) Add in 3 diced cloves and 3 minced cloves <br>3) Add in warm water <br>4)Let dough rise 1 hr <br>5) Shape dough into two baguettes <br>6) Let dough rise 1 hr and preheat over to 475 <br>7) Peel rest of Garlic Cloves and pack in tin foil with olive oil and salt <br>8) Score dough and put it and garlic in oven for 20 min <br>* Tossing in 1/2 cup water to the oven with bread makes crust crispier <br>9) melt 1 stick butter in a pan and add garlic from oven and italian seasoning<br>10) cut loaves and brush butter mixture on them",
+                        "time": "Takes 3 hours"
                 },
                 {
                         "title":"Lava Cake",
-                        "ingredients": "ingredients",
+                        "ingredients": "1 stick Butter <br>6 oz Chocolate <br>1 1/4 cup powdered Sugar <br>2 Eggs <br>3 Egg Yolks <br>1 tsp Vanilla <br>1/2 cup flour <br>Ice Cream",
                         "link": "https://www.foodnetwork.com/recipes/chocolate-lava-cakes-2312421",
-                        "materials": "materials",
-                        "servings": "servings",
+                        "materials": "Mixing Bowl <br>4 Ramekins",
+                        "servings": "Makes 4 Lava Cakes",
                         "steps": "steps",
-                        "time": "time"
+                        "time": "Takes 30 min"
                 },
                 {
                         "title":"Lava Cake (Paloma\'s Variant)",
@@ -154,6 +174,15 @@ var recipeJSON =
                         "time": "time"
                 },
                 {
+                        "title":"Pork, Glazed (Dad\'s)",
+                        "ingredients": "1 Pound Pork <br> 1 Tbsp Flour <br> 2 Tbsp Brown Sugar <br> 1/2 tsp Salt <br> 1/2 tsp Ground Cumin <br> 1/4 tsp Ground Cardamom <br> 1/8 tsp Ground Red Pepper <br> 1/4 cup Craisins <br> 1/4 cup Orange Juice <br> 3 Tbsps Balsamic Vinegar <br> 2 Tbsps Capers <br> 1 Tbsp Olive Oil",
+                        "link": "",
+                        "materials": "Cast Iron Pan <br> Bowl",
+                        "servings": "Makes 4 Servings",
+                        "steps": "1) Cut Pork into 16 pieces <br> 2) Combine Flour, Sugar, Salt, Cumin, Cardamom, Red Pepper in Bowl <br> 3) Rub mixture on Pork <br> 4) Combine Sugar, Craisins, Juice, Vinegar, Capers in Bowl <br> 5) Heat Oil in Cast Iron <br> 6) Add Pork, Cook 2 min <br> 7) Flip Pork, Cook 1 min <br> 8) Add Vinegar Mixture amd cook for ~1 Min until thick",
+                        "time": "Takes 30 Min"
+                },
+                {
                         "title": "Ribs",
                         "ingredients": "ingredients",
                         "link": "https://cafedelites.com/oven-barbecue-ribs/",
@@ -166,24 +195,6 @@ var recipeJSON =
                         "title":"Rolls",
                         "ingredients": "ingredients",
                         "link": "https://www.foodnetwork.com/recipes/rapid-rolls-1960624",
-                        "materials": "materials",
-                        "servings": "servings",
-                        "steps": "steps",
-                        "time": "time"
-                },
-                {
-                        "title":"Raj's Tort Soup",
-                        "ingredients": "ingredients",
-                        "link": "https://hungryhappens.net/one-pot-vegetable-tortellini-soup/",
-                        "materials": "materials",
-                        "servings": "servings",
-                        "steps": "steps",
-                        "time": "time"
-                },
-                {
-                        "title":"Whoopie Pies",
-                        "ingredients": "ingredients",
-                        "link": "https://sallysbakingaddiction.com/red-velvet-whoopie-pies/#tasty-recipes-69731",
                         "materials": "materials",
                         "servings": "servings",
                         "steps": "steps",
