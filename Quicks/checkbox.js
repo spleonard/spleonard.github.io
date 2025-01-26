@@ -49,3 +49,8 @@ function finalScore(){
     var finalScore = document.getElementById("finalScore");
     finalScore.innerHTML = parseInt(redScore.innerHTML) + parseInt(yellowScore.innerHTML) + parseInt(greenScore.innerHTML) + parseInt(blueScore.innerHTML) - parseInt(penaltyScore.innerHTML);
 }
+
+function LentilSoupAd(){
+  // Go to the Recipe Page
+    window.location.assign('https://www.ziyad.com/recipe/red-lentil-soup/');
+}
