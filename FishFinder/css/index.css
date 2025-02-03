@@ -26,6 +26,10 @@ p {
   transform: scale(3);
 }
 
+.bigpic{
+  transform: scale(1);
+}
+
 .unscaled{
   transform: scale(2);
   z-index: 0;
@@ -43,7 +47,7 @@ p {
 
 #fishFrame {
   width: 100vw;
-  height: 50vh;
+  height: 55vh;
   justify-content: center;
   align-content: center;
   padding-left: 3vw;  
@@ -51,12 +55,12 @@ p {
   padding-top: 5vw;  
 
   background-image: url(../img/FishMenuEmpty.png);
-  background-size: 100vw 50vh;
+  background-size: 100vw 55vh;
   background-repeat: no-repeat;
 
   display: grid;
   grid-template-columns: repeat(10,8.1vw);
-  grid-template-rows: repeat(9, 5.5vh);
+  grid-template-rows: repeat(10, 5.5vh);
 }
 
 .labelContainer{
