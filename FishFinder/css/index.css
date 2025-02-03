@@ -1,6 +1,6 @@
 body {
     background-image: url(../img/Background.webp);
-    background-size: 100vw 100vh;
+    background-size: 110vw 110vh;
     background-repeat: no-repeat;
     background-position: fixed;
     backdrop-filter: blur(25px);
@@ -8,8 +8,8 @@ body {
     background-attachment: fixed;
     background-position:fixed;
 
-    width: 100vw;
-    height: 100vh;
+    width: 110vw;
+    height: 110vh;
     font-size: 300%;
     margin: 0;
 }
@@ -19,8 +19,8 @@ input{
 }
 
 p {
- margin-top: 3vh;
- margin-bottom: 3vh;
+ margin-top: 1vh;
+ margin-bottom: 1vh;
 }
 #fishFrame img {
   transform: scale(3);
@@ -47,7 +47,7 @@ p {
 
 #fishFrame {
   width: 100vw;
-  height: 57vh;
+  height: 54vh;
   justify-content: center;
   align-content: center;
   padding-left: 3vw;  
@@ -55,12 +55,12 @@ p {
   padding-top: 5vw;  
 
   background-image: url(../img/FishMenuEmpty.png);
-  background-size: 100vw 57vh;
+  background-size: 100vw 54vh;
   background-repeat: no-repeat;
 
   display: grid;
   grid-template-columns: repeat(10,8.1vw);
-  grid-template-rows: repeat(10, 5.5vh);
+  grid-template-rows: repeat(10, 5.4vh);
 }
 
 .labelContainer{
