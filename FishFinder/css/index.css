@@ -27,7 +27,7 @@ p {
 }
 
 .bigpic{
-  transform: scale(1);
+  transform: scale(10);
 }
 
 .unscaled{
@@ -47,7 +47,7 @@ p {
 
 #fishFrame {
   width: 100vw;
-  height: 55vh;
+  height: 60vh;
   justify-content: center;
   align-content: center;
   padding-left: 3vw;  
@@ -55,7 +55,7 @@ p {
   padding-top: 5vw;  
 
   background-image: url(../img/FishMenuEmpty.png);
-  background-size: 100vw 55vh;
+  background-size: 100vw 60vh;
   background-repeat: no-repeat;
 
   display: grid;
