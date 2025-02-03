@@ -1,6 +1,6 @@
 body {
     background-image: url(../img/Background.webp);
-    background-size: 110vw 110vh;
+    background-size: 105vw 105vh;
     background-repeat: no-repeat;
     background-position: fixed;
     backdrop-filter: blur(25px);
@@ -8,8 +8,8 @@ body {
     background-attachment: fixed;
     background-position:fixed;
 
-    width: 110vw;
-    height: 110vh;
+    width: 105vw;
+    height: 105vh;
     font-size: 300%;
     margin: 0;
 }
