@@ -10,7 +10,15 @@ function checkfunction(a,b) {
     }
 }
 
-
+function lockingCheck(a){
+    var locking = document.getElementById(a);
+    if(locking.checked == false){
+        locking.checked = true;
+    }
+    else {
+        locking.checked = false;
+    }
+}
 
 function tallyChecks(cname,scoreBox){
     var inputElems = document.getElementsByTagName("input");
