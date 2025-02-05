@@ -11,10 +11,10 @@ body{
   
   #board {
       display: grid;
-      grid-template-columns:repeat(5,15vw);
-      grid-template-rows: repeat(6,15vw);
-      row-gap: 1%;
-      column-gap: 1%;
+      grid-template-columns:repeat(5,19vw);
+      grid-template-rows: repeat(6,19vw);
+      row-gap: 1vw;
+      column-gap: 1vw;
     }
   
   .letterBox {
