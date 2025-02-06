@@ -32,6 +32,15 @@ function checkAllTags(xi) {
   return false;
 }
 
+function removeCheckbox(TimeOrName) {
+  var removeCheck, removeCheckID
+  if (TimeOrName == "time") removeCheck = 'showTimes';
+  if (TimeOrName == "name") removeCheck = 'showNames';
+  console.log(removeCheck);
+  removeCheckID = document.getElementById(removeCheck); 
+  removeCheckID.checked= false;
+  filterSelection2('all');
+}
 
 function filterSelection2(c) {
   // Store Last Click for CheckMark Updates
@@ -39,13 +48,14 @@ function filterSelection2(c) {
   lastButtonEntry = c;
   if (c == "all") c = "";
 
-  var x, i, s4, hP, sT;
+  var x, i, s4, hP, sT, sN;
 
   // Check Toggle on Checkboxes
   x = document.getElementsByClassName("filterDiv");
   s4 = document.getElementById('hide4seasons'); s4 = s4.checked;
   hP = document.getElementById('hidePot'); hP = hP.checked;
   sT = document.getElementById('showTimes'); sT = sT.checked;
+  sN = document.getElementById('showNames'); sN = sN.checked;
 
   for (i = 0; i < x.length; i++) {
     w3RemoveClass(x[i], "show");
@@ -55,10 +65,16 @@ function filterSelection2(c) {
     if (checkAllTags(x[i])) w3AddClass(x[i], "show");
     // Below Lines Remove Divs Based on Checkbox Toggles
     if (x[i].classList.contains("spring") & x[i].classList.contains("summer") & x[i].classList.contains("fall") & x[i].classList.contains("winter") & s4) w3RemoveClass(x[i], "show");
+    
     if ((x[i].classList.contains("pot") || x[i].classList.contains("plant"))  & hP) w3RemoveClass(x[i], "show");
+
     if (x[i].classList.contains("time") & !sT) w3AddClass(x[i], "fullHide");
     if (x[i].classList.contains("time") & sT) w3RemoveClass(x[i], "fullHide");
     if (x[i].classList.contains("time") & !x[i].classList.contains("show")) w3AddClass(x[i], "fullHide");
+
+    if (x[i].classList.contains("name") & !sN) w3AddClass(x[i], "fullHide");
+    if (x[i].classList.contains("name") & sN) w3RemoveClass(x[i], "fullHide");
+    if (x[i].classList.contains("name") & !x[i].classList.contains("show")) w3AddClass(x[i], "fullHide");
   }
 }
 
