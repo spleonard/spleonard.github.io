@@ -134,8 +134,8 @@ var recipeJSON =
                         "link": "https://www.foodnetwork.com/recipes/chocolate-lava-cakes-2312421",
                         "materials": "Mixing Bowl <br>4 Ramekins",
                         "servings": "Makes 4 Lava Cakes",
-                        "steps": "steps",
-                        "time": "Takes 30 min"
+                        "steps": "1) Microwave and stir Butter and Chocolate Chips until chunkless <br> 2) Mix in sugar, eggs, egg yolks, and vanilla <br> 3) Mix in flour <br> 4) Spread into ~6 ramekins <br> 5) Cook for ~13 min <br> 6) Eat warm with ice cream",
+                        "time": "Takes 20 min"
                 },
                 {
                         "title":"Lava Cake (Paloma\'s Variant)",
@@ -147,31 +147,31 @@ var recipeJSON =
                         "time": "time"
                 },
                 {
-                        "title":"Macaron",
-                        "ingredients": "ingredients",
+                        "title":"Macaron (Cookie Only)",
+                        "ingredients": "3 Egg Whites <br> 1/4 cup Sugar <br> 2 cups powdered Sugar <br> 1 cup Almond Flour <br> 1 pinch Salt <br> 1/4 tsp Cream of Tartar",
                         "link": "https://entertainingwithbeth.com/foolproof-french-macaron-recipe/",
-                        "materials": "materials",
-                        "servings": "servings",
-                        "steps": "steps",
-                        "time": "time"
+                        "materials": "Stand Mixer<br> Silicone Sheets <br> Baking Trays <br> Piping (or Ziploc) Bag",
+                        "servings": "Makes ~40 half cookies",
+                        "steps": "1) Beat Egg Whites with Stand Mixer <br> 2) Add in salt, cream of tartar, white sugar, and food coloring. Mix until peaks stay <br> 3) Sift in almond flour and powdered sugar <br> 4) Hand mix (~65 strokes) until well mixed. <br> 5) Transfer to piping bag <br> 6) Pipe 1 in. circles onto trays <br> 7) Slap the trays against table to release air. Let sit until firm (25 min) <br> 8) Bake for 20 min. Consider checking on and roating every 5 min <br> Let cool, then take off and pipe in buttercream",
+                        "time": "Takes 2 hours"
                 },
                 {
-                        "title":"Monkey Bread",
-                        "ingredients": "ingredients",
+                        "title":"Monkey Bread (Mr. V)",
+                        "ingredients": "2 rolls Pillsbury Biscuts or 1 roll Grands <br> 1/2 cup Sugar <br> 1/2 cup brown Sugar <br> 3 Tbsp cinnamon <br> 3/4 stick Butter <br> 1/2 cup Chopped Nuts (optional)",
                         "link": "https://www.tasteandtellblog.com/beginners-cinnamon-pull-apart-bread-from-scratch/",
-                        "materials": "materials",
-                        "servings": "servings",
-                        "steps": "steps",
-                        "time": "time"
+                        "materials": "Bag <br> Oven Tray",
+                        "servings": "Makes 1 Tray Full",
+                        "steps": "1) Preheat oven to 350 <br> 2) Cut biscuts into quarters <br> 3) Mix cinnamon and sugar in plastic bag <br> 4) Drop biscut pieces into bag and shake to coat well <br> 5) Place into a foil pan (dutch oven size) <br> 6) melt butter and pour over dough <br> 7) bake for 35 min <br> <br> *) Can also cook in a dutch oven with coals surrounding for similar time. Consider spinning oven and lid every 10 min when cooking and preheat for 15 min.",
+                        "time": "Takes 45 min"
                 },
                 {
-                        "title":"Pizza",
-                        "ingredients": "ingredients",
+                        "title":"Pizza Dough",
+                        "ingredients": "3 1/2 cup Flour <br> 1 tsp Sugar <br> 1 packet Yeast <br> 2 tsp Salt <br> 1 1/2 cup warm water <br> 2 tbsp Olive Oil",
                         "link": "https://www.foodnetwork.com/recipes/bobby-flay/pizza-dough-recipe-1921714",
-                        "materials": "materials",
-                        "servings": "servings",
-                        "steps": "steps",
-                        "time": "time"
+                        "materials": "Stand Mixer",
+                        "servings": "Makes 2 Doughs",
+                        "steps": "1) Combine Flour, Sugar, Yeast, Salt in Stand Mixer <br> 2) Add Water and Oil while mixing <br> 3) Add a little water/flour if needed until firm dough ball is formed <br> 4) Grease a bowl, put dough in it, and cover. Wait 1 hour <br> 5) Cut dough in half and shape into pizzas <br> 6) Add toppings as desired and cook at 450 for about 8 min",
+                        "time": "Takes 2 hours"
                 },
                 {
                         "title":"Pork, Glazed (Dad\'s)",
@@ -183,31 +183,40 @@ var recipeJSON =
                         "time": "Takes 30 Min"
                 },
                 {
+                        "title":"Raj's Tort Soup",
+                        "ingredients": "1/4 cup Olive Oil <br> 1 medium Sweet Onion, diced <br> 4 medium Carrots, diced <br> 12 oz Mushrooms, diced <br> 4 Celery Sticks, diced <br> 4 cloves Garlic, minced <br> 1 tsp Paprika <br> 1 tbsp Italian Seasoning <br> Salt <br> Pepper <br> 2 tbsp Tomato Paste <br> 1/2 cup dry White Wine <br> 7 cups Chicken Broth <br> 1 1/2 pounds cheese tortellini <br> 1/2 cup grated parmesan cheese <br> 1/2 cup heavy cream <br> 3 handfuls kale, chopped",
+                        "link": "https://hungryhappens.net/one-pot-vegetable-tortellini-soup/",
+                        "materials": "Pot",
+                        "servings": "Makes 4 Servings",
+                        "steps": "1) Heat oil in Pot <br> 2) Add Carrots and Onion. Cook for 3 min <br> 3) Add Mushoom and Celery. Stir and Cook for 3 min <br> 4) Add Garlic. Stir and Cook 1 min <br> 5) Add Seasonings and Tomato Paste. Stir and coat all <br> 6) Add wine and broth. Boil <br> 7) Turn down to simmer and cook covered until carrots go soft, about 20 min <br> 8) Add in tortellini and parmesan. Boil for 5 min <br> 9) Add in heavy cream and kale. Gently stir in",
+                        "time": "Takes 1 hour"
+                },
+                {
                         "title": "Ribs",
-                        "ingredients": "ingredients",
+                        "ingredients": "Ribs <br> BBQ Sauce <br> Whiskey <br> Seasonings <br> *garlic powder <br> *onion powder <br> *paprika <br> *salt <br> *pepper <br> *cumin <br> *chili powder",
                         "link": "https://cafedelites.com/oven-barbecue-ribs/",
-                        "materials": "materials",
-                        "servings": "servings",
-                        "steps": "steps",
-                        "time": "time"
+                        "materials": "Baking Tray <br> Tin Foil",
+                        "servings": "Makes 1 rack",
+                        "steps": "1) Preheat oven to 350 <br> 2) Mix together seasonings and put on ribs <br> 3) Cover ribs with tin foil and put in oven for 2 hours (set timer for 1:45) <br> 4) With 15 min left, mix together a bottle of BBQ and 1-2 shots whiskey in a pot. Heat while constantly stirring until steam doesnt hurt to breathe <br> 5) Remove ribs from oven. Take off top foil. Brush with BBQ sauce <br> 6) Return ribs to oven, uncovered, for 10 min <br> 7) Remove and let sit for at least 5-10 min",
+                        "time": "Takes 2.5 hours"
                 },
                 {
                         "title":"Rolls",
-                        "ingredients": "ingredients",
+                        "ingredients": "3 Packets Yeast <br> 1 3/4 cup warm Water <br> 1/2 cup Honey <br> 1/2 cup Melted Butter <br> 2 tsp Salt <br> 2 Eggs <br> 4-6 cups Flour <br> Additional 2 Tbsp Butter/Salt for Brushing",
                         "link": "https://www.foodnetwork.com/recipes/rapid-rolls-1960624",
-                        "materials": "materials",
-                        "servings": "servings",
-                        "steps": "steps",
-                        "time": "time"
+                        "materials": "Stand Mixer <br> Baking Tray",
+                        "servings": "Makes 20 rolls",
+                        "steps": "1) Mix Yeast and Water in Stand Mixer <br> 2) Add Honey <br> 3) Add Butter, Salt, and Eggs <br> 4) Add Flour, 1 cup at a time until not sticky <br> 5) Make 20 Balls of Dough. Place on Baking Tray <br> 6) Preheat oven to 400 <br> 7) Let Rise for 20 minutes <br> 8) Brush with butter, then put in oven for 25 min <br> 9) Brush with more butter and salt",
+                        "time": "Takes 1 hour"
                 },
                 {
                         "title":"Wings",
-                        "ingredients": "ingredients",
+                        "ingredients": "Chicken Wings <br> 1 cup Flour <br> ~4 cups Oil <br> Spices <br> *Paprika <br> *Cayenne Pepper <br> *Garlic Powder <br> *Salt <br> *Pepper",
                         "link": "https://www.thecookierookie.com/best-fried-buffalo-wings-gluten-free/",
-                        "materials": "materials",
-                        "servings": "servings",
-                        "steps": "steps",
-                        "time": "time"
+                        "materials": "Bag <br> Pot <br> Paper Towels <br> Slotted Spoon",
+                        "servings": "Makes 1 Gallon Chicken",
+                        "steps": "1) Mix Spices and Flour in bag <br> 2) Add Chicken to bag. Toss and Coat them <br> 3) place in fridge for at least 15 min <br> 4) Heat oil in pot, at least 3 inches <br> 5) Fry a few at a time for 10-15 min. Ensure thoroughly cooked <br> 6) Remove and toss in sauce/dry rub",
+                        "time": "Takes 2 hours"
                 }
             ]
         }
