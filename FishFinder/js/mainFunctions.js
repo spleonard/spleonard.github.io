@@ -1,7 +1,7 @@
 
 var lastButtonEntry = "all";
 var activeFilters = [];
-filterSelection("all")
+//filterSelection("all")
 
 
 function filterSelection(c) {

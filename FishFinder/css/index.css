@@ -27,13 +27,14 @@ p {
 }
 
 .bigpic{
-  transform: scale(0.4);
+  transform: scale(0.38);
+  
 }
 
 .unscaled{
   transform: scale(2);
   z-index: 0;
-  filter: brightness(0%), opacity(10%);
+  /*filter: brightness(0%), opacity(10%);*/
 }
 
 #buttonFrame{
@@ -82,7 +83,7 @@ figcaption{
   line-height: 100px;
   text-align: center;
   margin: 2px;
-  filter: brightness(0);
+  /*filter: brightness(0);*/
   opacity: 0.15;    /* Hidden by default */
 }
 
