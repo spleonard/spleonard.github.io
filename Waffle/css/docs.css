@@ -11,18 +11,22 @@ body{
   
   #board {
     display: grid;
-    grid-template-columns:repeat(5,19vw);
-    grid-template-rows: repeat(6,19vw);
+    grid-template-columns:repeat(5,8vh);
+    grid-template-rows: repeat(6,8vh);
     row-gap: 1vw;
     column-gap: 1vw;
+    padding-top: 4vh;
+    justify-content: center;
   }
 
   #solvedBoard {
     display: grid;
-    grid-template-columns:repeat(5,19vw);
-    grid-template-rows: repeat(6,19vw);
+    grid-template-columns:repeat(5,8vh);
+    grid-template-rows: repeat(6,8vh);
     row-gap: 1vw;
     column-gap: 1vw;
+    padding-top: 1vh;
+    justify-content: center;
   }
   
   .letterBox {
@@ -58,5 +62,7 @@ body{
     padding: 1vh;
     background-color: #afafaf;
     border-radius: .5vh;
-    font-size: larger;
+    font-size: xx-large;
+    color: black;
+    padding-top: 1vh;
   }
