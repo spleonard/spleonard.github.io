@@ -5,11 +5,11 @@
   <script src="./js/main.js"></script> 
   <script src="./js/makeLists.js"></script> 
   <script src="./js/makeWords.js"></script> 
+  <script src="./js/pickWords.js"></script> 
   <script src="./js/words.js"></script> 
 </head>
-
 <div id="board">
-  <input type="text" id="box1_1" class="letterBox grayBox" style="grid-area: 1/1/2/2" onclick="swapColor('box1_1')"></input>
+  <input id="box1_1" class="letterBox grayBox" style="grid-area: 1/1/2/2" onclick="swapColor('box1_1')"></input>
   <input id="box1_2" class="letterBox grayBox" style="grid-area: 1/2/2/3" onclick="swapColor('box1_2')"></input> 
   <input id="box1_3" class="letterBox grayBox" style="grid-area: 1/3/2/4" onclick="swapColor('box1_3')"></input>
   <input id="box1_4" class="letterBox grayBox" style="grid-area: 1/4/2/5" onclick="swapColor('box1_4')"></input>
@@ -34,6 +34,34 @@
   <input id="box5_3" class="letterBox grayBox" style="grid-area: 5/3/6/4" onclick="swapColor('box5_3')"></input>
   <input id="box5_4" class="letterBox grayBox" style="grid-area: 5/4/6/5" onclick="swapColor('box5_4')"></input>
   <input id="box5_5" class="letterBox grayBox" style="grid-area: 5/5/6/6" onclick="swapColor('box5_5')"></input>
+  <button onclick="window.location.assign('https://wafflegame.net/daily')" style="grid-area: 6/1/7/3">See Today's Waffle Puzzle</button>
+  <button onclick="solveWaffle()" style="grid-area: 6/3/7/6">Solve!</button>
 
-  <button onclick="solveWaffle()">Solve!</button>
+</div>
+<div id="solvedBoard">
+  <input id="box1_1s" class="letterBox grayBox ansBox" style="grid-area: 1/1/2/2"></input>
+  <input id="box1_2s" class="letterBox grayBox ansBox" style="grid-area: 1/2/2/3"></input> 
+  <input id="box1_3s" class="letterBox grayBox ansBox" style="grid-area: 1/3/2/4"></input>
+  <input id="box1_4s" class="letterBox grayBox ansBox" style="grid-area: 1/4/2/5"></input>
+  <input id="box1_5s" class="letterBox grayBox ansBox" style="grid-area: 1/5/2/6"></input>
+
+  <input id="box2_1s" class="letterBox grayBox ansBox" style="grid-area: 2/1/3/2"></input>
+  <input id="box2_3s" class="letterBox grayBox ansBox" style="grid-area: 2/3/3/4"></input>
+  <input id="box2_5s" class="letterBox grayBox ansBox" style="grid-area: 2/5/3/6"></input>
+
+  <input id="box3_1s" class="letterBox grayBox ansBox" style="grid-area: 3/1/4/2"></input>
+  <input id="box3_2s" class="letterBox grayBox ansBox" style="grid-area: 3/2/4/3"></input>
+  <input id="box3_3s" class="letterBox grayBox ansBox" style="grid-area: 3/3/4/4"></input>
+  <input id="box3_4s" class="letterBox grayBox ansBox" style="grid-area: 3/4/4/5"></input>
+  <input id="box3_5s" class="letterBox grayBox ansBox" style="grid-area: 3/5/4/6"></input>
+
+  <input id="box4_1s" class="letterBox grayBox ansBox" style="grid-area: 4/1/5/2"></input>
+  <input id="box4_3s" class="letterBox grayBox ansBox" style="grid-area: 4/3/5/4"></input>
+  <input id="box4_5s" class="letterBox grayBox ansBox" style="grid-area: 4/5/5/6"></input>
+
+  <input id="box5_1s" class="letterBox grayBox ansBox" style="grid-area: 5/1/6/2"></input>
+  <input id="box5_2s" class="letterBox grayBox ansBox" style="grid-area: 5/2/6/3"></input>
+  <input id="box5_3s" class="letterBox grayBox ansBox" style="grid-area: 5/3/6/4"></input>
+  <input id="box5_4s" class="letterBox grayBox ansBox" style="grid-area: 5/4/6/5"></input>
+  <input id="box5_5s" class="letterBox grayBox ansBox" style="grid-area: 5/5/6/6"></input>
 </div>

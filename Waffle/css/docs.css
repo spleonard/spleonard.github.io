@@ -10,12 +10,20 @@ body{
   
   
   #board {
-      display: grid;
-      grid-template-columns:repeat(5,19vw);
-      grid-template-rows: repeat(6,19vw);
-      row-gap: 1vw;
-      column-gap: 1vw;
-    }
+    display: grid;
+    grid-template-columns:repeat(5,19vw);
+    grid-template-rows: repeat(6,19vw);
+    row-gap: 1vw;
+    column-gap: 1vw;
+  }
+
+  #solvedBoard {
+    display: grid;
+    grid-template-columns:repeat(5,19vw);
+    grid-template-rows: repeat(6,19vw);
+    row-gap: 1vw;
+    column-gap: 1vw;
+  }
   
   .letterBox {
       font-size: xx-large;
@@ -47,7 +55,6 @@ body{
   }
   
   button {
-    grid-area: 6/2/7/5;
     padding: 1vh;
     background-color: #afafaf;
     border-radius: .5vh;

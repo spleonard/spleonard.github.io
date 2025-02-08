@@ -16,3 +16,14 @@ function swapColor(boxID){
         return
     }
 }
+
+function greenAns() {
+    // Select all divs with the class 'specialBackground'
+    var divs = document.querySelectorAll(".ansBox");
+
+    // Loop through the divs and add the 'greenBackground' class
+    divs.forEach(function(div) {
+        div.classList.remove("grayBox")
+        div.classList.add("greenBox");
+    });
+};

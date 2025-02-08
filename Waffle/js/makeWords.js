@@ -1,11 +1,8 @@
 
 function MakeAllFakeWords(qListGood, qListBad, qListYellow, floatingLetters) {
     var AllFakeWords = [[], [], [], [], [], []];
-    var AllActualWords = [[], [], [], [], [], []];
-
     // Assuming your local list is an array of words
     const acceptableWords = JSON.parse(localStorage.getItem("wordsJSON")) || [];
-    console.log(acceptableWords);
     
     for (let i = 0; i < 6; i++) {
         var tempWords = generateWordsForOneWord(floatingLetters, qListGood[i]);
@@ -16,8 +13,6 @@ function MakeAllFakeWords(qListGood, qListBad, qListYellow, floatingLetters) {
         // Filter words based on the local list of acceptable words
         AllFakeWords[i] = tempWords.filter(word => acceptableWords.includes(word) && filterWords(word, qListGood[i], tempQListYellow, tempQListBad));
     }
-
-    console.log('Actual Word Frequencies:', AllActualWords);
     return AllFakeWords;
 }
 
@@ -62,7 +57,8 @@ function generateWordsForOneWord(wordBank, wordPattern) {
 }
 
 function filterWords(wordList, wordPattern, requiredLetters, forbiddenLetters) {
-    return wordList.filter(word => {
+    wordListArray = [wordList[0], wordList[1], wordList[2], wordList[3], wordList[4]];
+    return wordListArray.filter(word => {
         // Check if the word matches the pattern
         const matchesPattern = word.split('').every((letter, index) => {
             return wordPattern[index] === '?' || wordPattern[index] === letter;
