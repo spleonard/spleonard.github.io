@@ -6,6 +6,7 @@ body{
     font-style: normal;
     width: 100vw;
     height: 100vh;
+    touch-action: manipulation;
   }
   
   
@@ -15,7 +16,7 @@ body{
     grid-template-rows: repeat(6,8vh);
     row-gap: 1vw;
     column-gap: 1vw;
-    padding-top: 4vh;
+    padding-top: 2vh;
     justify-content: center;
   }
 
