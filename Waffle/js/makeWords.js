@@ -3,7 +3,6 @@ function MakeAllFakeWords(qListGood, qListBad, qListYellow, floatingLetters) {
     var AllFakeWords = [[], [], [], [], [], []];
     // Assuming your local list is an array of words
     const acceptableWords = JSON.parse(localStorage.getItem("wordsJSON")) || [];
-    
     for (let i = 0; i < 6; i++) {
         var tempWords = generateWordsForOneWord(floatingLetters, qListGood[i]);
         var tempQListBad = removeQuestionMarks(qListBad[i]);
@@ -27,18 +26,28 @@ function generateWordsForOneWord(wordBank, wordPattern) {
     const allFakeWordsSet = new Set();
 
     function generateWordsHelper(currentWord, currentIndex, letterCounts) {
-        if (currentIndex === 5) {
+        // If we've reached the end of the pattern, add the current word to the set
+        if (currentIndex === wordPattern.length) {
             allFakeWordsSet.add(currentWord.join(''));
             return;
         }
 
         const currentPatternChar = wordPattern[currentIndex];
+        // If it's a wildcard, we can pick any letter from the wordBank
         const availableLetters = currentPatternChar === '?' ? wordBank : [currentPatternChar];
 
         for (const letter of availableLetters) {
+            // Only proceed if we have the letter available in the letter counts
             if (letterCounts.get(letter) > 0 || currentPatternChar !== '?') {
+                // Create a new map and decrement the letter count
                 const newCounts = new Map(letterCounts);
-                newCounts.set(letter, newCounts.get(letter) - 1);
+                
+                // Decrement the count only if this letter is used for the current wildcard
+                if (currentPatternChar === '?') {
+                    newCounts.set(letter, newCounts.get(letter) - 1);
+                }
+
+                // Continue with the recursion for the next position
                 generateWordsHelper([...currentWord, letter], currentIndex + 1, newCounts);
             }
         }
@@ -50,6 +59,7 @@ function generateWordsForOneWord(wordBank, wordPattern) {
         letterCounts.set(letter, (letterCounts.get(letter) || 0) + 1);
     }
 
+    // Start the recursive process
     generateWordsHelper([], 0, letterCounts);
 
     // Convert the Set back to an array to match your original return type

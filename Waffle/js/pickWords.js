@@ -1,14 +1,3 @@
-/*function iterateGrid(words){
-    var counter = 0;
-    printToGrid(words);
-    var spareLetters = compareGrids();
-    var letters, states = getAllLettersAgain(spareLetters);
-    var sixWords = form6(allLetters);
-    var sixStates = form6(allStates);
-    const {qListGood, qListBad, qListYellow} = generate3Lists(sixWords,sixStates);
-    allPossibleWords = MakeAllFakeWords(qListGood, qListBad, qListYellow, floatingLetters);
-}*/
-
 function printToGrid(words){
     var outputElems = ["box1_1s", "box1_2s", "box1_3s", "box1_4s", "box1_5s", "box2_1s", "box2_3s", "box2_5s", "box3_1s", "box3_2s", "box3_3s", "box3_4s", "box3_5s", "box4_1s", "box4_3s", "box4_5s", "box5_1s", "box5_2s", "box5_3s", "box5_4s", "box5_5s"];
     if (words[0].length == 1){
@@ -109,22 +98,43 @@ function compareGrids() {
 }
 
 
-function getAllLettersAgain(spareLetters){
+// Idea is for function to return states and letters of all letters not currently in use
+function getAllLettersAgain(spareLetters, previousStates) {
     var outputElems = ["box1_1s", "box1_2s", "box1_3s", "box1_4s", "box1_5s", "box2_1s", "box2_3s", "box2_5s", "box3_1s", "box3_2s", "box3_3s", "box3_4s", "box3_5s", "box4_1s", "box4_3s", "box4_5s", "box5_1s", "box5_2s", "box5_3s", "box5_4s", "box5_5s"];
     var allLetters = [];
-    var allStates = [];
+    var allStateList = [];
+    var allStateResult = [["","","","",""],["","","","",""],["","","","",""],["","","","",""],["","","","",""],["","","","",""]];
+
     var spareLetterIndex = 0;
-    outputElems.forEach(letterInput => {
-        newLetter = document.getElementById(letterInput).value;
-        if (newLetter == ""){
-            allStates.push(0);
+
+    outputElems.forEach((letterInput, index) => {
+        var newLetter = document.getElementById(letterInput).value;
+
+        // Update state if the letter field is empty
+        if (newLetter == "") {
             newLetter = spareLetters[spareLetterIndex];
             spareLetterIndex++;
-        }
-        else {
-            allStates.push(1)
+
+            // Use the indexResolver to properly update states in allStateResult    
+            allStateList[index] = 3;  // Indicate to keep the previous state if needed
+
+        } else {
+
+            allStateList[index] = 1;  // You can modify the state logic here if needed
         }
         allLetters.push(newLetter);
-    })
-    return {allLetters, allStates};
+    });
+
+    var allStateResult = form6(allStateList);
+    for (let i = 0; i < 5; i++) {
+        for (let j = 0; j < 4; j++) {
+            // Check if the current value is "missing"
+            if (allStateResult[i][j] === "prev") {
+                // Find the value from other sublists in the same index position (j)
+                allStateResult[i][j] = previousStates[i][j];
+            }
+        }
+    }
+
+    return { allLetters, allStateResult };
 }
