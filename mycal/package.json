@@ -1,6 +1,6 @@
 {
   "name": "mycal",
-  "homepage":"https://www.samleonard.me/puzzle/",
+  "homepage":"https://www.samleonard.me/mycal/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
