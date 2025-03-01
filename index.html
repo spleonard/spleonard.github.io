@@ -19,7 +19,14 @@
     <button style="grid-area: 3/2/4/3" class="headButton opacity-hover" onclick="window.location.assign('./HabitTracker/Habits.html')"> Habit Tracker</button>
     <button style="grid-area: 4/1/5/2" class="headButton opacity-hover" onclick="window.location.assign('./Waffle/Waffle.html')"> Waffle</button>
     <button style="grid-area: 4/2/5/3" class="headButton opacity-hover" onclick="window.location.assign('./Percal/Percal.html')"> TBD </button>
-    <button style="grid-area: 5/1/6/2" class="headButton opacity-hover" onclick="window.location.replace('https://calendar.samleonard.me')"> npm wip </button>
+    <button id="calendar-btn" style="grid-area: 5/1/6/2" class="headButton opacity-hover"> npm wip </button>
   </div>
+
+  <script>
+    document.getElementById("calendar-btn").addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href = "https://calendar.samleonard.me";
+    });
+  </script>  </div>
 </body>
 </html>
