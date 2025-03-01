@@ -24,7 +24,11 @@
 
   <script>
     document.getElementById("calendar-btn").addEventListener("click", function () {
-      window.location.replace("https://calendar.samleonard.me");
+      let form = document.createElement("form");
+      form.method = "GET";
+      form.action = "https://calendar.samleonard.me";
+      document.body.appendChild(form);
+      form.submit();
     });
   </script>
 </body>
