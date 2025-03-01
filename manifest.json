@@ -2,6 +2,7 @@
   "name": "Sam's Website",
   "short_name": "Sam's Website",
   "display": "standalone",
-  "scope": "https://www.samleonard.me/",
-  "start_url": "https://www.samleonard.me/"
+  "scope": "/",
+  "start_url": "/",
+  "ID":"/"
 }
