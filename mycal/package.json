@@ -1,6 +1,6 @@
 {
   "name": "mycal",
-  "homepage":"https://spleonard.github.io/mycal/",
+  "homepage":"https://spleonard.github.io/mycal",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
