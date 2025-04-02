@@ -24,7 +24,11 @@
         <button onclick="setColor('blue')">Blue</button>
     </div>
 
-    <div class="boxes">
+    <div class="boxes";
+        display: grid;
+        grid-template-columns:repeat(6,50px);
+        grid-template-rows: repeat(24,25px);>
+        
         <div class="color-box" onclick="colorBox(this)"></div>
         <div class="color-box" onclick="colorBox(this)"></div>
         <div class="color-box" onclick="colorBox(this)"></div>
