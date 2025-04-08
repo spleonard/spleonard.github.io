@@ -12,19 +12,17 @@
 </head>
 
 <body>
+    <div id="boxes"></div>
     <div class="color-picker">
-        <button onclick="setColor('red')">Red</button>
-        <button onclick="setColor('yellow')">Yellow</button>
-        <button onclick="setColor('green')">Green</button>
-        <button onclick="setColor('blue')">Blue</button>
-        <button onclick="setColor('purple')">Purple</button>
-        <button onclick="setColor('white')">White</button>
-        <button onclick="setColor('gray')">Remove Color</button>
-        <button onclick="setColor('')">N/A</button>
+        <div id="circular-button-result" style="background-color: transparent; grid-column: 1;" ></div>
+        <button style="background-color: #FFADAD; grid-column: 2;" class="circular-button" onclick="setColor('#FFADAD')"></button>
+        <button style="background-color: #FDFFB6; grid-column: 3;" class="circular-button" onclick="setColor('#FDFFB6')"></button>
+        <button style="background-color: #CAFFBF; grid-column: 4;" class="circular-button" onclick="setColor('#CAFFBF')"></button>
+        <button style="background-color: #9BF6FF; grid-column: 5;" class="circular-button" onclick="setColor('#9BF6FF')"></button>
+        <button style="background-color: #B0B8FF; grid-column: 6;" class="circular-button" onclick="setColor('#B0B8FF')"></button>
+        <button style="background-color: #FBFBFB; grid-column: 7;" class="circular-button" onclick="setColor('#FBFBFB')"></button>
+        <button style="background-color: #D0D0D0; grid-column: 8;" class="circular-button" onclick="setColor('#D0D0D0')"></button>
+        <button style="background-color: transparent; grid-column: 9;" class="circular-button" onclick="setColor('transparent')"></button>
     </div>
-
-    <div id="boxes">
-    </div>
-
 </body>
 </html>

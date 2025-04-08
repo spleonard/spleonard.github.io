@@ -3,6 +3,7 @@ document.getElementById('boxes').innerHTML =
 '<input class="color-box" type="text" onclick="colorBox(this)">'.repeat(126)+
 
 '<div class="main-title">CLUE</div>'+
+'<div class="choice">Players:</div>'+
 '<input class="playername" type="text">'+
 '<input class="playername" type="text">'+
 '<input class="playername" type="text">'+
@@ -39,7 +40,13 @@ document.getElementById('boxes').innerHTML =
 
 // Function to set the selected color
 function setColor(color) {
+    let colorIndicator = document.getElementById("circular-button-result");
+    colorIndicator.style.backgroundColor = color;
+
     selectedColor = color;
+    if (color == 'transparent'){
+        selectedColor = '';
+    }
 }
 
 // Function to change the color of the box
