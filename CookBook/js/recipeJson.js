@@ -63,8 +63,6 @@ var recipeJSON =
                         "servings": "Makes 1 Cake",
                         "steps": "1) Preheat oven to 325° <br> 2) Roast Walnuts in Oven for 15 minutes <br> 3) Reduce Oven to 300° <br> 4) Mix roasted Walnuts, Brown Sugar, and Cinnamon together <br> 5) Mix Butter and Sugar in a Mixing Bowl <br> 6) Add Eggs <br> 7) Add Sour Cream and Vanilla <br> 8) Add Flour, Baking Soda, and Salt, mix thoroughly <br> 9) Put 1/3 of the Batter into a well-greased Bundt pan (Spray + Flour is a good idea) <br> 10) Distribute Half the Walnut mixture evenly in the Bundt pan <br> 11) Add another 1/3 of the batter <br> 12) Add the rest of the Walnut mixture <br> 13) Add the last of the batter <br> 14) Bake for 70 Minutes",
                         "time": "Takes 1.5 Hours"
-
-
                 },
                 {
                         "title":"Cookies, Kissies",
@@ -145,6 +143,15 @@ var recipeJSON =
                         "servings": "servings",
                         "steps": "steps",
                         "time": "time"
+                },
+                {
+                        "title":"Lemonade (1940\'s)",
+                        "ingredients": "2 Cups Lemon Juice <br> 1 Cup Sugar <br> 1 Cup Water <br> Lemon Zest <br> 4 Cups Cold Water",
+                        "link": "",
+                        "materials": "Pitcher",
+                        "servings": "Makes 8 Cups (3 Glasses)",
+                        "steps": "1) Make Simple Syrup with Sugar, Water, Zest <br> 2) Add Lemon Juice <br> 3) Strain <br> 4) Mix in Cold Water",
+                        "time": "Takes 5 min"
                 },
                 {
                         "title":"Macaron (Cookie Only)",
