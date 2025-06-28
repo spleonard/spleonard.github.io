@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 1rem;
+    color: #222;
+  }
+  
+  header, footer {
+    text-align: center;
+  }
+  
+  .project {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .project h2 {
+    width: 100%;
+    font-size: 1.4rem;
+  }
+  
+  .media {
+    flex: 1 1 100%;
+  }
+  
+  .media img,
+  .media video {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+  
+  .description {
+    flex: 1 1 100%;
+  }
+  
+  .description h3 {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .description p {
+    font-size: 0.95rem;
+  }
+  
