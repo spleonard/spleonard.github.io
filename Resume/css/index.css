@@ -1,1 +1,46 @@
-hi
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 2em 1em;
+  text-align: center;
+}
+
+#projects {
+  padding: 2em 1em;
+  max-width: 800px;
+  margin: auto;
+}
+
+.project {
+  margin-bottom: 2em;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 2em;
+}
+
+.project img, .project video {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  margin: 1em 0;
+}
+
+.description h4 {
+  margin-top: 1em;
+  color: #555;
+}
+
+footer {
+  text-align: center;
+  padding: 2em 1em;
+  background-color: #eee;
+  font-size: 0.9em;
+}
