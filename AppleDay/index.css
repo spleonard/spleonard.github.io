@@ -1,0 +1,83 @@
+body { 
+    margin: 0;
+    padding:0;
+ }
+    
+#skeleton {
+    display: grid;
+    background-color:#3a3a3c;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: repeat(5, 20%);
+    row-gap: 2px;
+    column-gap: 2px;
+    position:fixed;
+    
+    /* For Image Content*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.headButton {
+    background-color: lightgray;
+    font-size: 6em!important;
+    color: black;
+    margin: 5%;
+    padding: 3%;
+    /* Borders */
+    border-radius: 25px;
+    border-width: 2px;
+    border-color: black;
+    /* Centering Text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Start Hovering CSS */
+
+.opacity-away {
+    opacity: 1;
+    transition: all .4s ease;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+}
+
+.opacity-away:hover {
+    opacity: 1;
+    transition: all .4s ease;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+}
+
+.opacity-hover {
+    opacity: 1;
+    transition: all .4s ease;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+}
+
+.opacity-hover:hover {
+    opacity: 0.4;
+    transition: all .4s ease;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+}
+
+/* End Hovering CSS */
