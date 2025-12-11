@@ -8,7 +8,11 @@
   <link rel="icon" type="image/png" href="img/logo.png">
   
   <!-- Link to CSS -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+  <link rel="stylesheet" href="css/classes.css">
 
   <!-- Optional: Font -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -20,7 +24,11 @@
     <nav class="navbar">
       <div class="nav-container">
         <div class="logo">
-          <img src="img/logo.png" alt="Vertical Dreams Logo">
+          <div class="logo">
+            <a href="index.html">
+              <img src="img/logo.png" alt="Vertical Dreams Logo">
+            </a>
+          </div>          
         </div>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
@@ -30,9 +38,8 @@
           <li><a href="groups.html">Groups</a></li>
           <li><a href="events.html">Events</a></li>
           <li><a href="outdoors.html">Outdoors</a></li>
-          <li><a href="routes.html">Routes</a></li>
           <li><a href="GiftCards.html">Gift Cards</a></li>
-          <li><a class="activePage" href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
         <div class="menu-toggle">
           <span></span>
@@ -43,10 +50,37 @@
     </nav>
   </header>
 
-  <!-- Main Content -->
-  <main>
-    <!-- Replace this section with page-specific content -->
+<!-- Classes Page Content -->
+<main class="classes-page">
+    <h1>Our Classes</h1>
+  
+    <div class="class-cards">
+      <div class="class-card">
+        <img src="img/climbing-class.jpg" alt="Climbing Class">
+        <h2>Climbing Basics</h2>
+        <p>Learn climbing techniques, safety, and fun exercises for all levels.</p>
+      </div>
+  
+      <div class="class-card">
+        <img src="img/yoga-class.jpg" alt="Yoga Class">
+        <h2>Yoga for Climbers</h2>
+        <p>Improve flexibility, balance, and focus with yoga tailored for climbers.</p>
+      </div>
+  
+      <div class="class-card">
+        <img src="img/strength-class.jpg" alt="Strength Class">
+        <h2>Strength Training</h2>
+        <p>Build the strength you need for climbing and general fitness.</p>
+      </div>
+  
+      <div class="class-card">
+        <img src="img/kids-class.jpg" alt="Kids Class">
+        <h2>Kids Climbing</h2>
+        <p>Fun, safe climbing classes designed for children of all ages.</p>
+      </div>
+    </div>
   </main>
+
 
   <!-- Footer -->
   <footer class="site-footer">

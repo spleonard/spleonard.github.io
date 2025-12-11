@@ -1,0 +1,22 @@
+
+/* ---------------------------------------------------
+   FAQ SECTION
+--------------------------------------------------- */
+
+.faq-section {
+    width: 90%;
+    max-width: 900px;
+    margin: 3rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  }
+  
+  /* Floating image only on desktop */
+  .faq-image.alignright {
+    float: right;
+    margin: 0 0 1.2rem 1.2rem;
+    max-width: 40%;
+    border-radius: 8px;
+  }

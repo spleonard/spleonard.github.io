@@ -1,0 +1,50 @@
+/* ---------------------------------------------------
+ GIFT CARDS PAGE
+--------------------------------------------------- */
+
+.giftcards-container {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .giftcards-section {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 25px;
+  }
+  
+  .giftcards-section h2 {
+    margin-bottom: 15px;
+    color: #222;
+  }
+  
+  .giftcards-section p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .giftcards-section .btn {
+    padding: 12px 20px;
+    background-color: #f39c12;
+    color: #fff;
+    border-radius: 6px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .giftcards-section .btn:hover {
+    background-color: #d98212;
+    transform: translateY(-2px);
+  }
+  
+  @media (max-width: 600px) {
+    .giftcards-container {
+      padding: 1rem;
+    }
+  }
+  

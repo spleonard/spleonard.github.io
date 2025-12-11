@@ -1,0 +1,13 @@
+/* Center the waiver iframe horizontally */
+.waiver-iframe-container {
+    display: flex;
+    justify-content: center; /* horizontal centering */
+    margin: 40px 0;          /* optional spacing above/below */
+}
+
+/* Only set max-width for responsiveness; DO NOT change height */
+.waiver-iframe-container iframe {
+    max-width: 100%;   /* shrink width on small screens */
+    width: 850px;      /* desktop width */
+    height: 1250px;    /* keep full height as in HTML */
+}

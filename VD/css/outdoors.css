@@ -1,0 +1,95 @@
+
+/* -----------------------------
+   OUTDOOR PAGE
+------------------------------ */
+
+.outdoor-page {
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 2rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+  }
+  
+  .outdoor-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #222;
+  }
+  
+  .outdoor-page .intro-text {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .outdoor-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 2rem;
+  }
+  
+  .outdoor-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    text-align: left;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .outdoor-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  }
+  
+  .outdoor-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+    color: #222;
+  }
+  
+  .outdoor-card p,
+  .outdoor-card ul {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  .outdoor-card ul {
+    padding-left: 1.3rem;
+  }
+  
+  .outdoor-cta {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  
+  .outdoor-cta p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .outdoor-cta .cta-link.large {
+    padding: 14px 28px;
+    font-size: 1.15rem;
+    background-color: #444;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    text-decoration: none;
+    transition: all 0.25s ease;
+  }
+  
+  .outdoor-cta .cta-link.large:hover {
+    background-color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  }
+  
+  .outdoor-page .outdoor-cta .cta-link.large {
+    margin-top: 0.5rem;
+  }

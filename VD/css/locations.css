@@ -1,0 +1,68 @@
+  /* Locations Page */
+  .locations-page {
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .locations-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  /* Accordion style */
+  .location-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .location-item {
+    width: 80%;
+    max-width: 500px;
+    text-align: left;
+  }
+  
+  .location-btn {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.3s;
+  }
+  
+  .location-btn:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .location-details {
+    display: none; /* hidden by default */
+    padding: 10px 20px;
+    background-color: #fafafa;
+    border-left: 3px solid #f39c12; /* accent color bar */
+    border-radius: 0 0 8px 8px;
+    margin-top: 5px;
+  }
+  
+  .location-details p {
+    margin: 5px 0;
+  }
+  
+  /* Desktop: side-by-side */
+@media (min-width: 900px) {
+  .location-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .location-item {
+    width: 45%;      /* side-by-side */
+    max-width: 500px;
+  }
+}

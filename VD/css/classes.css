@@ -1,0 +1,56 @@
+
+  /* Classes Page */
+  .classes-page {
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .classes-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .class-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .class-card {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    width: 250px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  
+  .class-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .class-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .class-card h2 {
+    font-size: 1.5rem;
+    margin: 15px 10px 10px;
+  }
+  
+  .class-card p {
+    margin: 0 10px 15px;
+    font-size: 1rem;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .class-cards {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  }

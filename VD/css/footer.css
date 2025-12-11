@@ -1,0 +1,40 @@
+/* ---------------------------------------------------
+   FOOTER
+--------------------------------------------------- */
+
+.site-footer {
+    background: #111;
+    color: #ccc;
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+  }
+  
+  .site-footer .footer-links img {
+    width: 30px;
+    margin: 0 10px;
+    transition: 0.2s;
+  }
+  
+  .site-footer .footer-links img:hover {
+    transform: scale(1.12);
+    opacity: 0.85;
+  }
+  
+  
+  .social-icons img {
+    width: 30px;
+    height: auto;
+  }
+  
+  /* Mobile tweak */
+  @media (max-width: 480px) {
+    .site-footer .footer-links {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+  }
