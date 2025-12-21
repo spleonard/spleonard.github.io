@@ -79,7 +79,7 @@ var recipeJSON =
                         "link": "https://www.cookingclassy.com/browned-butter-cinnamon-dulce-de-leche-stuffed-chocolate-chip-cookies/",
                         "materials": "Pan <br> Oven <br> 2+ Baking Trays <br> Parchment Paper/2+ Silicone Mats <br> Stand Mixer",
                         "servings": "Makes 2 Dozen Cookies",
-                        "steps": "1) Brown Butter in a Pan and cool <br> 2) Combine Flour, Cornstarch, Cinnamon, Baking Powder, and Baking Soda",
+                        "steps": "1) Brown Butter in a Pan and cool <br> 2) Combine Flour, Cornstarch, Cinnamon, Baking Powder, Baking Soda and Salt <br> 3) Combine Cooled Butter, Sugars, and Vanilla in stand mixer <br> 4) Mix in eggs, 1 at a time <br> 5) Add in drys <br> 6) Add in choc chips <br> 7) chill for 30-60min <br> 8) mold dough into balls, press in, add a small scoop of dulce de leche, and seal it <br> 9) bake for 10-12 min at 350 ",
                         "time": "Takes 1 Hour"
                 },
                 {
