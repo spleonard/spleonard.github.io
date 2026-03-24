@@ -92,7 +92,7 @@
     color: var(--muted); margin: 16px 18px 7px;
   }
 
-  /* MINI CALENDAR */
+  /* MINI CALENDAR — horizontally scrollable, 60 days, today is rightmost */
   .mini-calendar {
     display: flex; gap: 9px;
     padding: 4px 18px 6px;
@@ -353,7 +353,7 @@ const DOW = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 
 let activeEmojiTarget = null;
 
-// ── STORAGE ──
+// ── STORAGE (localStorage — works in Safari saved files) ──
 function loadHabits() {
   try {
     const s = localStorage.getItem('hbt_habits');
@@ -399,11 +399,6 @@ function friendlyLabel(k) {
 // ── STATE ──
 let selectedKey = todayKey();
 
-// ── HAPTICS ──
-function haptic(pattern) {
-  if (navigator.vibrate) navigator.vibrate(pattern);
-}
-
 // ── MINI CALENDAR ──
 function renderMiniCal(scrollToKey) {
   const log = loadLog();
@@ -411,6 +406,7 @@ function renderMiniCal(scrollToKey) {
   mc.innerHTML = '';
   const today = new Date();
 
+  // Render 60 days: index 59=oldest, 0=today
   for (let i = 59; i >= 0; i--) {
     const d = addDays(today, -i);
     const k = dk(d);
@@ -432,6 +428,7 @@ function renderMiniCal(scrollToKey) {
     mc.appendChild(card);
   }
 
+  // Scroll: if scrollToKey provided, scroll to that card; otherwise scroll to today (rightmost)
   requestAnimationFrame(function() {
     const target = document.getElementById('mc-'+(scrollToKey||todayKey()));
     if (target) {
@@ -449,6 +446,7 @@ function renderFullCal() {
   document.getElementById('week-hdr').innerHTML =
     DOW.map(d=>'<div class="whcell">'+d+'</div>').join('');
 
+  // Start 27 days back, aligned to Sunday
   const rangeStart = addDays(today, -27);
   const startOffset = rangeStart.getDay();
   const gridStart = addDays(rangeStart, -startOffset);
@@ -486,6 +484,7 @@ function renderFullCal() {
 function renderDayPanel() {
   const log = loadLog();
   const habits = loadHabits();
+  // Ensure entry is always a proper 3-element array
   let entry = log[selectedKey];
   if (!Array.isArray(entry) || entry.length < 3) entry = [0,0,0];
 
@@ -509,19 +508,7 @@ function renderDayPanel() {
         if (!Array.isArray(l[selectedKey]) || l[selectedKey].length < 3) {
           l[selectedKey] = [0,0,0];
         }
-        const wasAllDone = l[selectedKey].filter(Boolean).length === 3;
         l[selectedKey][idx] = l[selectedKey][idx] ? 0 : 1;
-        const nowAllDone = l[selectedKey].filter(Boolean).length === 3;
-
-        // ── HAPTIC FEEDBACK ──
-        if (!wasAllDone && nowAllDone) {
-          haptic([60, 40, 60, 40, 120]); // celebration pulse — all 3 done
-        } else if (l[selectedKey][idx]) {
-          haptic(30);                    // single habit checked
-        } else {
-          haptic(10);                    // unchecking — subtle
-        }
-
         saveLog(l);
         renderAll(false);
       };
@@ -537,6 +524,7 @@ function renderStreak() {
   const today = new Date();
   const todayK = todayKey();
 
+  // Count streak from today or yesterday back
   function countStreak(startOffset) {
     let n = 0;
     for (let i = startOffset; i < 365; i++) {
@@ -572,7 +560,7 @@ function renderAll(scrollToSelected) {
 // ── TODAY BUTTON ──
 function goToToday() {
   selectedKey = todayKey();
-  renderAll(false);
+  renderAll(false); // null = scroll to today
 }
 
 // ── EXPAND TOGGLE ──
