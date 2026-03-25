@@ -47,6 +47,15 @@ var recipeJSON =
                         "time": "Takes 2 Hours"
                 },
                 {
+                        "title": "Bolognese (Italy)",
+                        "ingredients": "400g coarse-ground Beef (chuck, brisket, or flank) <br> 150g fresh Pork Pancetta, sliced <br> 1/2 Onion <br> 1 medium Carrot <br> 1 Celery Stalk <br> 1/2 cup Red or White Wine <br> 200g Strained Tomatoes <br> 1 tbsp double-concentrated Tomato Paste <br> 3 tbsp Olive Oil <br> Light Meat or Vegetable Broth <br> Salt and Pepper <br><br> <i>Optional: <br> 1/2 cup Whole Milk</i>",
+                        "link": "https://www.accademiaitalianadellacucina.it/sites/default/files/Rag%C3%B9%20alla%20bolognese%20-%20updated%20recipe_20%20April%202023.pdf",
+                        "materials": "Dutch Oven",
+                        "servings": "Makes 6 Servings",
+                        "steps": "1) Finely chop Onion, Celery, and Carrot <br> 2) Cook Pancetta and Olive Oil on low in Dutch Oven until melted <br> 3) Add vegetables, stirring until softened but not browned <br> 4) Raise heat to medium <br> 5) Add Beef, break up and brown for ~10 min <br> 6) Add Wine, cook until fully evaporated <br> 7) Add Tomato Paste and Strained Tomatoes, mix well <br> 8) Add 1 cup boiling Broth, cover, simmer 2-3 hours adding more Broth as needed <br> 8.5) Add Milk halfway through previous step if using <br> 8) Season with Salt and Pepper",
+                        "time": "Takes 2.5-3.5 Hours"
+                },
+                {
                         "title":"Cinnamon Rolls",
                         "ingredients": "1 cup warm Milk <br> 1 tbsp Yeast <br> 2 tbsp Sugar <br> 1 tsp Salt <br> 3 tbsp Butter <br> 1 Egg <br> 3 cups Flour <br> <br> 1/2 cup Butter <br> 1 cup Brown Sugar <br> 2 tbsp Cinnamon <br> <br> 4 oz Cream Creese <br> 1/4 cup Butter <br> 1 cup Powdered Sugar <br> 1/2 tsp Vanilla Extract <br> 2 tbsp Milk",
                         "link": "https://thestayathomechef.com/best-homemade-cinnamon-rolls-ever/",
@@ -172,6 +181,15 @@ var recipeJSON =
                         "time": "Takes 45 min"
                 },
                 {
+                        "title": "Pancakes (Sourdough Buttermilk)",
+                        "ingredients": "2 Eggs <br> 226g Buttermilk <br> 36g Sugar <br> 56g Sourdough Discard <br> 4g Vanilla Extract <br> 180g All-Purpose Flour <br> 1 tsp Baking Powder <br> 1/4 tsp Baking Soda <br> 4g Salt <br> 28g Butter, melted",
+                        "link": "https://makeitdough.com/buttermilk-sourdough-discard-pancakes/",
+                        "materials": "Skillet <br> Kitchen Scale",
+                        "servings": "Makes 8 Pancakes",
+                        "steps": "1) Whisk Eggs, Buttermilk, Discard, Sugar, and Vanilla until smooth <br> 2) Sift in Flour, Baking Powder, Baking Soda, and Salt in thirds, folding gently each time <br> 3) Stir in Butter <br> 4) Rest 30 min <br> 5) Cook 1/4 cup portions in buttered skillet on medium heat",
+                        "time": "Takes 2 Hours"
+                },
+                {
                         "title":"Pizza Dough",
                         "ingredients": "3 1/2 cup Flour <br> 1 tsp Sugar <br> 1 packet Yeast <br> 2 tsp Salt <br> 1 1/2 cup warm water <br> 2 tbsp Olive Oil",
                         "link": "https://www.foodnetwork.com/recipes/bobby-flay/pizza-dough-recipe-1921714",
@@ -199,6 +217,15 @@ var recipeJSON =
                         "time": "Takes 1 hour"
                 },
                 {
+                        "title": "Red Bean Buns",
+                        "ingredients": "1 can Red Beans <br> 350g All-Purpose Flour <br> 2 tsp Yeast <br> 2 tsp Baking Powder <br> 1 tbsp Sugar <br> 1.5 tbsp Oil <br> 180g Water",
+                        "link": "https://redhousespice.com/red-bean-buns/",
+                        "materials": "Steamer <br> Parchment Paper",
+                        "servings": "Makes 14 Buns",
+                        "steps": "1) Mix all ingredients except beans into a ball. <br> 2) Rest 10 min <br> 3) Divide dough into 14 piecesh). <br> 4) Roll pieces into disc and proceed, one at a time <br> 5) Place ~30g paste in center, seal completely, place seam-side down <br> 6) Rest 30 min <br> 7) Steam 10 min",
+                        "time": "Takes 1.5 Hours"
+                },
+                {
                         "title": "Ribs",
                         "ingredients": "Ribs <br> BBQ Sauce <br> Whiskey <br> Seasonings <br> *garlic powder <br> *onion powder <br> *paprika <br> *salt <br> *pepper <br> *cumin <br> *chili powder",
                         "link": "https://cafedelites.com/oven-barbecue-ribs/",
@@ -215,6 +242,15 @@ var recipeJSON =
                         "servings": "Makes 20 rolls",
                         "steps": "1) Mix Yeast and Water in Stand Mixer <br> 2) Add Honey <br> 3) Add Butter, Salt, and Eggs <br> 4) Add Flour, 1 cup at a time until not sticky <br> 5) Make 20 Balls of Dough. Place on Baking Tray <br> 6) Preheat oven to 400 <br> 7) Let Rise for 20 minutes <br> 8) Brush with butter, then put in oven for 25 min <br> 9) Brush with more butter and salt",
                         "time": "Takes 1 hour"
+                },
+                {
+                        "title":"Sourdough",
+                        "ingredients": "100g starter <br> 350g water <br> 10g salt <br> 500g bread flour",
+                        "link": "",
+                        "materials": "Stand Mixer <br> Banneton <br> Dutch Oven",
+                        "servings": "Makes 1 loaf",
+                        "steps": "1) Mix Starter and Water <br> 2) Add Salt <br> 3) Add Flour <br> 4) Mix well <br> 5) Rest 1 hour <br> 6) Stretch and Fold <br> 7) Rest and Stretch and fold for a Total of at least 4 times <br> 8) Let Rest 4+ hours <br> 9) Place in Banneton and Rest in Fridge until Ready <br> 10) Preheat dutch oven to 450F <br> 11) Place in Dough Gently <br> 12) Slash it <br> 13) Bake 30 min covered <br> 14) Bake ~15 min uncovered",
+                        "time": "Takes 1 day"
                 },
                 {
                         "title":"Wings",
