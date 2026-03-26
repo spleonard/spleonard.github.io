@@ -8,8 +8,8 @@ body {
     background-color:#3a3a3c;
     width: 100vw;
     height: 100vh;
-    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(5, 20%);
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20% 10% repeat(3, 20%) 10%;
     row-gap: 2px;
     column-gap: 2px;
     position:fixed;
