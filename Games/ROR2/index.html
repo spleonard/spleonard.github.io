@@ -377,7 +377,7 @@ const G=[“gold”],U=[“utility”],OK=[“on-kill”],HL=[“healing”],CR=
 const CD=[“cooldown”],V=[“void”];
 
 const ITEMS=[
-// ── BASE COMMON (alphabetical) ───────────────────────────────────
+// – BASE COMMON (alphabetical) ———————————–
 {id:“armor-piercing-rounds”,name:“Armor-Piercing Rounds”,rarity:“common”,dlc:null,img:“Armor-Piercing_Rounds.png”,emoji:“💥”,cats:[…A],desc:“Deal an additional 20% damage (+20% per stack) to bosses.”,wiki:“Armor-Piercing_Rounds”},
 {id:“backup-magazine”,name:“Backup Magazine”,rarity:“common”,dlc:null,img:“Backup_Magazine.png”,emoji:“🔋”,cats:[…CD,…U],desc:“Add +1 (+1 per stack) charge of your Secondary skill.”,wiki:“Backup_Magazine”},
 {id:“bison-steak”,name:“Bison Steak”,rarity:“common”,dlc:null,img:“Bison_Steak.png”,emoji:“🥩”,cats:[…H],desc:“Increases maximum health by 25 (+25 per stack).”,wiki:“Bison_Steak”},
@@ -421,7 +421,7 @@ const ITEMS=[
 {id:“sale-star”,name:“Sale Star”,rarity:“common”,dlc:“sots”,img:“Sale_Star.png”,emoji:“⭐”,cats:[…U],desc:“Gain an extra item from the first chest opened each stage. Each additional Sale Star adds 5% chance for more items.”,wiki:“Sale_Star”},
 {id:“unstable-transmitter”,name:“Unstable Transmitter”,rarity:“common”,dlc:“sots”,img:“Unstable_Transmitter.png”,emoji:“📡”,cats:[…A,…U],desc:“When HP drops below 25%, teleport to a random location and deal 350% damage to nearby enemies. Cooldown: 120s.”,wiki:“Unstable_Transmitter”},
 {id:“warped-echo”,name:“Warped Echo”,rarity:“common”,dlc:“sots”,img:“Warped_Echo.png”,emoji:“🌀”,cats:[…H,…U],desc:“Split incoming damage in two: half is absorbed immediately, the other half hits 3 seconds later.”,wiki:“Warped_Echo”},
-// ── BASE UNCOMMON (alphabetical) ────────────────────────────────
+// – BASE UNCOMMON (alphabetical) ––––––––––––––––
 {id:“atg-missile”,name:“AtG Missile Mk. 1”,rarity:“uncommon”,dlc:null,img:“AtG_Missile_Mk._1.png”,emoji:“🚀”,cats:[…A],desc:“10% chance to fire a missile that deals 300% (+300% per stack) total damage.”,wiki:“AtG_Missile_Mk._1”},
 {id:“bandolier”,name:“Bandolier”,rarity:“uncommon”,dlc:null,img:“Bandolier.png”,emoji:“🎽”,cats:[…CD,…OK],desc:“18% (+10% per stack) chance on kill to drop an ammo pack that resets all cooldowns.”,wiki:“Bandolier”},
 {id:“berzerkers-pauldron”,name:“Berzerker’s Pauldron”,rarity:“uncommon”,dlc:null,img:“Berzerker’s_Pauldron.png”,emoji:“🪖”,cats:[…A,…M,…OK],desc:“Within 0.5s of killing 3 enemies, gain Warcry for 6s (+4s per stack), increasing movement and attack speed by 50%.”,wiki:“Berzerker%27s_Pauldron”},
@@ -454,7 +454,7 @@ const ITEMS=[
 {id:“spinel-catalyst”,name:“Spinel Catalyst”,rarity:“uncommon”,dlc:“sotv”,img:“Spinel_Catalyst.png”,emoji:“💜”,cats:[…CD],desc:“Killing an enemy reduces your Equipment cooldown by 4s (+4s per stack).”,wiki:“Spinel_Catalyst”},
 // SotS UNCOMMON
 {id:“runic-lens”,name:“Runic Lens”,rarity:“uncommon”,dlc:“sots”,img:“Runic_Lens.png”,emoji:“🔮”,cats:[…A],desc:“5% chance on hit to summon a meteor on the target dealing 2000% (+50% per stack) damage.”,wiki:“Runic_Lens”},
-// ── BASE LEGENDARY (alphabetical) ────────────────────────────────
+// – BASE LEGENDARY (alphabetical) ––––––––––––––––
 {id:“57-leaf-clover”,name:“57 Leaf Clover”,rarity:“legendary”,dlc:null,img:“57_Leaf_Clover.png”,emoji:“🍀”,cats:[…U],desc:“All random effects are rerolled once for a favorable outcome (+1 per stack).”,wiki:“57_Leaf_Clover”},
 {id:“alien-head”,name:“Alien Head”,rarity:“legendary”,dlc:null,img:“Alien_Head.png”,emoji:“👽”,cats:[…CD],desc:“Reduce skill cooldowns by 25% (+25% per stack).”,wiki:“Alien_Head”},
 {id:“brilliant-behemoth”,name:“Brilliant Behemoth”,rarity:“legendary”,dlc:null,img:“Brilliant_Behemoth.png”,emoji:“💥”,cats:[…A,…AO],desc:“All your attacks explode in a 4m (+2.5m per stack) radius for a bonus 60% TOTAL damage to nearby enemies.”,wiki:“Brilliant_Behemoth”},
@@ -482,7 +482,7 @@ const ITEMS=[
 {id:“growth-nectar”,name:“Growth Nectar”,rarity:“legendary”,dlc:“sots”,img:“Growth_Nectar.png”,emoji:“🍯”,cats:[…U],desc:“Gain 20% bonus to all stats for 5 seconds after gaining 5 or more unique buffs.”,wiki:“Growth_Nectar”},
 {id:“sonorous-whispers”,name:“Sonorous Whispers”,rarity:“legendary”,dlc:“sots”,img:“Sonorous_Whispers.png”,emoji:“🔔”,cats:[…U,…OK],desc:“Killing a large monster always drops an item. All Elites have a 15% (+5% per stack) chance to drop an item.”,wiki:“Sonorous_Whispers”},
 {id:“war-bonds”,name:“War Bonds”,rarity:“legendary”,dlc:“sots”,img:“War_Bonds.png”,emoji:“💰”,cats:[…G],desc:“Gain 75 (+25 per stack) gold at the start of every stage. Scales over time.”,wiki:“War_Bonds”},
-// ── BOSS (alphabetical, mixed DLCs) ──────────────────────────────
+// – BOSS (alphabetical, mixed DLCs) ——————————
 {id:“charged-perforator”,name:“Charged Perforator”,rarity:“boss”,dlc:null,img:“Charged_Perforator.png”,emoji:“⚡”,cats:[…A],desc:“10% chance on hit to down a lightning strike, dealing 500% (+500% per stack) total damage.”,wiki:“Charged_Perforator”},
 {id:“defense-nucleus”,name:“Defense Nucleus”,rarity:“boss”,dlc:“sotv”,img:“Defense_Nucleus.png”,emoji:“🔵”,cats:[…U,…A],desc:“Killing elite monsters spawns an Alpha Construct with bonus 100% (+100% per stack) damage and 100% health. Limited to 4.”,wiki:“Defense_Nucleus”},
 {id:“genesis-loop”,name:“Genesis Loop”,rarity:“boss”,dlc:null,img:“Genesis_Loop.png”,emoji:“🌀”,cats:[…A,…AO],desc:“After falling below 25% health, cause a runic meteor shower dealing 2000% (+2000% per stack) damage per blast. Recharges in 30s.”,wiki:“Genesis_Loop”},
@@ -497,7 +497,7 @@ const ITEMS=[
 {id:“queens-gland”,name:“Queen’s Gland”,rarity:“boss”,dlc:null,img:“Queen’s_Gland.png”,emoji:“👑”,cats:[…U,…A],desc:“Every 30 seconds, summon a Beetle Guard with bonus 300% (+300% per stack) damage and 100% (+100% per stack) health.”,wiki:“Queen%27s_Gland”},
 {id:“shatterspleen”,name:“Shatterspleen”,rarity:“boss”,dlc:null,img:“Shatterspleen.png”,emoji:“🫁”,cats:[…A,…CR,…AO],desc:“Gain 5% critical chance. Bleeding enemies explode on death for 400% (+400% per stack) base damage.”,wiki:“Shatterspleen”},
 {id:“titanic-knurl”,name:“Titanic Knurl”,rarity:“boss”,dlc:null,img:“Titanic_Knurl.png”,emoji:“🪨”,cats:[…H,…HL],desc:“Increase maximum health by 40 (+40 per stack) and base health regeneration by 1.6 (+1.6 per stack) hp/s.”,wiki:“Titanic_Knurl”},
-// ── LUNAR (alphabetical, mixed DLCs) ─────────────────────────────
+// – LUNAR (alphabetical, mixed DLCs) —————————–
 {id:“beads-of-fealty”,name:“Beads of Fealty”,rarity:“lunar”,dlc:null,img:“Beads_of_Fealty.png”,emoji:“📿”,cats:[…U],desc:“Seems to do nothing… but the Twisted Scavenger seems to like it.”,wiki:“Beads_of_Fealty”},
 {id:“corpsebloom”,name:“Corpsebloom”,rarity:“lunar”,dlc:null,img:“Corpsebloom.png”,emoji:“🌸”,cats:[…HL],desc:“Heal +100% (+100% per stack) more. All healing is applied over time. Can heal max 10% (-5% per stack) health/s.”,wiki:“Corpsebloom”},
 {id:“defiant-gouge”,name:“Defiant Gouge”,rarity:“lunar”,dlc:null,img:“Defiant_Gouge.png”,emoji:“⚡”,cats:[…U],desc:“Using a Shrine will trigger an enemy spawn event.”,wiki:“Defiant_Gouge”},
@@ -513,7 +513,7 @@ const ITEMS=[
 {id:“strides-of-heresy”,name:“Strides of Heresy”,rarity:“lunar”,dlc:null,img:“Strides_of_Heresy.png”,emoji:“👟”,cats:[…M,…U],desc:“Replace your Utility skill with Shadowfade. Corrupts all Red Whips.”,wiki:“Strides_of_Heresy”},
 {id:“transcendence”,name:“Transcendence”,rarity:“lunar”,dlc:null,img:“Transcendence.png”,emoji:“✨”,cats:[…SH,…H],desc:“Convert all but 1 health into regenerating shields. Gain 50% (+25% per stack) maximum health.”,wiki:“Transcendence”},
 {id:“visions-of-heresy”,name:“Visions of Heresy”,rarity:“lunar”,dlc:null,img:“Visions_of_Heresy.png”,emoji:“👁”,cats:[…A],desc:“Replace your Primary skill with Hungering Gaze. Corrupts all Lens-Maker’s Glasses.”,wiki:“Visions_of_Heresy”},
-// ── VOID (all SotV, alphabetical) ───────────────────────────────
+// – VOID (all SotV, alphabetical) —————————––
 {id:“benthic-bloom”,name:“Benthic Bloom”,rarity:“void”,dlc:“sotv”,img:“Benthic_Bloom.png”,emoji:“🌺”,cats:[…U,…V],desc:“Upgrades 3 (+3 per stack) random items to the next rarity at the start of each stage. Corrupts all 57 Leaf Clovers.”,wiki:“Benthic_Bloom”},
 {id:“encrusted-key”,name:“Encrusted Key”,rarity:“void”,dlc:“sotv”,img:“Encrusted_Key.png”,emoji:“🔑”,cats:[…U,…V],desc:“A hidden cache containing a void item appears each stage. Corrupts all Rusted Keys.”,wiki:“Encrusted_Key”},
 {id:“lost-seers-lenses”,name:“Lost Seer’s Lenses”,rarity:“void”,dlc:“sotv”,img:“Lost_Seer’s_Lenses.png”,emoji:“🔭”,cats:[…A,…V],desc:“Your attacks have a 0.5% (+0.5% per stack) chance to instantly kill a non-boss enemy. Corrupts all Lens-Maker’s Glasses.”,wiki:“Lost_Seer%27s_Lenses”},
@@ -528,7 +528,7 @@ const ITEMS=[
 {id:“tentabauble”,name:“Tentabauble”,rarity:“void”,dlc:“sotv”,img:“Tentabauble.png”,emoji:“🐙”,cats:[…U,…V],desc:“5% (+5% per stack) chance on hit to root an enemy for 1s (+1s per stack). Corrupts all Chronobaubles.”,wiki:“Tentabauble”},
 {id:“voidsent-flame”,name:“Voidsent Flame”,rarity:“void”,dlc:“sotv”,img:“Voidsent_Flame.png”,emoji:“🔵”,cats:[…A,…AO,…V],desc:“Upon killing an enemy at full health, spawn a lava pillar for 260% (+156% per stack) base damage. Corrupts all Will-o’-the-wisps.”,wiki:“Voidsent_Flame”},
 {id:“weeping-fungus”,name:“Weeping Fungus”,rarity:“void”,dlc:“sotv”,img:“Weeping_Fungus.png”,emoji:“🍄”,cats:[…HL,…M,…V],desc:“Heal for 2% (+2% per stack) of your health every second while sprinting. Corrupts all Bustling Fungi.”,wiki:“Weeping_Fungus”},
-// ── EQUIPMENT (base, alphabetical) ──────────────────────────────
+// – EQUIPMENT (base, alphabetical) ——————————
 {id:“blast-shower”,name:“Blast Shower”,rarity:“equipment”,dlc:null,img:“Blast_Shower.png”,emoji:“🚿”,cats:[…U],desc:“Cleanse all negative effects. Includes debuffs, damage over time, and even some boss attacks. Cooldown: 45s.”,wiki:“Blast_Shower”},
 {id:“crowdfunder”,name:“The Crowdfunder”,rarity:“equipment”,dlc:null,img:“The_Crowdfunder.png”,emoji:“💸”,cats:[…A,…G],desc:“Fires a continuous spray of bullets for 100% damage per bullet. Costs $1 per bullet (scales over time). Cooldown: None.”,wiki:“The_Crowdfunder”},
 {id:“disposable-missile-launcher”,name:“Disposable Missile Launcher”,rarity:“equipment”,dlc:null,img:“Disposable_Missile_Launcher.png”,emoji:“🚀”,cats:[…A,…AO],desc:“Fire a swarm of 12 missiles, each dealing 300% damage. Cooldown: 45s.”,wiki:“Disposable_Missile_Launcher”},
