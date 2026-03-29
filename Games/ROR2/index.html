@@ -44,6 +44,7 @@ header{background:var(--bg2);border-bottom:1px solid var(--border);padding:12px 
 .dlc-toggle:hover{border-color:rgba(255,255,255,.28);color:var(--text);}
 .dlc-toggle.active.sotv{background:rgba(155,89,217,.14);border-color:var(--void);color:#b47de8;}
 .dlc-toggle.active.sots{background:rgba(91,164,217,.14);border-color:var(--lunar);color:#7bbfe8;}
+.dlc-toggle.active.ac{background:rgba(91,164,217,.14);border-color:var(--uncommon);color:var(--uncommon);}
 .dot{width:6px;height:6px;border-radius:50%;background:currentColor;flex-shrink:0;}
 .ctrl-btn{display:inline-flex;align-items:center;padding:3px 9px;border-radius:20px;border:1px solid var(--border2);background:var(--bg3);color:var(--muted);font-size:11px;font-weight:600;cursor:pointer;transition:all .12s;user-select:none;}
 .ctrl-btn:hover{border-color:rgba(255,255,255,.28);color:var(--text);}
@@ -672,7 +673,7 @@ const RARITIES=[
 const state={
   search:"",
   activeRarities:new Set(RARITIES.map(r=>r.id)),
-  activeDlcs:new Set(["sotv","sots"]),
+  activeDlcs:new Set(["sotv","sots","ac"]),
   activeCategories:new Set(),
   pinnedItem:null,pinnedCard:null
 };
@@ -734,7 +735,7 @@ function buildGrid(){
       const url=IMGS[item.img];
       const imgTag=url?`<img class="item-img" src="${url}" alt="${item.name}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">`:"";
       const catTags=(item.cats||[]).map(c=>`<span class="item-cat-tag cat-${c}">${c}</span>`).join("");
-      card.innerHTML=`${item.dlc?`<span class="dlc-badge ${item.dlc}">${item.dlc==="sotv"?"SotV":"SotS"}</span>`:""}
+      card.innerHTML=`${item.dlc?`<span class="dlc-badge ${item.dlc}">${item.dlc==="sotv"?"SotV":item.dlc==="sots"?"SotS":"AC"}</span>`:""}
         <div class="item-img-wrap">${imgTag}<span class="item-fallback"${url?' style="display:none"':''}>${item.emoji}</span></div>
         <div class="item-text"><div class="item-name" title="${item.name}">${item.name}</div><div class="item-desc">${item.desc}</div><div class="item-cats">${catTags}</div></div>`;
       card.addEventListener("mouseenter",()=>{if(!state.pinnedItem)showDetail(item,false);});
@@ -785,7 +786,7 @@ document.addEventListener("click",(e)=>{
 // Show All / Clear All
 document.getElementById("btn-show-all").addEventListener("click",()=>{
   RARITIES.forEach(r=>{state.activeRarities.add(r.id);});
-  state.activeDlcs.add("sotv");state.activeDlcs.add("sots");
+  state.activeDlcs.add("sotv");state.activeDlcs.add("sots");state.activeDlcs.add("ac");
   document.querySelectorAll(".pill[data-filter]").forEach(p=>p.classList.add("active"));
   document.querySelectorAll(".dlc-toggle").forEach(t=>t.classList.add("active"));
   state.activeCategories.clear();
