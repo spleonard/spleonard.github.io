@@ -399,6 +399,22 @@ const IMGS = {
   "Essence_of_Heresy.png": "img/Essence_of_Heresy.png",
   "Mercurial_Rachis.png": "img/Mercurial_Rachis.png",
   "Neutronium_Weight.png": "img/Neutronium_Weight.png",
+  "Trophy_Hunter's_Tricorn.png": "img/Trophy_Hunter's_Tricorn.png",
+  "The_Backup.png": "img/The_Backup.png",
+  "Neutronium_Weight.png": "img/Neutronium_Weight.png",
+  "Deus_Ex_Machina.png": "img/Deus_Ex_Machina.png",
+  "Executive_Card.png": "img/Executive_Card.png",
+  "Goobo_Jr.png": "img/Goobo_Jr.png",
+  "Seed_of_Life.png": "img/Seed_of_Life.png",
+  "Shared_Design.png": "img/Shared_Design.png",
+  "Silence_Between_Two_Strikes.png": "img/Silence_Between_Two_Strikes.png",
+  "Of_One_Mind.png": "img/Of_One_Mind.png",
+  "N'kuhana's_Retort.png": "img/N'kuhana's_Retort.png",
+  "Ifrit's_Distinction.png": "img/Ifrit's_Distinction.png",
+  "His_Spiteful_Boon.png": "img/His_Spiteful_Boon.png",
+  "His_Reassurance.png": "img/His_Reassurance.png",
+  "Her_Biting_Embrace.png": "img/Her_Biting_Embrace.png",
+  "Aurelionite's_Blessing.png": "img/Aurelionite's_Blessing.png",
 };
 
 // cats shorthand
@@ -589,16 +605,18 @@ const ITEMS=[
 {id:"voidsent-flame",name:"Voidsent Flame",rarity:"void",dlc:"sotv",img:"Voidsent_Flame.png",emoji:"🔵",cats:[...A,...AO,...V],desc:"Upon killing an enemy at full health, spawn a lava pillar for 260% (+156% per stack) base damage. Corrupts all Will-o'-the-wisps.",wiki:"Voidsent_Flame"},
 {id:"weeping-fungus",name:"Weeping Fungus",rarity:"void",dlc:"sotv",img:"Weeping_Fungus.png",emoji:"🍄",cats:[...HL,...M,...V],desc:"Heal for 2% (+2% per stack) of your health every second while sprinting. Corrupts all Bustling Fungi.",wiki:"Weeping_Fungus"},
 
-// -- EQUIPMENT (alphabetical, DLC mixed in) ----------------------
-{id:"blast-shower",name:"Blast Shower",rarity:"equipment",dlc:null,img:"Blast_Shower.png",emoji:"🚿",cats:[...U],desc:"Cleanse all negative effects. Includes debuffs, damage over time, and even some boss attacks. Cooldown: 45s.",wiki:"Blast_Shower"},
-{id:"crowdfunder",name:"The Crowdfunder",rarity:"equipment",dlc:null,img:"The_Crowdfunder.png",emoji:"💸",cats:[...A,...G],desc:"Fires a continuous spray of bullets for 100% damage per bullet. Costs $1 per bullet (scales over time). Cooldown: None.",wiki:"The_Crowdfunder"},
+// -- STANDARD EQUIPMENT (alphabetical, DLC mixed in) ----------------
+{id:"blast-shower",name:"Blast Shower",rarity:"equipment",dlc:null,img:"Blast_Shower.png",emoji:"🚿",cats:[...U],desc:"Cleanse all negative effects. Includes debuffs, damage over time, and nearby projectiles. Cooldown: 45s.",wiki:"Blast_Shower"},
+{id:"deus-ex-machina",name:"Deus Ex Machina",rarity:"equipment",dlc:null,img:"Deus_Ex_Machina.png",emoji:"🚿",cats:[...U],desc:"Counter any damage. Successful counters bless your next attack, ensuring your on-hit effects ALWAYS activate.",wiki:"Deus_Ex_Machina"},
 {id:"disposable-missile-launcher",name:"Disposable Missile Launcher",rarity:"equipment",dlc:null,img:"Disposable_Missile_Launcher.png",emoji:"🚀",cats:[...A,...AO],desc:"Fire a swarm of 12 missiles, each dealing 300% damage. Cooldown: 45s.",wiki:"Disposable_Missile_Launcher"},
 {id:"eccentric-vase",name:"Eccentric Vase",rarity:"equipment",dlc:null,img:"Eccentric_Vase.png",emoji:"🏺",cats:[...U,...M],desc:"Create a quantum tunnel of up to 1000m in length. Cooldown: 45s.",wiki:"Eccentric_Vase"},
+{id:"executive-card",name:"Executive Card",rarity:"equipment",dlc:"sotv",img:"Executive_Card.png",emoji:"💳",cats:[...G,...U],desc:"Whenever you make a gold purchase, get 10% of the gold spent back. Multishop terminals remain open after purchase. Cooldown: 0.1s.",wiki:"Executive_Card"},
 {id:"foreign-fruit",name:"Foreign Fruit",rarity:"equipment",dlc:null,img:"Foreign_Fruit.png",emoji:"🍎",cats:[...HL],desc:"Instantly heal for 50% of your maximum health. Cooldown: 45s.",wiki:"Foreign_Fruit"},
 {id:"forgive-me-please",name:"Forgive Me Please",rarity:"equipment",dlc:"sotv",img:"Forgive_Me_Please.png",emoji:"🙏",cats:[...U,...OK],desc:"Throw a cursed doll that continuously triggers your 'on kill' effects for 8 seconds. Cooldown: 45s.",wiki:"Forgive_Me_Please"},
-{id:"fuel-array",name:"Fuel Array",rarity:"equipment",dlc:null,img:"Fuel_Array.png",emoji:"⚗️",cats:[...U],desc:"Looks like it could power something. EXTREMELY unstable... Powers REX.",wiki:"Fuel_Array"},
+{id:"fuel-array",name:"Fuel Array",rarity:"equipment",dlc:null,img:"Fuel_Array.png",emoji:"⚗️",cats:[...U],desc:"Looks like it could power something. EXTREMELY unstable... Powers REX if brought to him.",wiki:"Fuel_Array"},
 {id:"gnarled-woodsprite",name:"Gnarled Woodsprite",rarity:"equipment",dlc:null,img:"Gnarled_Woodsprite.png",emoji:"🌿",cats:[...HL,...U],desc:"Gain a Woodsprite follower that heals you for 1.5% of max health/s. Can be sent to an ally to heal them for 10% max health. Cooldown: 45s.",wiki:"Gnarled_Woodsprite"},
-{id:"gorags-opus",name:"Gorag's Opus",rarity:"equipment",dlc:null,img:"Gorag's_Opus.png",emoji:"📻",cats:[...A,...M],desc:"All allies enter a frenzy for 7 seconds: +50% movement, +100% attack speed. Cooldown: 45s.",wiki:"Gorag%27s_Opus"},
+{id:"goobo-jr",name:"Goobo Jr.",rarity:"equipment",dlc:"sotv",img:"Goobo_Jr.png",emoji:"🟢",cats:[...U,...A],desc:"Spawn a gummy clone of yourself with 300% damage and 300% health for 30 seconds. Cooldown: 100s.",wiki:"Goobo_Jr."},
+{id:"gorags-opus",name:"Gorag's Opus",rarity:"equipment",dlc:null,img:"Gorag's_Opus.png",emoji:"📻",cats:[...A,...M],desc:"All allies enter a frenzy for 7 seconds: +50% movement speed, +100% attack speed. Cooldown: 45s.",wiki:"Gorag%27s_Opus"},
 {id:"jade-elephant",name:"Jade Elephant",rarity:"equipment",dlc:null,img:"Jade_Elephant.png",emoji:"🐘",cats:[...H],desc:"Gain 500 armor for 5 seconds. Cooldown: 45s.",wiki:"Jade_Elephant"},
 {id:"milky-chrysalis",name:"Milky Chrysalis",rarity:"equipment",dlc:null,img:"Milky_Chrysalis.png",emoji:"🦋",cats:[...M,...H],desc:"Sprout wings and fly for 15 seconds. Heal for 20% of max health on use. Cooldown: 60s.",wiki:"Milky_Chrysalis"},
 {id:"molotov-6pack",name:"Molotov (6-Pack)",rarity:"equipment",dlc:"sotv",img:"Molotov_(6-Pack).png",emoji:"🍾",cats:[...A,...AO],desc:"Throw 6 molotov cocktails that ignite enemies for 500% base damage. Each leaves a burning area for 200% damage/s. Cooldown: 45s.",wiki:"Molotov_(6-Pack)"},
@@ -606,22 +624,36 @@ const ITEMS=[
 {id:"preon-accumulator",name:"Preon Accumulator",rarity:"equipment",dlc:null,img:"Preon_Accumulator.png",emoji:"⚡",cats:[...A,...AO],desc:"Fires preon tendrils for up to 600% damage/s. On contact, releases a detonation for 4000% damage. Cooldown: 140s.",wiki:"Preon_Accumulator"},
 {id:"primordial-cube",name:"Primordial Cube",rarity:"equipment",dlc:null,img:"Primordial_Cube.png",emoji:"⬛",cats:[...U,...AO],desc:"Fire a black hole that draws enemies within 30m into its center for 10 seconds. Cooldown: 60s.",wiki:"Primordial_Cube"},
 {id:"radar-scanner",name:"Radar Scanner",rarity:"equipment",dlc:null,img:"Radar_Scanner.png",emoji:"📡",cats:[...U],desc:"Reveal all nearby interactables within 500m for 10 seconds. Cooldown: 45s.",wiki:"Radar_Scanner"},
-{id:"recycler",name:"Recycler",rarity:"equipment",dlc:null,img:"Recycler.png",emoji:"♻️",cats:[...U],desc:"Transform an Item or Equipment into a different one of the same rarity. Cooldown: 45s.",wiki:"Recycler"},
-{id:"remote-caffeinator",name:"Remote Caffeinator",rarity:"equipment",dlc:null,img:"Remote_Caffeinator.png",emoji:"☕",cats:[...U],desc:"Request an airdrop of a special Disruptor Drink to a targeted location. Cooldown: 140s.",wiki:"Remote_Caffeinator"},
+{id:"recycler",name:"Recycler",rarity:"equipment",dlc:null,img:"Recycler.png",emoji:"♻️",cats:[...U],desc:"Transform an Item or Equipment into a different one of the same rarity. Each item type can only be changed once. Cooldown: 45s.",wiki:"Recycler"},
+{id:"remote-caffeinator",name:"Remote Caffeinator",rarity:"equipment",dlc:"sotv",img:"Remote_Caffeinator.png",emoji:"☕",cats:[...U],desc:"Request an airdrop of a special Disruptor Drink to a targeted location, dealing 6x600% damage and applying random buffs to allies. Cooldown: 140s.",wiki:"Remote_Caffeinator"},
 {id:"royal-capacitor",name:"Royal Capacitor",rarity:"equipment",dlc:null,img:"Royal_Capacitor.png",emoji:"⚡",cats:[...A],desc:"Call down a lightning strike on a targeted monster, dealing 3000% damage and stunning nearby enemies. Cooldown: 20s.",wiki:"Royal_Capacitor"},
-{id:"sawmerang",name:"Sawmerang",rarity:"equipment",dlc:null,img:"Sawmerang.png",emoji:"🪃",cats:[...A],desc:"Throw three large saw blades that slice through enemies for 3x400% damage. Cooldown: 45s.",wiki:"Sawmerang"},
-{id:"super-massive-leech",name:"Super Massive Leech",rarity:"equipment",dlc:null,img:"Super_Massive_Leech.png",emoji:"🪱",cats:[...HL,...A],desc:"Heal for 20% of your max health each time you kill an enemy. Cooldown: 20s.",wiki:"Super_Massive_Leech"},
-{id:"trophy-hunters-tricorn",name:"Trophy Hunter's Tricorn",rarity:"equipment",dlc:"sotv",img:"Trophy_Hunter's_Tricorn.png",emoji:"🎩",cats:[...U],desc:"Execute any enemy capable of dropping a unique boss item at or below 15% health. Cooldown: 60s.",wiki:"Trophy_Hunter%27s_Tricorn"},
-{id:"volcanic-egg",name:"Volcanic Egg",rarity:"equipment",dlc:null,img:"Volcanic_Egg.png",emoji:"🥚",cats:[...A,...M],desc:"Transform into a speeding fireball for 5 seconds, dealing 500% damage on impact. Cooldown: 45s.",wiki:"Volcanic_Egg"},
+{id:"sawmerang",name:"Sawmerang",rarity:"equipment",dlc:null,img:"Sawmerang.png",emoji:"🪃",cats:[...A],desc:"Throw three large saw blades that slice through enemies for 3x400% damage. Also deals 3x100% damage/s to bleeding enemies. Returns to you. Cooldown: 45s.",wiki:"Sawmerang"},
+{id:"seed-of-life",name:"Seed of Life",rarity:"equipment",dlc:"sots",img:"Seed_of_Life.png",emoji:"🌱",cats:[...HL,...U],desc:"Revive dead allies on activation, or automatically revive yourself on death. Transforms into a healing sprout after use. Cooldown: 60s.",wiki:"Seed_of_Life"},
+{id:"super-massive-leech",name:"Super Massive Leech",rarity:"equipment",dlc:null,img:"Super_Massive_Leech.png",emoji:"🪱",cats:[...HL,...A],desc:"Heal for 20% of the damage you deal for 8 seconds. Cooldown: 20s.",wiki:"Super_Massive_Leech"},
+{id:"the-backup",name:"The Back-up",rarity:"equipment",dlc:null,img:"The_Backup.png",emoji:"💸",cats:[...A,...G],desc:"Call 4 Strike Drones to fight for you. Lasts 25 seconds.",wiki:"The_Back-Up"},
+{id:"crowdfunder",name:"The Crowdfunder",rarity:"equipment",dlc:null,img:"The_Crowdfunder.png",emoji:"💸",cats:[...A,...G],desc:"Toggle to fire a continuous spray of bullets for 100% damage per bullet. Costs $1 per bullet, scaling over time. Cooldown: None.",wiki:"The_Crowdfunder"},
+{id:"trophy-hunter's-tricorn",name:"Trophy Hunter's Tricorn",rarity:"equipment",dlc:null,img:"Trophy_Hunter's_Tricorn.png",emoji:"💸",cats:[...A,...G],desc:"Execute any enemy capable of spawning a unique reward, and it will drop that item. Equipment is consumed on use.",wiki:"Trophy_Hunter's_Tricorn"},
+{id:"volcanic-egg",name:"Volcanic Egg",rarity:"equipment",dlc:null,img:"Volcanic_Egg.png",emoji:"🥚",cats:[...A,...M],desc:"Transform into a speeding fireball for 5 seconds, dealing 500% damage on impact and detonating for 800% damage at the end. Cooldown: 45s.",wiki:"Volcanic_Egg"},
 
-// -- LUNAR EQUIPMENT (alphabetical) ------------------------------
-{id:"effigy-of-grief",name:"Effigy of Grief",rarity:"lunar-equip",dlc:null,img:"Effigy_of_Grief.png",emoji:"😞",cats:[...U],desc:"ALL characters within are slowed by 50% and have armor reduced by 20. Can place up to 5. Consumed on use.",wiki:"Effigy_of_Grief"},
+// -- LUNAR EQUIPMENT (alphabetical) ---------------------------------
+{id:"effigy-of-grief",name:"Effigy of Grief",rarity:"lunar-equip",dlc:null,img:"Effigy_of_Grief.png",emoji:"😞",cats:[...U],desc:"Drop a permanent effigy that slows ALL characters within by 50% and reduces their armor by 20. Can place up to 5. Cooldown: 15s.",wiki:"Effigy_of_Grief"},
 {id:"glowing-meteorite",name:"Glowing Meteorite",rarity:"lunar-equip",dlc:null,img:"Glowing_Meteorite.png",emoji:"☄️",cats:[...A,...AO],desc:"Rain meteors from the sky, damaging ALL characters for 600% damage per blast. Lasts 20 seconds. Cooldown: 140s.",wiki:"Glowing_Meteorite"},
 {id:"helfire-tincture",name:"Helfire Tincture",rarity:"lunar-equip",dlc:null,img:"Helfire_Tincture.png",emoji:"🔥",cats:[...A,...AO],desc:"Ignite ALL characters within 15m for 12 seconds. Deals 5% max HP/s to yourself, 10% to allies, 300% to enemies. Cooldown: 45s.",wiki:"Helfire_Tincture"},
-{id:"spinel-tonic",name:"Spinel Tonic",rarity:"lunar-equip",dlc:null,img:"Spinel_Tonic.png",emoji:"🧪",cats:[...A,...M,...H],desc:"Drink the tonic for 20 seconds: +100% damage, +70% attack/move speed, +20 armor, +50% max health. 20% chance of Tonic Affliction after. Cooldown: 60s.",wiki:"Spinel_Tonic"},
+{id:"spinel-tonic-lunar",name:"Spinel Tonic",rarity:"lunar-equip",dlc:null,img:"Spinel_Tonic.png",emoji:"🧪",cats:[...A,...M,...H],desc:"Lunar variant: same effects as the standard Spinel Tonic but obtained from Lunar Pods. 20% chance of Tonic Affliction on expiry.",wiki:"Spinel_Tonic"},
 
-// -- ELITE EQUIPMENT (alphabetical) ------------------------------
-{id:"spectral-circlet",name:"Spectral Circlet",rarity:"elite-equip",dlc:null,img:"Spectral_Circlet.png",emoji:"👻",cats:[...U],desc:"[Haunted Elite] Passively grants the Celestine Elite's haunting aura, periodically cloaking nearby enemies.",wiki:"Spectral_Circlet"},
+// -- ELITE EQUIPMENT (alphabetical) ---------------------------------
+// Passive — grant the abilities of Elite enemies. Cannot be activated.
+// Obtained as a rare 1/4000 drop from their respective Elite enemy.
+{id:"aurelionite's_blessing",name:"Aurelionite's Blessing",rarity:"elite-equip",dlc:null,img:"Aurelionite's_Blessing.png",emoji:"💛",cats:[...G,...U],desc:"[Gilded Elite] Become an aspect of gold. Nearby gold-coin projectiles orbit you and deal damage to enemies.",wiki:"Aurelionite's_Blessing"},
+{id:"her-biting-embrace",name:"Her Biting Embrace",rarity:"elite-equip",dlc:null,img:"Her_Biting_Embrace.png",emoji:"🧊",cats:[...U],desc:"[Glacial Elite] Become an aspect of ice. Your attacks slow enemies and freeze on kill. You leave an ice explosion on death.",wiki:"Her_Biting_Embrace"},
+{id:"his-reassurance",name:"His Reassurance",rarity:"elite-equip",dlc:null,img:"His_Reassurance.png",emoji:"🪨",cats:[...H,...U],desc:"[Perfected/Lunar Elite] Become an aspect of the moon. Gain a massive health boost and your attacks apply a lunar curse reducing max health.",wiki:"His_Reassurance"},
+{id:"his-spiteful-boon",name:"His Spiteful Boon",rarity:"elite-equip",dlc:null,img:"His_Spiteful_Boon.png",emoji:"💜",cats:[...H,...U],desc:"[Malachite Elite] Become an aspect of corruption. Gain Malachite spikes and reduce nearby enemies' healing.",wiki:"His_Spiteful_Boon"},
+{id:"ifrits-distinction",name:"Ifrit's Distinction",rarity:"elite-equip",dlc:null,img:"Ifrit's_Distinction.png",emoji:"🔥",cats:[...A,...U],desc:"[Blazing Elite] Become an aspect of fire. Leave a burning fire trail and apply a 50% total damage burn on hit.",wiki:"Ifrit%27s_Distinction"},
+{id:"nkuhanas-retort",name:"N'kuhana's Retort",rarity:"elite-equip",dlc:null,img:"N'kuhana's_Retort.png",emoji:"🦴",cats:[...U],desc:"[Malachite Elite] Become an aspect of corruption. Your attacks release homing bone spikes and reduce healing on enemies hit.",wiki:"N%27kuhana%27s_Retort"},
+{id:"of-one-mind",name:"Of One Mind",rarity:"elite-equip",dlc:"sotv",img:"Of_One_Mind.png",emoji:"🫧",cats:[...V,...U],desc:"[Collective Elite] Become an aspect of the collective. You gain a protective shield and explode on death.",wiki:"Shared_Design"},
+{id:"shared-design",name:"Shared Design",rarity:"elite-equip",dlc:"sotv",img:"Shared_Design.png",emoji:"🫧",cats:[...V,...U],desc:"[Voidtouched Elite] Become an aspect of the void. Your attacks apply Void Fog and reduce enemy stats.",wiki:"Shared_Design"},
+{id:"silence-between-two-strikes",name:"Silence Between Two Strikes",rarity:"elite-equip",dlc:null,img:"Silence_Between_Two_Strikes.png",emoji:"⚡",cats:[...A,...U],desc:"[Overloading Elite] Become an aspect of lightning. Your attacks create delayed explosions and you passively emit electrical blasts.",wiki:"Silence_Between_Two_Strikes"},
+{id:"spectral-circlet",name:"Spectral Circlet",rarity:"elite-equip",dlc:null,img:"Spectral_Circlet.png",emoji:"👻",cats:[...U],desc:"[Haunted/Celestine Elite] Become an aspect of the haunted. Periodically cloak all nearby enemies.",wiki:"Spectral_Circlet"},
 ];
 
 const RARITIES=[
