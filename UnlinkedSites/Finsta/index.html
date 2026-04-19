@@ -9,266 +9,315 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="Instagram" />
   <link rel="apple-touch-icon" href="https://www.instagram.com/static/images/ico/apple-touch-icon-76x76-precomposed.png/666282be8229.png" />
+  <!-- Pacifico — thick connected cursive, closest free match to Instagram's wordmark -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 
-```
-/* Billabong — the actual Instagram wordmark font */
-@font-face {
-  font-family: 'Billabong';
-  src: url('https://db.onlinewebfonts.com/t/cfe1f1f1ff98e1e33adc3c2e1f91b201.woff2') format('woff2'),
-       url('https://db.onlinewebfonts.com/t/cfe1f1f1ff98e1e33adc3c2e1f91b201.woff') format('woff');
-  font-weight: normal;
-}
+    :root {
+      --bg:        #ffffff;
+      --border:    #dbdbdb;
+      --text:      #262626;
+      --subtext:   #8e8e8e;
+      --shimmer-a: #efefef;
+      --shimmer-b: #e2e2e2;
+      --blue:      #0095f6;
+      --icon:      #262626;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg:        #000000;
+        --border:    #262626;
+        --text:      #f5f5f5;
+        --subtext:   #a8a8a8;
+        --shimmer-a: #1c1c1c;
+        --shimmer-b: #2a2a2a;
+        --icon:      #f5f5f5;
+      }
+    }
 
-:root {
-  --ig-blue: #0095f6;
-  --ig-border: #dbdbdb;
-  --ig-text: #262626;
-  --ig-secondary: #8e8e8e;
-  --ig-white: #ffffff;
-}
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      max-width: 430px;
+      margin: 0 auto;
+      min-height: 100dvh;
+      overflow-x: hidden;
+    }
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  background: var(--ig-white);
-  color: var(--ig-text);
-  max-width: 430px;
-  margin: 0 auto;
-  min-height: 100dvh;
-  overflow-x: hidden;
-}
+    /* ── TOP BAR ── */
+    .top-bar {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 14px; height: 50px;
+      background: var(--bg);
+      position: sticky; top: 0; z-index: 100;
+    }
+    /* Wordmark: Pacifico is a very close visual match to the screenshot */
+    .wordmark {
+      font-family: 'Pacifico', cursive;
+      font-size: 28px;
+      color: var(--text);
+      line-height: 1;
+      position: absolute; left: 50%; transform: translateX(-50%);
+      white-space: nowrap;
+    }
+    .icon-btn {
+      background: none; border: none; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      width: 40px; height: 44px;
+    }
 
-/* ── TOP BAR ── */
-.top-bar {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 0 12px; height: 44px;
-  background: var(--ig-white); border-bottom: 1px solid var(--ig-border);
-  position: sticky; top: 0; z-index: 100;
-}
-.logo {
-  font-family: 'Billabong', 'Dancing Script', cursive;
-  font-size: 28px; font-weight: normal;
-  color: var(--ig-text); line-height: 1;
-  /* fallback if font doesn't load */
-}
-.top-icons { display: flex; gap: 4px; align-items: center; }
-.icon-btn { background: none; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; }
+    /* ── STORIES ── */
+    .stories-row {
+      display: flex; gap: 14px; overflow-x: auto;
+      padding: 10px 14px 14px;
+      border-bottom: 1px solid var(--border);
+      scrollbar-width: none;
+    }
+    .stories-row::-webkit-scrollbar { display: none; }
+    .story { display: flex; flex-direction: column; align-items: center; gap: 6px; flex-shrink: 0; }
+    .story-ring-wrap { position: relative; }
+    .story-ring {
+      width: 66px; height: 66px; border-radius: 50%;
+      background: conic-gradient(#f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      display: flex; align-items: center; justify-content: center; padding: 2.5px;
+    }
+    .story-ring .inner {
+      width: 100%; height: 100%; border-radius: 50%;
+      background: #3a3a3a; border: 2.5px solid var(--bg);
+    }
+    .plus-badge {
+      position: absolute; bottom: 0; right: 0;
+      width: 22px; height: 22px; border-radius: 50%;
+      background: var(--blue); border: 2px solid var(--bg);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .story-name { width: 52px; height: 8px; border-radius: 4px; margin-top: 2px; }
 
-/* ── SKELETON ── */
-#skeleton { background: var(--ig-white); padding-bottom: 80px; }
-.sk-post { border-bottom: 1px solid var(--ig-border); }
-.sk-header { display: flex; align-items: center; gap: 10px; padding: 12px 14px; }
-.sk-meta { padding: 10px 14px; display: flex; flex-direction: column; gap: 8px; margin-bottom: 4px; }
-.shimmer {
-  background: linear-gradient(90deg, #f0f0f0 25%, #e8e8e8 50%, #f0f0f0 75%);
-  background-size: 200% 100%;
-  animation: shimmer 1.5s infinite;
-  border-radius: 3px;
-}
-@keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+    /* ── SHIMMER ── */
+    .shimmer {
+      background: linear-gradient(90deg, var(--shimmer-a) 25%, var(--shimmer-b) 50%, var(--shimmer-a) 75%);
+      background-size: 200% 100%;
+      animation: shimmer 1.5s infinite;
+      border-radius: 3px;
+    }
+    @keyframes shimmer { 0%{background-position:200% 0} 100%{background-position:-200% 0} }
 
-/* ── ERROR STATE ── */
-#error-state {
-  display: none; flex-direction: column; align-items: center; justify-content: center;
-  min-height: calc(100dvh - 104px);
-  padding: 32px 52px; text-align: center; background: var(--ig-white);
-}
-#error-state.show { display: flex; animation: fadeUp 0.35s ease both; }
-@keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+    /* ── SKELETON ── */
+    #skeleton { padding-bottom: 90px; }
+    .sk-post { border-bottom: 1px solid var(--border); }
+    .sk-row { display: flex; align-items: center; gap: 10px; padding: 12px 14px; }
+    .sk-meta { padding: 10px 14px; display: flex; flex-direction: column; gap: 8px; margin-bottom: 6px; }
 
-.error-icon { width: 80px; height: 80px; margin-bottom: 20px; }
-.error-title { font-size: 17px; font-weight: 600; color: var(--ig-text); margin-bottom: 10px; letter-spacing: -0.1px; }
-.error-body { font-size: 13px; color: var(--ig-secondary); line-height: 1.65; margin-bottom: 20px; }
-.error-retry {
-  background: none; border: none; color: var(--ig-blue);
-  font-size: 14px; font-weight: 600; cursor: pointer;
-  font-family: inherit; padding: 6px 10px;
-  border-radius: 6px;
-}
-.error-retry:active { opacity: 0.5; }
+    /* ── ERROR STATE ── */
+    #error-state {
+      display: none; flex-direction: column; align-items: center; justify-content: center;
+      min-height: calc(100dvh - 160px);
+      padding: 32px 52px; text-align: center;
+    }
+    #error-state.show { animation: fadeUp 0.35s ease both; }
+    @keyframes fadeUp { from{opacity:0;transform:translateY(14px)} to{opacity:1;transform:translateY(0)} }
 
-/* ── BOTTOM NAV ── */
-.bottom-nav {
-  position: fixed; bottom: 0; left: 50%; transform: translateX(-50%);
-  width: 100%; max-width: 430px;
-  background: var(--ig-white); border-top: 1px solid var(--ig-border);
-  display: flex; justify-content: space-around; align-items: center;
-  padding: 6px 0 calc(8px + env(safe-area-inset-bottom));
-  z-index: 100;
-}
-.nav-btn {
-  background: none; border: none; cursor: pointer;
-  display: flex; align-items: center; justify-content: center;
-  width: 48px; height: 40px;
-}
-/* active home icon fill */
-.nav-home-active { fill: #262626; }
+    .error-icon { width: 82px; height: 82px; margin-bottom: 22px; }
+    .error-title { font-size: 17px; font-weight: 600; color: var(--text); margin-bottom: 10px; }
+    .error-body { font-size: 13px; color: var(--subtext); line-height: 1.65; margin-bottom: 22px; }
+    .error-retry {
+      background: none; border: none; color: var(--blue);
+      font-size: 14px; font-weight: 600; cursor: pointer;
+      font-family: inherit; padding: 6px 10px;
+    }
+    .error-retry:active { opacity: 0.5; }
 
-.profile-thumb {
-  width: 27px; height: 27px; border-radius: 50%;
-  background: #dbdbdb; overflow: hidden;
-  display: flex; align-items: center; justify-content: center;
-}
-```
-
+    /* ── BOTTOM NAV ── */
+    .bottom-nav {
+      position: fixed; bottom: 0; left: 50%; transform: translateX(-50%);
+      width: 100%; max-width: 430px;
+      background: var(--bg); border-top: 1px solid var(--border);
+      display: flex; justify-content: space-around; align-items: center;
+      padding: 8px 0 calc(10px + env(safe-area-inset-bottom));
+      z-index: 100;
+    }
+    .nav-btn {
+      background: none; border: none; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      width: 48px; height: 40px;
+    }
   </style>
+
 </head>
 <body>
 
 <!-- TOP BAR -->
 
 <div class="top-bar">
-  <span class="logo">Instagram</span>
-  <div class="top-icons">
-    <!-- Notifications (heart) -->
-    <button class="icon-btn" aria-label="Notifications">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#262626" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.501 5.501 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-      </svg>
-    </button>
-    <!-- Direct Messages (paper plane) -->
-    <button class="icon-btn" aria-label="Messages">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#262626" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-        <line x1="22" y1="2" x2="11" y2="13"/>
-        <polygon points="22 2 15 22 11 13 2 9 22 2"/>
-      </svg>
-    </button>
-  </div>
+
+  <!-- Plus (new post) — plain thin + sign matching screenshot -->
+
+  <button class="icon-btn" aria-label="New post">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <line x1="12" y1="4" x2="12" y2="20" stroke="var(--icon)" stroke-width="2" stroke-linecap="round"/>
+      <line x1="4" y1="12" x2="20" y2="12" stroke="var(--icon)" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+  </button>
+
+  <!-- Wordmark -->
+
+<span class="wordmark">Instagram</span>
+
+  <!-- Heart outline — matching the thin open heart in screenshot -->
+
+  <button class="icon-btn" aria-label="Notifications">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 21C12 21 3 14.5 3 8.5C3 5.42 5.42 3 8.5 3C10.24 3 11.91 3.81 13 5.08C14.09 3.81 15.76 3 17.5 3C20.58 3 23 5.42 23 8.5C23 14.5 12 21 12 21Z"
+        stroke="var(--icon)" stroke-width="1.7" stroke-linejoin="round" fill="none"/>
+    </svg>
+  </button>
 </div>
 
-<!-- SKELETON LOADER -->
+<!-- STORIES -->
+
+<div class="stories-row">
+  <div class="story your-story">
+    <div class="story-ring-wrap">
+      <div class="story-ring"><div class="inner"></div></div>
+      <div class="plus-badge">
+        <svg width="11" height="11" viewBox="0 0 12 12">
+          <line x1="6" y1="1.5" x2="6" y2="10.5" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="1.5" y1="6" x2="10.5" y2="6" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+    <span class="story-name shimmer"></span>
+  </div>
+  <div class="story"><div class="story-ring"><div class="inner"></div></div><span class="story-name shimmer"></span></div>
+  <div class="story"><div class="story-ring"><div class="inner"></div></div><span class="story-name shimmer"></span></div>
+  <div class="story"><div class="story-ring"><div class="inner"></div></div><span class="story-name shimmer"></span></div>
+  <div class="story"><div class="story-ring"><div class="inner"></div></div><span class="story-name shimmer"></span></div>
+</div>
+
+<!-- SKELETON -->
 
 <div id="skeleton">
-  <!-- Post 1 skeleton -->
   <div class="sk-post">
-    <div class="sk-header">
+    <div class="sk-row">
       <div class="shimmer" style="width:38px;height:38px;border-radius:50%;flex-shrink:0;"></div>
-      <div style="display:flex;flex-direction:column;gap:6px;flex:1;">
+      <div style="flex:1;display:flex;flex-direction:column;gap:7px;">
         <div class="shimmer" style="width:38%;height:10px;"></div>
         <div class="shimmer" style="width:22%;height:8px;"></div>
       </div>
-      <div class="shimmer" style="width:18px;height:4px;border-radius:2px;"></div>
     </div>
-    <div class="shimmer" style="width:100%;height:380px;border-radius:0;"></div>
+    <div class="shimmer" style="width:100%;height:375px;border-radius:0;"></div>
     <div class="sk-meta">
-      <!-- action icons row -->
-      <div style="display:flex;gap:14px;padding:2px 0;">
-        <div class="shimmer" style="width:22px;height:22px;border-radius:4px;"></div>
-        <div class="shimmer" style="width:22px;height:22px;border-radius:4px;"></div>
-        <div class="shimmer" style="width:22px;height:22px;border-radius:4px;"></div>
+      <div style="display:flex;gap:14px;">
+        <div class="shimmer" style="width:22px;height:22px;border-radius:3px;"></div>
+        <div class="shimmer" style="width:22px;height:22px;border-radius:3px;"></div>
+        <div class="shimmer" style="width:22px;height:22px;border-radius:3px;"></div>
       </div>
-      <div class="shimmer" style="width:24%;height:10px;"></div>
-      <div class="shimmer" style="width:72%;height:9px;"></div>
-      <div class="shimmer" style="width:46%;height:9px;"></div>
+      <div class="shimmer" style="width:22%;height:10px;"></div>
+      <div class="shimmer" style="width:70%;height:9px;"></div>
+      <div class="shimmer" style="width:45%;height:9px;"></div>
     </div>
   </div>
-  <!-- Post 2 skeleton -->
   <div class="sk-post">
-    <div class="sk-header">
+    <div class="sk-row">
       <div class="shimmer" style="width:38px;height:38px;border-radius:50%;flex-shrink:0;"></div>
-      <div style="display:flex;flex-direction:column;gap:6px;flex:1;">
+      <div style="flex:1;display:flex;flex-direction:column;gap:7px;">
         <div class="shimmer" style="width:32%;height:10px;"></div>
         <div class="shimmer" style="width:18%;height:8px;"></div>
       </div>
-      <div class="shimmer" style="width:18px;height:4px;border-radius:2px;"></div>
     </div>
-    <div class="shimmer" style="width:100%;height:380px;border-radius:0;"></div>
+    <div class="shimmer" style="width:100%;height:375px;border-radius:0;"></div>
     <div class="sk-meta">
-      <div style="display:flex;gap:14px;padding:2px 0;">
-        <div class="shimmer" style="width:22px;height:22px;border-radius:4px;"></div>
-        <div class="shimmer" style="width:22px;height:22px;border-radius:4px;"></div>
-        <div class="shimmer" style="width:22px;height:22px;border-radius:4px;"></div>
+      <div style="display:flex;gap:14px;">
+        <div class="shimmer" style="width:22px;height:22px;border-radius:3px;"></div>
+        <div class="shimmer" style="width:22px;height:22px;border-radius:3px;"></div>
+        <div class="shimmer" style="width:22px;height:22px;border-radius:3px;"></div>
       </div>
-      <div class="shimmer" style="width:18%;height:10px;"></div>
-      <div class="shimmer" style="width:60%;height:9px;"></div>
+      <div class="shimmer" style="width:16%;height:10px;"></div>
+      <div class="shimmer" style="width:58%;height:9px;"></div>
     </div>
   </div>
 </div>
 
-<!-- ERROR STATE (the prank) -->
+<!-- ERROR STATE -->
 
 <div id="error-state">
-  <!-- Person + X badge icon -->
   <svg class="error-icon" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <!-- person silhouette -->
-    <circle cx="38" cy="27" r="13" stroke="#262626" stroke-width="3.2"/>
-    <path d="M12 70c0-14.36 11.64-26 26-26s26 11.64 26 26" stroke="#262626" stroke-width="3.2" stroke-linecap="round"/>
-    <!-- red circle badge -->
+    <circle cx="38" cy="27" r="13" stroke="var(--text)" stroke-width="3.2"/>
+    <path d="M12 70c0-14.36 11.64-26 26-26s26 11.64 26 26" stroke="var(--text)" stroke-width="3.2" stroke-linecap="round"/>
     <circle cx="62" cy="16" r="14" fill="#ed4956"/>
-    <!-- white X -->
     <line x1="57" y1="11" x2="67" y2="21" stroke="white" stroke-width="2.8" stroke-linecap="round"/>
     <line x1="67" y1="11" x2="57" y2="21" stroke="white" stroke-width="2.8" stroke-linecap="round"/>
   </svg>
-
   <div class="error-title">No Friends Found</div>
-  <div class="error-body">
-    We couldn't load your feed.<br>
-    It looks like everyone may have<br>blocked you.<br><br>
-    Check your social life and try again.
-  </div>
+  <div class="error-body">We couldn't load your feed.<br>It looks like everyone may have<br>blocked you.<br><br>Check your social life and try again.</div>
   <button class="error-retry" onclick="retryPrank()">Try Again</button>
 </div>
 
-<!-- BOTTOM NAV — correct Instagram 5-icon layout:
-     Home · Search · New Post (＋) · Reels · Profile -->
+<!--
+  BOTTOM NAV — traced directly from screenshot:
+  1. House outline (open, no fill, simple peaked roof + walls)
+  2. Rounded square with play ▶ triangle (Reels)
+  3. Downward triangle / funnel with concave top edges (Threads send)
+  4. Magnifying glass
+  5. Circle with person head+shoulders outline inside
+-->
 
 <div class="bottom-nav">
 
-  <!-- Home (filled house — active state) -->
+  <!-- 1. Home — open house outline, matches screenshot exactly -->
 
   <button class="nav-btn" aria-label="Home">
-    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M9.005 16.545a2.997 2.997 0 0 1 2.997-2.997A2.997 2.997 0 0 1 15 16.545V22h7V11.543L12 2 2 11.543V22h7.005Z" fill="#262626"/>
+    <svg width="25" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- roof -->
+      <polyline points="2,11 12,2 22,11" stroke="var(--icon)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <!-- walls + door -->
+      <path d="M4 11v9a1 1 0 001 1h4v-5h6v5h4a1 1 0 001-1v-9" stroke="var(--icon)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
     </svg>
   </button>
 
-  <!-- Search (magnifying glass) -->
-
-  <button class="nav-btn" aria-label="Search">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#262626" stroke-width="1.8" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="10.5" cy="10.5" r="7.5"/>
-      <line x1="16.5" y1="16.5" x2="22" y2="22"/>
-    </svg>
-  </button>
-
-  <!-- New Post (square with +) -->
-
-  <button class="nav-btn" aria-label="New Post">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#262626" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-      <rect x="3" y="3" width="18" height="18" rx="4"/>
-      <line x1="12" y1="8" x2="12" y2="16"/>
-      <line x1="8" y1="12" x2="16" y2="12"/>
-    </svg>
-  </button>
-
-  <!-- Reels (clapperboard / film) -->
+  <!-- 2. Reels — rounded rect with play triangle, matches screenshot -->
 
   <button class="nav-btn" aria-label="Reels">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#262626" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-      <!-- outer rect -->
-      <rect x="2" y="2" width="20" height="20" rx="4"/>
-      <!-- clapperboard bar -->
-      <line x1="2" y1="7" x2="22" y2="7"/>
-      <!-- clapperboard teeth -->
-      <line x1="7" y1="2" x2="7" y2="7"/>
-      <line x1="12" y1="2" x2="12" y2="7"/>
-      <line x1="17" y1="2" x2="17" y2="7"/>
-      <!-- play triangle -->
-      <polygon points="10,11 10,18 17,14.5" fill="#262626" stroke="none"/>
+    <svg width="25" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="2.5" y="2.5" width="19" height="19" rx="5" stroke="var(--icon)" stroke-width="1.8"/>
+      <!-- play triangle centered -->
+      <path d="M10 8.5L17 12L10 15.5V8.5Z" fill="var(--icon)" stroke="none"/>
     </svg>
   </button>
 
-  <!-- Profile (circle avatar) -->
+  <!-- 3. Send/Threads — outline paper plane matching screenshot: triangle outline pointing right with center line -->
+
+  <button class="nav-btn" aria-label="Threads">
+    <svg width="25" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M22 12L3 4l4 8-4 8 19-8Z" stroke="var(--icon)" stroke-width="1.8" stroke-linejoin="round" fill="none"/>
+      <line x1="7" y1="12" x2="22" y2="12" stroke="var(--icon)" stroke-width="1.8" stroke-linecap="round"/>
+    </svg>
+  </button>
+
+  <!-- 4. Search — magnifying glass -->
+
+  <button class="nav-btn" aria-label="Search">
+    <svg width="25" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="11" cy="11" r="7.5" stroke="var(--icon)" stroke-width="1.8"/>
+      <line x1="16.5" y1="16.5" x2="22" y2="22" stroke="var(--icon)" stroke-width="1.8" stroke-linecap="round"/>
+    </svg>
+  </button>
+
+  <!-- 5. Profile — thin circle with head+body silhouette, matches screenshot -->
 
   <button class="nav-btn" aria-label="Profile">
-    <div class="profile-thumb">
-      <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="13.5" cy="13.5" r="13.5" fill="#dbdbdb"/>
-        <circle cx="13.5" cy="10.5" r="4.5" fill="#a0a0a0"/>
-        <path d="M4 24c0-5.247 4.253-9.5 9.5-9.5S23 18.753 23 24" stroke="#a0a0a0" stroke-width="2" stroke-linecap="round" fill="none"/>
-      </svg>
-    </div>
+    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- outer circle border -->
+      <circle cx="13.5" cy="13.5" r="12" stroke="var(--icon)" stroke-width="1.6" fill="none"/>
+      <!-- head -->
+      <circle cx="13.5" cy="11" r="3.8" stroke="var(--icon)" stroke-width="1.5" fill="none"/>
+      <!-- shoulders arc clipped inside outer circle -->
+      <path d="M5 23.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5" stroke="var(--icon)" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    </svg>
   </button>
 
 </div>
@@ -276,7 +325,11 @@ body {
 <script>
   function showError() {
     document.getElementById('skeleton').style.display = 'none';
-    document.getElementById('error-state').classList.add('show');
+    const err = document.getElementById('error-state');
+    err.style.display = 'flex';
+    // Force reflow so animation re-triggers each time
+    void err.offsetWidth;
+    err.classList.add('show');
   }
   function retryPrank() {
     const err = document.getElementById('error-state');
@@ -286,7 +339,7 @@ body {
     sk.style.display = 'block';
     setTimeout(showError, 2500);
   }
-  setTimeout(showError, 3000);
+  setTimeout(showError, 3200);
 </script>
 
 </body>
