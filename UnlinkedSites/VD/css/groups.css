@@ -1,6 +1,9 @@
 /* -----------------------------
    GROUPS PAGE
 ------------------------------ */
+body{
+  background-color: rgb(233, 238, 253);
+}
 
 .groups-page {
     max-width: 1100px;
@@ -34,7 +37,6 @@
   }
   
   .groups-page .group-card {
-    background: #fff;
     border-radius: 12px;
     padding: 1.5rem;
     box-shadow: 0 4px 16px rgba(0,0,0,0.1);
@@ -69,7 +71,19 @@
   .groups-page .group-card.double {
     grid-column: span 2;
   }
-  
+
+  .groups-bg-orange {
+      background-color: #FFD8B1;
+  }
+
+  .groups-bg-gray {
+      background-color: #ECECEC;
+  }
+
+  .groups-bg-blue {
+      background-color: #D6ECFF;
+  }
+
   /* Responsive tweak for smaller screens */
   @media (max-width: 768px) {
     .groups-page .group-card.double {
@@ -128,4 +142,5 @@
       grid-column: span 1; /* stacks normally on mobile */
     }
   }
+  
   
