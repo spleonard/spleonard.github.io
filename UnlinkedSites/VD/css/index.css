@@ -11,7 +11,6 @@ body{
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-    font-family: 'Roboto', sans-serif;
     text-align: left; /* left-align all text */
   }
   
@@ -61,6 +60,55 @@ body{
     transform: translateY(-2px);
   }
   
+  .cta-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 40px auto;
+    max-width: 1000px;
+    padding: 0 20px;
+  }
+
+
+  .cta-button {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #fff; /* dark gray background */
+      color: #444;            /* white text */
+      font-weight: 300;       /* lighter font weight */
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s, transform 0.2s;
+      margin-top: 10px;
+      flex: 1;
+      max-width: 450px;
+      padding: 30px;
+      
+      text-decoration: none;
+      text-align: center;
+
+      border-radius: 12px;
+
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  }
+
+
+  .cta-button:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 8px 20px rgba(0,0,0,0.25);
+  }
+
+
+  .cta-button h2 {
+      margin-bottom: 10px;
+  }
+
+
+  .cta-button p {
+      margin: 0;
+  }
   /* Responsive tweaks */
   @media (max-width: 600px) {
     .hero-section h1 {
@@ -151,5 +199,12 @@ body{
       .hero-slider .next {
         font-size: 1.5rem;
         padding: 8px 12px;
+      }
+      .cta-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .cta-button {
+          width: 100%;
       }
     }

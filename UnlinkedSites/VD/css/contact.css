@@ -4,8 +4,7 @@
 .contact-page {
     text-align: center;
     padding: 60px 20px;
-    font-family: 'Roboto', sans-serif;
-    background-color: #f9f9f9; /* subtle background for contrast */
+    background-color: rgb(233, 238, 253);
   }
   
   .contact-page h1 {
