@@ -72,30 +72,42 @@
      Mobile Responsive
   ========================== */
   @media (max-width: 768px) {
+
+    .nav-container {
+        padding: 0 8px;   /* was inherited from 20px */
+    }
+
     .nav-links {
-      display: none;              /* hide desktop links */
-      flex-direction: column;
-      background-color: #222;
-      position: absolute;
-      top: 70px;                  /* below navbar */
-      left: 50%;
-      transform: translateX(-50%);
-      width: 90%;
-      padding: 20px;
-      border-radius: 8px;
-      gap: 15px;
-      text-align: center;
+        display: none;
+        flex-direction: column;
+        background-color: #222;
+        position: absolute;
+        top: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        padding: 20px;
+        border-radius: 8px;
+        gap: 15px;
+        text-align: center;
     }
-  
+
     .nav-links.active {
-      display: flex;              /* show when hamburger clicked */
+        display: flex;
     }
-  
+
     .menu-toggle {
-      display: flex;              /* show hamburger on mobile */
+        display: flex;
     }
-  }
-  
+
+    .logo-img {
+        height: 50px;
+    }
+
+    .logo-title {
+        font-size: 0.9rem;
+    }
+}
 
  /* Logo container */
 .logo-container {
@@ -138,19 +150,19 @@
 /* Responsive: shrink on smaller screens */
 @media (max-width: 768px) {
     .logo-img {
-        height: 40px;
+        height: 50px;
     }
     .logo-title {
-        font-size: 1.2rem;
+        font-size: 0.9rem;
     }
 }
 
 @media (max-width: 480px) {
     .logo-img {
-        height: 35px;
+        height: 50px;
     }
     .logo-title {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }
 
