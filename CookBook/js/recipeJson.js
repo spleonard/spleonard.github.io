@@ -199,6 +199,15 @@ var recipeJSON =
                         "time": "Takes 2 hours"
                 },
                 {
+                        "title":"Glenn Pizza Dough",
+                        "ingredients": "1 1/2 cup warm Water <br> 1 tbsp Sugar <br> 2 tsp Yeast <br> 1 1/2 tsp Salt <br> 3/4 cup Glenn Flour <br> 1 2/3 cup AP Flour + 7 tbsp <br> 2 tbsp Olive Oil",
+                        "link": "https://grainsinsmallplaces.net/pizza-dough-fresh-milled-flour/#recipe",
+                        "materials": "Stand Mixer",
+                        "servings": "Makes 2 Doughs",
+                        "steps": "1) Combine sugar yeast and warm water in bowl, mix and let sit 5 min <br> 2) Add rest of ingredients to stand mixer <br> 3) Mix everything together lightly and let sit 15 min <br> 4) knead for 15 min. then cover and Wait 1 hour <br> 5) Cut dough in half and shape into pizzas <br> 6) Add toppings as desired and cook at 450 for about 8 min",
+                        "time": "Takes 2 hours"
+                },
+                {
                         "title":"Pork, Glazed (Dad\'s)",
                         "ingredients": "1 Pound Pork <br> 1 Tbsp Flour <br> 2 Tbsp Brown Sugar <br> 1/2 tsp Salt <br> 1/2 tsp Ground Cumin <br> 1/4 tsp Ground Cardamom <br> 1/8 tsp Ground Red Pepper <br> 1/4 cup Craisins <br> 1/4 cup Orange Juice <br> 3 Tbsps Balsamic Vinegar <br> 2 Tbsps Capers <br> 1 Tbsp Olive Oil",
                         "link": "",
