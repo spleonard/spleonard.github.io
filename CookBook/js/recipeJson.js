@@ -200,7 +200,7 @@ var recipeJSON =
                 },
                 {
                         "title":"Glenn Pizza Dough",
-                        "ingredients": "1 1/2 cup warm Water <br> 1 tbsp Sugar <br> 2 tsp Yeast <br> 1 1/2 tsp Salt <br> 3/4 cup (130g) Glenn Flour <br> (415g) 1 2/3 cup AP Flour + 7 tbsp <br> 2 tbsp Olive Oil",
+                        "ingredients": "1 1/2 cup warm Water <br> 1 tbsp Sugar <br> 2 tsp Yeast <br> 1 1/2 tsp Salt <br> 3/4 cup (130g) Glenn Flour <br> 1 2/3 cup (440g) AP Flour + 7 tbsp <br> 2 tbsp Olive Oil",
                         "link": "https://grainsinsmallplaces.net/pizza-dough-fresh-milled-flour/#recipe",
                         "materials": "Stand Mixer",
                         "servings": "Makes 2 Doughs",
