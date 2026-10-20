@@ -74,6 +74,15 @@ var recipeJSON =
                         "time": "Takes 1.5 Hours"
                 },
                 {
+                        "title":"Cocoa",
+                        "ingredients": "1 cup milk <br> 2 tbsp cocoa powder <br> 1.5 tbsp sugar",
+                        "link": "",
+                        "materials": "Pot",
+                        "servings": "Makes 1 Cup",
+                        "steps": "mix and heat slowly",
+                        "time": "Takes 5 min"
+                },
+                {
                         "title":"Cookies, Kissies",
                         "ingredients": "1 1/3 cups Flour <br> 1 tsp Baking Soda <br> 1/2 tsp Salt <br> 1/2 Cup Vegtable Shortening <br> 1/2 cup Sugar <br> 1/2 cup Brown Sugar <br> 1/2 cup Peanut Butter <br> 1 large Egg <br> 1 tsp Vanilla <br> Extra Sugar <br> 30 Hershey Kisses",
                         "link": "",
